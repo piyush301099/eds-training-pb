@@ -142,6 +142,397 @@
     ]
   },
   {
+    "id": "column-container",
+    "fields": [
+      {
+        "component": "multiselect",
+        "name": "extra-styles",
+        "description": "Select the Extra Styles for columns",
+        "label": "Extra Styles",
+        "valueType": "string",
+        "options": [
+          {
+            "name": "Apply Offset",
+            "value": "offset"
+          },
+          {
+            "name": "Apply Verticle Divider",
+            "value": "dividers"
+          }
+        ]
+      },
+      {
+        "component": "select",
+        "name": "style",
+        "description": "Select styles to decorate columns",
+        "label": "Select Styles for Columns",
+        "valueType": "string",
+        "options": [
+          {
+            "name": "50% - 50%",
+            "value": "two-col-50-50"
+          },
+          {
+            "name": "25% - 75%",
+            "value": "two-col-25-75"
+          },
+          {
+            "name": "75% - 25%",
+            "value": "two-col-75-25"
+          },
+          {
+            "name": "33% - 33% - 33%",
+            "value": "three-col-33-33-33"
+          },
+          {
+            "name": "25% - 25% - 50%",
+            "value": "three-col-25-25-50"
+          },
+          {
+            "name": "25% - 50% - 25%",
+            "value": "three-col-25-50-25"
+          },
+          {
+            "name": "50% - 25% - 25%",
+            "value": "three-col-50-25-25"
+          },
+          {
+            "name": "25% - 25% - 25% - 25%",
+            "value": "four-col-25-25-25-25"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "tabs-section",
+    "fields": [
+      {
+        "component": "number",
+        "name": "numberOfTabs",
+        "label": "Number of Tabs",
+        "value": 1,
+        "description": "The label shown for this section in the Content Tree",
+        "validation": {
+          "numberMin": 2,
+          "numberMax": 8,
+          "customErrorMsg": "You also need 1.21 gigawatts."
+        }
+      }
+    ]
+  },
+  {
+    "id": "cont-sec-container",
+    "fields": [
+      {
+        "component": "select",
+        "name": "backgroundColor",
+        "label": "Background Color",
+        "description": "Select the background color",
+        "required": true,
+        "value": "none",
+        "options": [
+          {
+            "name": "Primary - Red",
+            "value": "primary-red"
+          },
+          {
+            "name": "Secondary - Green",
+            "value": "secondary-green"
+          },
+          {
+            "name": "Tertiary - Blue",
+            "value": "tertiary-blue"
+          },
+          {
+            "name": "Quaternary - Gray",
+            "value": "quaternary-gray"
+          },
+          {
+            "name": "None",
+            "value": "none"
+          }
+        ]
+      },
+      {
+        "component": "select",
+        "name": "additionalPadding",
+        "label": "Additional Padding",
+        "description": "Select the padding for each side so that authors have the ability to specify spacing",
+        "required": true,
+        "value": "none",
+        "options": [
+          {
+            "name": "None",
+            "value": "none"
+          },
+          {
+            "name": "Narrow",
+            "value": "narrow"
+          },
+          {
+            "name": "Wide",
+            "value": "wide"
+          }
+        ]
+      },
+      {
+        "component": "select",
+        "name": "additionalMargins",
+        "label": "Additional Margins",
+        "description": "Select the margins for each side so that authors have the ability to specify spacing",
+        "required": true,
+        "value": "none",
+        "options": [
+          {
+            "name": "None",
+            "value": "none"
+          },
+          {
+            "name": "Narrow",
+            "value": "narrow"
+          },
+          {
+            "name": "Wide",
+            "value": "wide"
+          }
+        ]
+      },
+      {
+        "component": "checkbox-group",
+        "name": "roundedBorders",
+        "label": "Rounded Borders",
+        "valueType": "string",
+        "description": "Select check or unchecked for rounded borders",
+        "options": [
+          {
+            "name": "Rounded Borders",
+            "value": "true"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "accordion-item",
+    "fields": [
+      {
+        "component": "richtext",
+        "name": "title",
+        "label": "Title",
+        "valueType": "string",
+        "description": "Enter title of each accordion item",
+        "required": true
+      },
+      {
+        "component": "richtext",
+        "name": "description",
+        "label": "Description",
+        "valueType": "string",
+        "description": "Enter detailed description of each accordion item",
+        "required": true
+      },
+      {
+        "component": "text",
+        "name": "subtitle",
+        "label": "Image Title",
+        "valueType": "string",
+        "description": "Enter title for the Image"
+      },
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "image",
+        "label": "Image",
+        "description": "Upload Image for the section content"
+      },
+      {
+        "component": "text",
+        "name": "imageAlt",
+        "label": "Alt Text",
+        "description": "Pick alt text from AEM DAM with ability to override it"
+      },
+      {
+        "component": "text",
+        "name": "text",
+        "label": "Label",
+        "description": "Enter the label for expandable text"
+      },
+      {
+        "component": "richtext",
+        "name": "extendedDescription",
+        "label": "Extended Image Description",
+        "description": "Enter the description details for complicated images."
+      }
+    ]
+  },
+  {
+    "id": "accordion",
+    "fields": [
+      {
+        "component": "text",
+        "name": "accordiontitle",
+        "label": "Accordion Title",
+        "description": "Enter title for the entire Accordion Block"
+      },
+      {
+        "component": "select",
+        "name": "style",
+        "label": "Accordion Expansion",
+        "description": "Select the relevant Accordion Expansion option",
+        "value": "none",
+        "required": true,
+        "options": [
+          {
+            "name": "None",
+            "value": "none"
+          },
+          {
+            "name": "First",
+            "value": "first"
+          },
+          {
+            "name": "All",
+            "value": "all"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "additional-link",
+    "fields": [
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "linkHeadline",
+        "label": "Link Headline",
+        "required": true,
+        "description": "Enter display text for the quick link"
+      },
+      {
+        "component": "select",
+        "name": "ctaType",
+        "label": "CTA Type",
+        "description": "Select the CTA Type",
+        "options": [
+          {
+            "name": "Link",
+            "value": "link"
+          },
+          {
+            "name": "Asset (PDF/Image)",
+            "value": "asset"
+          }
+        ],
+        "condition": {
+          "!!": {
+            "var": "linkHeadline"
+          }
+        }
+      },
+      {
+        "component": "aem-content",
+        "name": "ctaLink",
+        "label": "CTA Link",
+        "valueType": "string",
+        "description": "Enter the URL to navigate when CTA is clicked",
+        "validation": {
+          "rootPath": "/content"
+        },
+        "condition": {
+          "and": [
+            { "===": [{ "var": "ctaType" }, "link"] },
+            { "!!": { "var": "linkHeadline" } }
+          ]
+        }
+      },
+      {
+        "component": "reference",
+        "name": "ctaAsset",
+        "label": "Asset (PDF/Image)",
+        "description": "Upload the Asset (PDF/Image)",
+        "valueType": "string",
+        "condition": {
+          "and": [
+            { "===": [{ "var": "ctaType" }, "asset"] },
+            { "!!": { "var": "linkHeadline" } }
+          ]
+        }
+      },
+      {
+        "component": "text",
+        "name": "additional-aria-label",
+        "label": "ARIA Label",
+        "valueType": "string",
+        "description": "Enter ARIA label to comply ADA"
+      },
+      {
+        "component": "select",
+        "name": "targetPath",
+        "label": "Target Path",
+        "description": "Select the target path for the authored CTA URL",
+        "value": "sameTab",
+        "options": [
+          {
+            "name": "Same Tab",
+            "value": "sameTab"
+          },
+          {
+            "name": "New Tab",
+            "value": "newTab"
+          }
+        ],
+        "condition": {
+          "and": [
+            { "===": [{ "var": "ctaType" }, "link"] },
+            { "!!": { "var": "linkHeadline" } }
+          ]
+        }
+      },
+      {
+        "component": "checkbox-group",
+        "label": "Exit Interstitial",
+        "name": "checkbox",
+        "valueType": "string",
+        "description": "Select this checkbox to enable the modal experience that notifies user that they are leaving the site",
+        "options": [
+          {
+            "name": "Exit Interstitial",
+            "value": "true"
+          }
+        ],
+        "condition": {
+          "and": [
+            { "===": [{ "var": "ctaType" }, "link"] },
+            { "!!": { "var": "linkHeadline" } }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "additional-links",
+    "fields": [
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "cards",
+        "label": "Cards Title",
+        "description": "Enter the title for the entire Card block",
+        "multi": false
+      },
+      {
+        "component": "richtext",
+        "name": "text",
+        "value": "",
+        "label": "Description",
+        "valueType": "string",
+        "required": true
+      }
+    ]
+  },
+  {
     "id": "card",
     "fields": [
       {
@@ -149,14 +540,130 @@
         "valueType": "string",
         "name": "image",
         "label": "Image",
-        "multi": false
+        "required": true,
+        "description": "Upload images for the card"
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "imageAlt",
+        "label": "Image Alt Text ",
+        "description": "Add Image Alternate Text"
+      },
+      {
+        "component": "text",
+        "name": "text",
+        "label": "Title",
+        "valueType": "string",
+        "description": "Enter title for each card",
+        "required": true
       },
       {
         "component": "richtext",
-        "name": "text",
-        "value": "",
-        "label": "Text",
-        "valueType": "string"
+        "name": "description",
+        "label": "Description",
+        "valueType": "string",
+        "description": "Enter description for each card",
+        "required": false
+      },
+      {
+        "component": "text",
+        "name": "ctaLabel",
+        "label": "CTA Label",
+        "valueType": "string",
+        "description": "Enter label to display on the CTA for each card"
+      },
+      {
+        "component": "select",
+        "name": "ctaType",
+        "label": "CTA Type",
+        "description": "Select the CTA Type",
+        "options": [
+          {
+            "name": "Link",
+            "value": "link"
+          },
+          {
+            "name": "Asset (PDF/Image)",
+            "value": "asset"
+          }
+        ],
+        "condition": {
+          "!!": {
+            "var": "ctaLabel"
+          }
+        }
+      },
+      {
+        "component": "aem-content",
+        "name": "ctaLink",
+        "label": "CTA Link",
+        "valueType": "string",
+        "description": "Enter the URL to navigate when CTA is clicked for each card",
+        "validation": {
+          "rootPath": "/content"
+        },
+        "condition": {
+          "and": [
+            { "===": [{ "var": "ctaType" }, "link"] },
+            { "!!": { "var": "ctaLabel" } }
+          ]
+        }
+      },
+      {
+        "component": "reference",
+        "name": "ctaAsset",
+        "label": "Asset (PDF/Image)",
+        "description": "Upload the Asset (PDF/Image)",
+        "valueType": "string",
+        "condition": {
+          "and": [
+            { "===": [{ "var": "ctaType" }, "asset"] },
+            { "!!": { "var": "ctaLabel" } }
+          ]
+        }
+      },
+      {
+        "component": "text",
+        "name": "card-tile-aria-label",
+        "label": "ARIA Label",
+        "valueType": "string",
+        "description": "Enter ARIA label to comply ADA"
+      },
+      {
+        "component": "select",
+        "name": "targetPath",
+        "label": "Target Path",
+        "description": "Select the target path for the authored CTA URL",
+        "value": "sameTab",
+        "options": [
+          {
+            "name": "Same Tab",
+            "value": "sameTab"
+          },
+          {
+            "name": "New Tab",
+            "value": "newTab"
+          }
+        ],
+        "condition": {
+          "and": [
+            { "===": [{ "var": "ctaType" }, "link"] },
+            { "!!": { "var": "ctaLabel" } }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "cards",
+    "fields": [
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "cards",
+        "label": "Section Title",
+        "description": "Enter the title for the entire Card block"
       }
     ]
   },
@@ -180,6 +687,611 @@
     ]
   },
   {
+    "id": "csr-form",
+    "fields": [
+      {
+        "component": "text",
+        "name": "formTitleText",
+        "label": "Form Title",
+        "valueType": "string",
+        "description": "Enter the Form Title",
+        "required": true
+      },
+      {
+        "component": "text",
+        "name": "disclaimerText",
+        "label": "Disclaimer",
+        "valueType": "string",
+        "description": "Enter the disclaimer for the Form",
+        "required": true
+      }
+    ]
+  },
+  {
+    "id": "enhanced-related-link",
+    "fields": [
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "linkHeadline",
+        "label": "Link Headline",
+        "required": true,
+        "description": "Enter display text for the quick link"
+      },
+      {
+        "component": "select",
+        "name": "ctaType",
+        "label": "CTA Type",
+        "description": "Select the CTA Type",
+        "options": [
+          {
+            "name": "Link",
+            "value": "link"
+          },
+          {
+            "name": "Asset (PDF/Image)",
+            "value": "asset"
+          }
+        ],
+        "condition": {
+          "!!": {
+            "var": "linkHeadline"
+          }
+        }
+      },
+      {
+        "component": "aem-content",
+        "name": "ctaLink",
+        "label": "CTA Link",
+        "valueType": "string",
+        "description": "Enter the URL to navigate when CTA is clicked",
+        "validation": {
+          "rootPath": "/content"
+        },
+        "condition": {
+          "and": [
+            { "===": [ { "var": "ctaType" }, "link" ] },
+            { "!!": { "var": "linkHeadline" } }
+          ]
+        }
+      },
+      {
+        "component": "reference",
+        "name": "ctaAsset",
+        "label": "Asset (PDF/Image)",
+        "description": "Upload the Asset (PDF/Image)",
+        "valueType": "string",
+        "condition": {
+          "and": [
+            { "===": [ { "var": "ctaType" }, "asset" ] },
+            { "!!": { "var": "linkHeadline" } }
+          ]
+        }
+      },
+      {
+        "component": "text",
+        "name": "enhanced-aria-label",
+        "label": "ARIA Label",
+        "valueType": "string",
+        "description": "Enter ARIA label to comply ADA"
+      },
+      {
+        "component": "select",
+        "name": "targetPath",
+        "label": "Target Path",
+        "description": "Select the target path for the authored CTA URL",
+        "value": "sameTab",
+        "options": [
+          {
+            "name": "Same Tab",
+            "value": "sameTab"
+          },
+          {
+            "name": "New Tab",
+            "value": "newTab"
+          }
+        ],
+        "condition": {
+          "and": [
+            { "===": [ { "var": "ctaType" }, "link" ] },
+            { "!!": { "var": "linkHeadline" } }
+          ]
+        }
+      },
+      {
+        "component": "checkbox-group",
+        "label": "Exit Interstitial",
+        "name": "checkbox",
+        "valueType": "string",
+        "description": "Select this checkbox to enable the modal experience that notifies user that they are leaving the site",
+        "options": [
+          {
+            "name": "Exit Interstitial",
+            "value": "true"
+          }
+        ],
+        "condition": {
+          "and": [
+            { "===": [ { "var": "ctaType" }, "link" ] },
+            { "!!": { "var": "linkHeadline" } }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "bio-pagination",
+    "fields": [
+      {
+        "component": "text",
+        "name": "ctalabelprevious",
+        "label": "CTA Label - Previous Page",
+        "valueType": "string",
+        "description": "Enter the CTA Label"
+      },
+      {
+        "component": "select",
+        "name": "ctaTypeprevious",
+        "label": "CTA Type",
+        "description": "Select the CTA Type",
+        "options": [
+          {
+            "name": "Link",
+            "value": "link"
+          },
+          {
+            "name": "Asset (PDF/Image)",
+            "value": "asset"
+          }
+        ],
+        "condition": {
+          "!!": {
+            "var": "ctalabelprevious"
+          }
+        }
+      },
+      {
+        "component": "aem-content",
+        "name": "ctalinkprevious",
+        "label": "CTA Link - Previous Page",
+        "valueType": "string",
+        "description": "Enter the URL to navigate when CTA is clicked",
+        "validation": {
+          "rootPath": "/content"
+        },
+        "condition": {
+          "and": [
+            { "===": [ { "var": "ctaTypeprevious" }, "link" ] },
+            { "!!": { "var": "ctalabelprevious" } }
+          ]
+        }
+      },
+      {
+        "component": "reference",
+        "name": "ctaAssetprevious",
+        "label": "Asset (PDF/Image)",
+        "description": "Upload the Asset (PDF/Image)",
+        "valueType": "string",
+        "condition": {
+          "and": [
+            { "===": [ { "var": "ctaTypeprevious" }, "asset" ] },
+            { "!!": { "var": "ctalabelprevious" } }
+          ]
+        }
+      },
+      {
+        "component": "text",
+        "name": "bio-pagination-aria-label-previous",
+        "label": "ARIA Label",
+        "valueType": "string",
+        "description": "Enter ARIA label to comply ADA"
+      },
+      {
+        "component": "text",
+        "name": "ctalabelnext",
+        "label": "CTA Label - Next Page",
+        "valueType": "string",
+        "description": "Enter the CTA Label"
+      },
+      {
+        "component": "select",
+        "name": "ctaTypenext",
+        "label": "CTA Type",
+        "description": "Select the CTA Type",
+        "options": [
+          {
+            "name": "Link",
+            "value": "link"
+          },
+          {
+            "name": "Asset (PDF/Image)",
+            "value": "asset"
+          }
+        ],
+        "condition": {
+          "!!": {
+            "var": "ctalabelnext"
+          }
+        }
+      },
+      {
+        "component": "aem-content",
+        "name": "ctalinknext",
+        "label": "CTA Link - Next Page",
+        "valueType": "string",
+        "description": "Enter the URL to navigate when CTA is clicked",
+        "validation": {
+          "rootPath": "/content"
+        },
+        "condition": {
+          "and": [
+            { "===": [ { "var": "ctaTypenext" }, "link" ] },
+            { "!!": { "var": "ctalabelnext" } }
+          ]
+        }
+      },
+      {
+        "component": "reference",
+        "name": "ctaAssetnext",
+        "label": "Asset (PDF/Image)",
+        "description": "Upload the Asset (PDF/Image)",
+        "valueType": "string",
+        "condition": {
+          "and": [
+            { "===": [ { "var": "ctaTypenext" }, "asset" ] },
+            { "!!": { "var": "ctalabelnext" } }
+          ]
+        }
+      },
+      {
+        "component": "text",
+        "name": "bio-pagination-aria-label-next",
+        "label": "ARIA Label",
+        "valueType": "string",
+        "description": "Enter ARIA label to comply ADA"
+      }
+    ]
+  },
+  {
+    "id": "executive-grid",
+    "fields": [
+      {
+        "component": "select",
+        "name": "imagePlacement",
+        "label": "Image Placement",
+        "description": "Select the appropriate image placement option",
+        "required": true,
+        "value": "left",
+        "options": [
+          {
+            "name": "Top",
+            "value": "top"
+          },
+          {
+            "name": "Left",
+            "value": "left"
+          }
+        ]
+      },
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "image",
+        "label": "Image",
+        "required": true,
+        "description": "Upload the image"
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "imageAlt",
+        "label": "Image Alt Text ",
+        "description": "Pick alt text from AEM DAM with ability to override it"
+      },
+      {
+        "component": "text",
+        "name": "executiveName",
+        "label": "Name",
+        "valueType": "string",
+        "description": "Enter the Executive’s name",
+        "required": true
+      },
+      {
+        "component": "text",
+        "name": "designation",
+        "label": "Designation",
+        "valueType": "string",
+        "description": "Enter the Executive’s Designation",
+        "required": true
+      },
+      {
+        "component": "text",
+        "name": "ctaLabel",
+        "label": "CTA Label",
+        "valueType": "string",
+        "description": "Enter the CTA Label",
+        "required": true
+      },
+      {
+        "component": "aem-content",
+        "name": "ctaLink",
+        "label": "Executive bio Link",
+        "valueType": "string",
+        "description": "Enter the CTA link",
+        "validation": {
+          "rootPath": "content/lilly-com-eds"
+        },
+        "condition": {
+          "!": {
+            "or": [
+              {
+                "===": [
+                  {
+                    "var": "ctaLabel"
+                  },
+                  ""
+                ]
+              },
+              {
+                "===": [
+                  {
+                    "var": "ctaLabel"
+                  },
+                  ""
+                ]
+              }
+            ]
+          }
+        }
+      },
+      {
+        "component": "select",
+        "name": "targetPath",
+        "label": "Target Path",
+        "description": "Select the target path for the authored CTA URL",
+        "value": "sameTab",
+        "options": [
+          {
+            "name": "Same Tab",
+            "value": "sameTab"
+          },
+          {
+            "name": "New Tab",
+            "value": "newTab"
+          }
+        ]
+      },
+      {
+        "component": "text",
+        "name": "news-tile-aria-label",
+        "label": "ARIA Label",
+        "valueType": "string",
+        "description": "Enter ARIA label to comply ADA"
+      }
+    ]
+  },
+  {
+    "id": "executive-grids",
+    "fields": []
+  },
+  {
+    "id": "executive-tile",
+    "fields": [
+      {
+        "component": "reference",
+        "name": "image",
+        "label": "Image",
+        "required": true,
+        "description": "Upload Image"
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "exImageAlt",
+        "label": "Image Alt text",
+        "description": "Pick alt text from AEM DAM with ability to override it",
+        "required": true,
+        "value": "Alt text from AEM DAM"
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "label": "Name",
+        "name": "executiveName",
+        "description": "Enter the Executive’s name",
+        "required": true
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "label": "Designation",
+        "name": "executiveDesignation",
+        "description": "Enter the Executive’s Designation",
+        "required": true
+      },
+      {
+        "component": "checkbox-group",
+        "label": "Instagram Profile",
+        "name": "instagramProfile",
+        "valueType": "boolean",
+        "description": "Select if the Executive’s Instagram profile is available",
+        "options": [
+          {
+            "name": "InstagramProfile",
+            "value": "true"
+          }
+        ]
+      },
+      {
+        "component": "aem-content",
+        "name": "instagramURL",
+        "label": "Instagram URL",
+        "description": "Enter the Instagram profile URL",
+        "required": true,
+        "valueType": "string",
+        "condition": {
+          "in": [
+            "true",
+            {
+              "var": "instagramProfile"
+            }
+          ]
+        }
+      },
+      {
+        "component": "checkbox-group",
+        "label": "X Profile",
+        "name": "xProfile",
+        "valueType": "boolean",
+        "description": "Select if the Executive’s X profile is available",
+        "options": [
+          {
+            "name": "XProfile",
+            "value": "true"
+          }
+        ]
+      },
+      {
+        "component": "aem-content",
+        "name": "xURL",
+        "description": "Enter the X profile URL",
+        "label": "X URL",
+        "valueType": "string",
+        "required": true,
+        "condition": {
+          "in": [
+            "true",
+            {
+              "var": "xProfile"
+            }
+          ]
+        },
+        "validation": {
+          "rootPath": "/content"
+        }
+      },
+      {
+        "component": "checkbox-group",
+        "label": "LinkedIn Profile",
+        "name": "linkedInProfile",
+        "valueType": "boolean",
+        "description": "Select if the Executive’s LinkedIn profile is available",
+        "options": [
+          {
+            "name": "linkedInProfile",
+            "value": "true"
+          }
+        ]
+      },
+      {
+        "component": "aem-content",
+        "name": "linkedInURL",
+        "label": "LinkedIn URL",
+        "description": "Enter the LinkedIn profile URL",
+        "required": true,
+        "valueType": "string",
+        "condition": {
+          "in": [
+            "true",
+            {
+              "var": "linkedInProfile"
+            }
+          ]
+        }
+      },
+      {
+        "component": "text",
+        "name": "ctaLabel",
+        "label": "CTA Label",
+        "valueType": "string",
+        "description": "Enter label to display on the CTA"
+      },
+      {
+        "component": "select",
+        "name": "ctaType",
+        "label": "CTA Type",
+        "description": "Select the CTA Type",
+        "options": [
+          {
+            "name": "Link",
+            "value": "link"
+          },
+          {
+            "name": "Asset (PDF/Image)",
+            "value": "asset"
+          }
+        ],
+        "condition": {
+          "!!": {
+            "var": "ctaLabel"
+          }
+        }
+      },
+      {
+        "component": "aem-content",
+        "name": "executiveBioFile",
+        "label": "Executive Bio File",
+        "valueType": "string",
+        "description": "Upload link to the bio file",
+        "validation": {
+          "rootPath": "content"
+        },
+        "condition": {
+          "and": [
+            { "===": [ { "var": "ctaType" }, "link" ] },
+            { "!!": { "var": "ctaLabel" } }
+          ]
+        }
+      },
+      {
+        "component": "reference",
+        "name": "ctaAsset",
+        "label": "Asset (PDF/Image)",
+        "description": "Upload the Asset (PDF/Image)",
+        "valueType": "string",
+        "condition": {
+          "and": [
+            { "===": [ { "var": "ctaType" }, "asset" ] },
+            { "!!": { "var": "ctaLabel" } }
+          ]
+        }
+      },
+      {
+        "component": "text",
+        "name": "executive-tile-aria-label",
+        "label": "ARIA Label",
+        "valueType": "string",
+        "description": "Enter ARIA label to comply ADA"
+      }
+    ]
+  },
+  {
+    "id": "expanded-access-form",
+    "fields": [
+      {
+        "component": "text",
+        "name": "formtitle",
+        "label": "Form Title",
+        "valueType": "string",
+        "description": "Enter the Form Title"
+      },
+      {
+        "component": "text",
+        "name": "formdescription",
+        "label": "Form Description",
+        "valueType": "string",
+        "description": "Enter the Form Description"
+      },
+      {
+        "component": "richtext",
+        "name": "formdisclaimer",
+        "label": "Disclaimer",
+        "valueType": "string",
+        "description": "Enter the disclaimer to appear at the bottom of Form"
+      }
+    ]
+  },
+  {
     "id": "fragment",
     "fields": [
       {
@@ -193,25 +1305,2482 @@
     "id": "hero",
     "fields": [
       {
+        "component": "select",
+        "name": "PrimarybackgroundType",
+        "label": "Primary Background Type",
+        "description": "Select Background Type Primary Hero",
+        "required": true,
+        "options": [
+          {
+            "name": "Image",
+            "value": "imageSlide"
+          },
+          {
+            "name": "Video",
+            "value": "videoSlide"
+          }
+        ]
+      },
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "BackgroundImage",
+        "label": "Background Image",
+        "description": "Upload Image for the Primary Hero",
+        "required": true,
+        "condition": {
+          "===": [
+            {
+              "var": "PrimarybackgroundType"
+            },
+            "imageSlide"
+          ]
+        }
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "Image Alt",
+        "label": "Image Alt Text",
+        "description": "Add Alt Text for Image Primary Hero",
+        "condition": {
+          "===": [
+            {
+              "var": "PrimarybackgroundType"
+            },
+            "imageSlide"
+          ]
+        }
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "label": "Background Video",
+        "name": "BackgroundVideo",
+        "description": "Upload video for the Primary Hero",
+        "required": true,
+        "condition": {
+          "===": [
+            {
+              "var": "PrimarybackgroundType"
+            },
+            "videoSlide"
+          ]
+        }
+      },
+      {
+        "component": "boolean",
+        "label": "Enable Overlay?",
+        "name": "EnableOverlay",
+        "valueType": "boolean",
+        "description": "Enable Overlay video for the Primary Hero"
+      },
+      {
+        "component": "text-input",
+        "valueType": "string",
+        "name": "overlayTitle",
+        "label": "Overlay Title",
+        "required": true,
+        "condition": {
+          "===": [
+            {
+              "var": "EnableOverlay"
+            },
+            true
+          ]
+        }
+      },
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "icon",
+        "label": "Icon",
+        "description": "Upload the icon image",
+        "condition": {
+          "===": [
+            {
+              "var": "PrimarybackgroundType"
+            },
+            "imageSlide"
+          ]
+        }
+      },
+      {
+        "component": "text",
+        "name": "imageAlt",
+        "label": "Icon Alt text",
+        "valueType": "string",
+        "description": "Pick alt text from AEM DAM with ability to override it",
+        "condition": {
+          "===": [
+            {
+              "var": "PrimarybackgroundType"
+            },
+            "imageSlide"
+          ]
+        }
+      },
+      {
+        "component": "select",
+        "name": "textcolor",
+        "label": "Text Color",
+        "description": "Select the Text Color",
+        "value": "white",
+        "required": true,
+        "options": [
+          {
+            "name": "Black",
+            "value": "black"
+          },
+          {
+            "name": "White",
+            "value": "white"
+          }
+        ],
+        "condition": {
+          "===": [
+            {
+              "var": "PrimarybackgroundType"
+            },
+            "imageSlide"
+          ]
+        }
+      },
+      {
+        "component": "text",
+        "name": "ctaLabel",
+        "label": "CTA Label",
+        "valueType": "string",
+        "description": "Enter label to display on the CTA for each card",
+        "condition": {
+          "===": [
+            {
+              "var": "PrimarybackgroundType"
+            },
+            "imageSlide"
+          ]
+        }
+      },
+      {
+        "component": "select",
+        "name": "ctaType",
+        "label": "CTA Type",
+        "description": "Select the CTA Type",
+        "options": [
+          {
+            "name": "Link",
+            "value": "link"
+          },
+          {
+            "name": "Asset (PDF/Image)",
+            "value": "asset"
+          }
+        ],
+        "condition": {
+          "and": [
+            {
+              "===": [
+                {
+                  "var": "PrimarybackgroundType"
+                },
+                "imageSlide"
+              ]
+            },
+            {
+              "!!": {
+                "var": "ctaLabel"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "component": "aem-content",
+        "name": "ctaLink",
+        "label": "CTA Link",
+        "valueType": "string",
+        "description": "Enter the URL to navigate when CTA is clicked for each card",
+        "validation": {
+          "rootPath": "/content"
+        },
+        "condition": {
+          "and": [
+            { "===": [ { "var": "ctaType" }, "link" ] },
+            { "!!": { "var": "ctaLabel" } }
+          ]
+        }
+      },
+      {
+        "component": "reference",
+        "name": "ctaAsset",
+        "label": "Asset (PDF/Image)",
+        "description": "Upload the Asset (PDF/Image)",
+        "valueType": "string",
+        "condition": {
+          "and": [
+            { "===": [ { "var": "ctaType" }, "asset" ] },
+            { "!!": { "var": "ctaLabel" } }
+          ]
+        }
+      },
+      {
+        "component": "text",
+        "name": "width-media-aria-label",
+        "label": "ARIA Label",
+        "valueType": "string",
+        "description": "Enter ARIA label to comply ADA"
+      },
+      {
+        "component": "select",
+        "name": "targetPath",
+        "label": "Target Path",
+        "description": "Select the target path for the authored CTA URL",
+        "value": "sameTab",
+        "options": [
+          {
+            "name": "Same Tab",
+            "value": "sameTab"
+          },
+          {
+            "name": "New Tab",
+            "value": "newTab"
+          }
+        ],
+        "condition": {
+          "and": [
+            {
+              "===": [
+                {
+                  "var": "PrimarybackgroundType"
+                },
+                "imageSlide"
+              ]
+            },
+            {
+              "===": [
+                {
+                  "var": "ctaType"
+                },
+                "link"
+              ]
+            },
+            { "!!": { "var": "ctaLabel" } }
+          ]
+        }
+      },
+      {
+        "component": "checkbox-group",
+        "label": "Exit Interstitial",
+        "name": "exitInterstitial",
+        "valueType": "string",
+        "options": [
+          {
+            "name": "Exit Interstitial",
+            "value": "true"
+          }
+        ],
+        "condition": {
+          "and": [
+            {
+              "===": [
+                {
+                  "var": "PrimarybackgroundType"
+                },
+                "imageSlide"
+              ]
+            },
+            {
+              "===": [
+                {
+                  "var": "ctaType"
+                },
+                "link"
+              ]
+            },
+            { "!!": { "var": "ctaLabel" } }
+          ]
+        }
+      },
+      {
+        "component": "text",
+        "name": "text",
+        "label": "Title",
+        "required": true,
+        "valueType": "string",
+        "description": "Enter main heading for the Primary Hero",
+        "validation": {
+          "minLength": 0,
+          "maxLength": 70,
+          "regExp": "^foo:.*",
+          "customErrorMsg": "Maximum Characters length limit should not be more than 70"
+        }
+      },
+      {
+        "component": "richtext",
+        "name": "description",
+        "label": "Description",
+        "valueType": "string",
+        "description": "Enter description for additional context"
+      }
+    ]
+  },
+  {
+    "id": "horizontal-numeric-tile",
+    "fields": [
+      {
+        "component": "select",
+        "name": "horizontalTileType",
+        "label": "Variations",
+        "description": "Select between Variation 1 and Variation 2",
+        "value": "variation-1",
+        "options": [
+          {
+            "name": "Variation 1",
+            "value": "variation-1"
+          },
+          {
+            "name": "Variation 2",
+            "value": "variation-2"
+          }
+        ]
+      },
+      {
+        "component": "richtext",
+        "name": "title",
+        "label": "Section Title",
+        "valueType": "string",
+        "description": "Enter the title for the section.",
+        "required": true,
+        "maxLength": "70"
+      },
+      {
+        "component": "richtext",
+        "name": "description",
+        "label": "Section Description",
+        "valueType": "string",
+        "description": "Enter the description for the section"
+      },
+      {
+        "component": "richtext",
+        "name": "footer",
+        "label": "Footer",
+        "valueType": "string",
+        "description": "Enter the footer",
+        "condition": {
+          "===": [
+            {
+              "var": "horizontalTileType"
+            },
+            "variation-2"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "icon-tile-grid",
+    "fields": [
+      {
+        "component": "richtext",
+        "name": "title",
+        "label": "Section Title",
+        "valueType": "string",
+        "description": "Enter the section title",
+        "required": true,
+        "maxLength": "70"
+      },
+      {
+        "component": "select",
+        "name": "columnConfiguration",
+        "label": "Column Configuration",
+        "description": "Select the number of columns and their respective widths.",
+        "value": "2-col",
+        "options": [
+          {
+            "name": "2-columns",
+            "value": "2-col"
+          },
+          {
+            "name": "3-columns",
+            "value": "3-col"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "icongrid-tile",
+    "fields": [
+      {
         "component": "reference",
         "valueType": "string",
         "name": "image",
-        "label": "Image",
-        "multi": false
+        "label": "Icon/Logo",
+        "required": true,
+        "description": "Upload icon for the Icon Grid"
       },
       {
         "component": "text",
         "valueType": "string",
         "name": "imageAlt",
-        "label": "Alt",
-        "value": ""
+        "label": "Alt Text",
+        "description": "Add Image Alternate Text"
       },
       {
         "component": "richtext",
         "name": "text",
-        "value": "",
-        "label": "Text",
+        "label": "Icon Title",
+        "valueType": "string",
+        "description": "Enter title for the Icon Grid",
+        "required": true
+      },
+      {
+        "component": "richtext",
+        "name": "description",
+        "label": "Icon Description",
+        "valueType": "string",
+        "description": "Enter Description for the Icon Grid",
+        "required": true
+      }
+    ]
+  },
+  {
+    "id": "tile",
+    "fields": [
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "image",
+        "label": "Icon/Logo",
+        "required": true,
+        "description": "Select or upload an icon for the tile."
+      },
+      {
+        "component": "text",
+        "name": "imageAlt",
+        "label": "Icon Alt text",
+        "valueType": "string",
+        "description": "Pick alt text from AEM DAM with ability to override it"
+      },
+      {
+        "component": "richtext",
+        "name": "text",
+        "label": "Title",
+        "valueType": "string",
+        "description": "Enter the title",
+        "required": true
+      },
+      {
+        "component": "richtext",
+        "name": "description",
+        "label": "Description",
+        "valueType": "string",
+        "description": "Enter the description"
+      }
+    ]
+  },
+  {
+    "id": "image-block",
+    "fields": [
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "image",
+        "label": "Image",
+        "required": true,
+        "description": "Upload Image for the section content"
+      },
+      {
+        "component": "text",
+        "name": "altText",
+        "label": "Image Alt text",
+        "valueType": "string",
+        "description": "Pick alt text from AEM DAM with ability to override it"
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "text",
+        "label": "Label",
+        "description": "Add a label"
+      },
+      {
+        "component": "richtext",
+        "name": "rte",
+        "label": "Extended Image Description",
+        "valueType": "string",
+        "description": "Enter the Image description"
+      }
+    ]
+  },
+  {
+    "id": "image",
+    "fields": [
+      {
+        "component": "reference",
+        "name": "image",
+        "label": "Image",
+        "multi": false,
+        "required": true,
+        "description": "Upload Image from DAM"
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "imageAlt",
+        "label": "Image Alt text",
+        "description": "Pick alt text from AEM DAM with ability to override it",
+        "required": true
+      }
+    ]
+  },
+  {
+    "id": "lcdp",
+    "fields": [
+      {
+        "component": "text",
+        "name": "lcdp",
+        "label": "LCDP",
+        "description": "Clinical Development Pipeline"
+      }
+    ]
+  },
+  {
+    "id": "media-card-link",
+    "fields": [
+      {
+        "component": "text",
+        "name": "ctaLabel",
+        "label": "CTA Label",
+        "valueType": "string",
+        "description": "Enter the CTA Label"
+      },
+      {
+        "component": "select",
+        "name": "ctaType",
+        "label": "CTA Type",
+        "description": "Select the CTA Type",
+        "options": [
+          {
+            "name": "Link",
+            "value": "link"
+          },
+          {
+            "name": "Asset (PDF/Image)",
+            "value": "asset"
+          }
+        ],
+        "condition": {
+          "!!": {
+            "var": "ctaLabel"
+          }
+        }
+      },
+      {
+        "component": "aem-content",
+        "name": "ctaLink",
+        "label": "CTA Link",
+        "valueType": "string",
+        "description": "Enter the URL to navigate when CTA is clicked for each card",
+        "validation": {
+          "rootPath": "/content"
+        },
+        "condition": {
+          "and": [
+            { "===": [ { "var": "ctaType" }, "link" ] },
+            { "!!": { "var": "ctaLabel" } }
+          ]
+        }
+      },
+      {
+        "component": "reference",
+        "name": "ctaAsset",
+        "label": "Asset (PDF/Image)",
+        "description": "Upload the Asset (PDF/Image)",
+        "valueType": "string",
+        "condition": {
+          "and": [
+            { "===": [ { "var": "ctaType" }, "asset" ] },
+            { "!!": { "var": "ctaLabel" } }
+          ]
+        }
+      },
+      {
+        "component": "text",
+        "name": "media-card-link-aria-label",
+        "label": "ARIA Label",
+        "valueType": "string",
+        "description": "Enter ARIA label to comply ADA"
+      }
+    ]
+  },
+  {
+    "id": "media-card",
+    "fields": [
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "mediaCardTitle",
+        "label": "Title",
+        "description": "Enter the text",
+        "multi": false
+      }
+    ]
+  },
+  {
+    "id": "news-tile-item",
+    "fields": [
+      {
+        "component": "text",
+        "name": "eyebrowText",
+        "label": "Eyebrow",
+        "valueType": "string",
+        "description": "Enter the Eyebrow text"
+      },
+      {
+        "component": "text",
+        "name": "newsTileTitle",
+        "label": "Title",
+        "valueType": "string",
+        "description": "Enter the Title",
+        "required": true
+      },
+      {
+        "component": "date-time",
+        "label": "Date",
+        "name": "date",
+        "valueType": "date",
+        "description": "Select the date"
+      },
+      {
+        "component": "richtext",
+        "name": "description",
+        "label": "newsTileDescription",
+        "valueType": "string",
+        "description": "Enter the description"
+      },
+      {
+        "component": "text",
+        "name": "ctaLabel",
+        "label": "CTA Label",
+        "valueType": "string",
+        "description": "Enter label to display on the CTA",
+        "value": "Read more",
+        "required": true
+      },
+      {
+        "component": "select",
+        "name": "ctaType",
+        "label": "CTA Type",
+        "description": "Select the CTA Type",
+        "options": [
+          {
+            "name": "Link",
+            "value": "link"
+          },
+          {
+            "name": "PDF",
+            "value": "pdf"
+          }
+        ],
+        "condition": {
+          "!!": {
+            "var": "ctaLabel"
+          }
+        }
+      },
+      {
+        "component": "aem-content",
+        "name": "ctaLink",
+        "label": "CTA Link",
+        "valueType": "string",
+        "description": "Enter the URL to navigate when CTA is clicked",
+        "validation": {
+          "rootPath": "/content"
+        },
+        "condition": {
+          "and": [
+            { "===": [ { "var": "ctaType" }, "link" ] },
+            { "!!": { "var": "ctaLabel" } }
+          ]
+        }
+      },
+      {
+        "component": "reference",
+        "name": "ctaAsset",
+        "label": "Asset (PDF/Image)",
+        "description": "Upload the Asset (PDF/Image)",
+        "valueType": "string",
+        "condition": {
+          "and": [
+            { "===": [ { "var": "ctaType" }, "asset" ] },
+            { "!!": { "var": "ctaLabel" } }
+          ]
+        }
+      },
+      {
+        "component": "text",
+        "name": "text-aria-label",
+        "label": "ARIA Label",
+        "valueType": "string",
+        "description": "Enter ARIA label to comply ADA"
+      },
+      {
+        "component": "select",
+        "name": "targetPath",
+        "label": "Target Path",
+        "description": "Select the target path for the authored CTA URL",
+        "value": "sameTab",
+        "options": [
+          {
+            "name": "Same Tab",
+            "value": "sameTab"
+          },
+          {
+            "name": "New Tab",
+            "value": "newTab"
+          }
+        ],
+        "condition": {
+          "and": [
+            { "===": [ { "var": "ctaType" }, "link" ] },
+            { "!!": { "var": "ctaLabel" } }
+          ]
+        }
+      },
+      {
+        "component": "checkbox-group",
+        "name": "exitInterstitial",
+        "label": "Exit Interstitial",
+        "description": "Select this checkbox to enable the modal experience",
+        "valueType": "string",
+        "options": [
+          {
+            "name": "Exit Interstitial",
+            "value": "true"
+          }
+        ],
+        "condition": {
+          "and": [
+            { "===": [ { "var": "ctaType" }, "link" ] },
+            { "!!": { "var": "ctaLabel" } }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "numeric-tile",
+    "fields": [
+      {
+        "component": "text",
+        "name": "title",
+        "label": "Title",
+        "description": "Enter the numeric value to be displayed on the tile.",
+        "required": true,
+        "valueType": "string",
+        "validation": {
+          "minLength": 1,
+          "maxLength": 4,
+          "customErrorMsg": "Maximum characters length limit should not be more than 4"
+        }
+      },
+      {
+        "component": "richtext",
+        "name": "description",
+        "label": "Description",
+        "valueType": "string",
+        "description": "Enter the description"
+      }
+    ]
+  },
+  {
+    "id": "promo-banner",
+    "fields": [
+      {
+        "component": "select",
+        "name": "textAlignment",
+        "label": "Text Alignment",
+        "description": "Choose the text alignment within the Promo Banner component",
+        "value": "left",
+        "required": true,
+        "options": [
+          {
+            "name": "Left",
+            "value": "left"
+          },
+          {
+            "name": "Center",
+            "value": "center"
+          },
+          {
+            "name": "Right",
+            "value": "right"
+          }
+        ]
+      },
+      {
+        "component": "text",
+        "name": "eyebrowText",
+        "label": "Eyebrow Text",
+        "valueType": "string",
+        "description": "Enter the Eyebrow text"
+      },
+      {
+        "component": "select",
+        "name": "highlightedtextColor",
+        "label": "Highlighted Text Color",
+        "description": "Only applicable to italic font in title",
+        "options": [
+          {
+            "name": "Primary",
+            "value": "primary"
+          },
+          {
+            "name": "Secondary",
+            "value": "secondary"
+          },
+          {
+            "name": "Tertiary",
+            "value": "tertiary"
+          }
+        ]
+      },
+      {
+        "component": "richtext",
+        "name": "title",
+        "label": "Title",
+        "valueType": "string",
+        "required": true,
+        "description": "ⓘ paragraph - Display1 with 100px , ⓘ Heading2 - Display1 with 48px"
+      },
+      {
+        "component": "richtext",
+        "name": "description",
+        "label": "Description",
+        "valueType": "string",
+        "description": "Enter the description"
+      },
+      {
+        "component": "text",
+        "name": "ctaLabel",
+        "label": "CTA Label",
+        "valueType": "string",
+        "description": "Enter label to display on the CTA"
+      },
+      {
+        "component": "select",
+        "name": "ctaType",
+        "label": "CTA Type",
+        "description": "Select the CTA Type",
+        "options": [
+          {
+            "name": "Link",
+            "value": "link"
+          },
+          {
+            "name": "Asset (PDF/Image)",
+            "value": "asset"
+          }
+        ],
+        "condition": {
+          "!!": {
+            "var": "ctaLabel"
+          }
+        }
+      },
+      {
+        "component": "aem-content",
+        "name": "ctaLink",
+        "label": "CTA Link",
+        "valueType": "string",
+        "description": "Enter the URL to navigate when CTA is clicked",
+        "validation": {
+          "rootPath": "/content"
+        },
+        "condition": {
+          "and": [
+            { "===": [ { "var": "ctaType" }, "link" ] },
+            { "!!": { "var": "ctaLabel" } }
+          ]
+        }
+      },
+      {
+        "component": "reference",
+        "name": "ctaAsset",
+        "label": "Asset (PDF/Image)",
+        "description": "Upload the Asset (PDF/Image)",
+        "valueType": "string",
+        "condition": {
+          "and": [
+            { "===": [ { "var": "ctaType" }, "asset" ] },
+            { "!!": { "var": "ctaLabel" } }
+          ]
+        }
+      },
+      {
+        "component": "text",
+        "name": "promo-banner-aria-label",
+        "label": "ARIA Label",
+        "valueType": "string",
+        "description": "Enter ARIA label to comply ADA"
+      },
+      {
+        "component": "select",
+        "name": "targetPath",
+        "label": "Target Path",
+        "description": "Select the target path for the authored CTA URL",
+        "value": "sameTab",
+        "options": [
+          {
+            "name": "Same Tab",
+            "value": "sameTab"
+          },
+          {
+            "name": "New Tab",
+            "value": "newTab"
+          }
+        ],
+        "condition": {
+          "and": [
+            { "===": [ { "var": "ctaType" }, "link" ] },
+            { "!!": { "var": "ctaLabel" } }
+          ]
+        }
+      },
+      {
+        "component": "checkbox-group",
+        "label": "Checkbox Group",
+        "name": "checkbox",
+        "valueType": "string",
+        "description": "Select this checkbox to enable the modal experience that notifies user that they are leaving the site",
+        "options": [
+          {
+            "name": "Exit Interstitial",
+            "value": "true"
+          }
+        ],
+        "condition": {
+          "and": [
+            { "===": [ { "var": "ctaType" }, "link" ] },
+            { "!!": { "var": "ctaLabel" } }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "pull-quote",
+    "fields": [
+      {
+        "component": "select",
+        "name": "componentType",
+        "label": "Component Type",
+        "description": "Select layout of quote block",
+        "value": "noImage",
+        "options": [
+          {
+            "name": "No Image",
+            "value": "noImage"
+          },
+          {
+            "name": "With Image",
+            "value": "withImage"
+          }
+        ]
+      },
+      {
+        "component": "container",
+        "name": "Image",
+        "label": "With image Field Details",
+        "valueType": "string",
+        "condition": {
+          "===": [
+            {
+              "var": "componentType"
+            },
+            "withImage"
+          ]
+        },
+        "fields": [
+          {
+            "component": "select",
+            "name": "imagePosition",
+            "label": "Image Position",
+            "description": "Select the appropriate column for image placement",
+            "value": "left",
+            "options": [
+              {
+                "name": "Left",
+                "value": "left"
+              },
+              {
+                "name": "Right",
+                "value": "right"
+              }
+            ]
+          },
+          {
+            "component": "reference",
+            "valueType": "string",
+            "name": "image",
+            "label": "Image",
+            "required": true,
+            "description": "Upload image for the component"
+          },
+          {
+            "component": "text",
+            "name": "imageAlt",
+            "label": "Image Alt text",
+            "description": "Pick alt text from AEM DAM with ability to override it"
+          }
+        ]
+      },
+      {
+        "component": "select",
+        "name": "alignment",
+        "label": "Alignment",
+        "description": "Select alignment of of icon placed on top",
+        "condition": {
+          "===": [
+            {
+              "var": "componentType"
+            },
+            "noImage"
+          ]
+        },
+        "value": "left",
+        "options": [
+          {
+            "name": "Left",
+            "value": "left"
+          },
+          {
+            "name": "Center",
+            "value": "center"
+          }
+        ]
+      },
+      {
+        "component": "richtext",
+        "name": "quote",
+        "label": "Quote",
+        "valueType": "string",
+        "description": "Enter title for each card",
+        "required": true
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "authorText",
+        "label": "Author",
+        "description": "Enter description for each card"
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "authorTitle",
+        "label": "Author Title",
+        "description": "Enter Author Title"
+      }
+    ]
+  },
+  {
+    "id": "relatedlink",
+    "fields": [
+      {
+        "component": "text",
+        "valueType": "string",
+        "label": "Link Headline",
+        "name": "linkHeadline",
+        "description": "Enter display text for the quick link",
+        "required": true
+      },
+      {
+        "component": "select",
+        "name": "ctaType",
+        "label": "CTA Type",
+        "description": "Select the CTA Type",
+        "options": [
+          {
+            "name": "Link",
+            "value": "link"
+          },
+          {
+            "name": "Asset (PDF/Image)",
+            "value": "asset"
+          }
+        ],
+        "condition": {
+          "!!": {
+            "var": "linkHeadline"
+          }
+        }
+      },
+      {
+        "component": "aem-content",
+        "name": "ctaLink",
+        "label": "CTA Link",
+        "valueType": "string",
+        "description": "Enter the URL to navigate when CTA is clicked",
+        "validation": {
+          "rootPath": "/content"
+        },
+        "condition": {
+          "and": [
+            { "===": [ { "var": "ctaType" }, "link" ] },
+            { "!!": { "var": "linkHeadline" } }
+          ]
+        }
+      },
+      {
+        "component": "reference",
+        "name": "ctaAsset",
+        "label": "Asset (PDF/Image)",
+        "description": "Upload the Asset (PDF/Image)",
+        "valueType": "string",
+        "condition": {
+          "and": [
+            { "===": [ { "var": "ctaType" }, "asset" ] },
+            { "!!": { "var": "linkHeadline" } }
+          ]
+        }
+      },
+      {
+        "component": "text",
+        "name": "linkHeadline-aria-label",
+        "label": "ARIA Label Link Headline ",
+        "valueType": "string",
+        "description": "Enter ARIA label to comply ADA"
+      },
+      {
+        "component": "select",
+        "name": "targetPath",
+        "label": "Target Path",
+        "description": "Select the target path for the authored CTA URL",
+        "value": "sameTab",
+        "options": [
+          {
+            "name": "Same Tab",
+            "value": "sameTab"
+          },
+          {
+            "name": "New Tab",
+            "value": "newTab"
+          }
+        ],
+        "condition": {
+          "and": [
+            { "===": [ { "var": "ctaType" }, "link" ] },
+            { "!!": { "var": "linkHeadline" } }
+          ]
+        }
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "description",
+        "label": "Description",
+        "description": "Enter the description"
+      },
+      {
+        "component": "checkbox-group",
+        "label": "Exit Interstitial",
+        "name": "checkbox",
+        "valueType": "string",
+        "description": "Select this checkbox to enable the modal experience that notifies user that they are leaving the site",
+        "options": [
+          {
+            "name": "Exit Interstitial",
+            "value": "true"
+          }
+        ],
+        "condition": {
+          "and": [
+            { "===": [ { "var": "ctaType" }, "link" ] },
+            { "!!": { "var": "linkHeadline" } }
+          ]
+        }
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "label": "Sub-text Headline",
+        "name": "subTextHeadline",
+        "description": "Enter display text for the  quick link sub-text"
+      },
+      {
+        "component": "select",
+        "name": "subTextCtaType",
+        "label": "Sub-text CTA Type",
+        "description": "Select the CTA Type",
+        "options": [
+          {
+            "name": "Link",
+            "value": "link"
+          },
+          {
+            "name": "Asset (PDF/Image)",
+            "value": "asset"
+          }
+        ],
+        "condition": {
+          "!!": {
+            "var": "subTextHeadline"
+          }
+        }
+      },
+      {
+        "component": "aem-content",
+        "name": "subTextCtaLink",
+        "label": "Sub-text CTA Link",
+        "valueType": "string",
+        "description": "Enter the URL to navigate when Quick Link sub-text is clicked",
+        "validation": {
+          "rootPath": "/content"
+        },
+        "condition": {
+          "and": [
+            { "===": [ { "var": "ctaType" }, "link" ] },
+            { "!!": { "var": "subTextHeadline" } }
+          ]
+        }
+      },
+      {
+        "component": "reference",
+        "name": "subTextctaAsset",
+        "label": "Sub-text Asset (PDF/Image)",
+        "description": "Upload the Asset (PDF/Image)",
+        "valueType": "string",
+        "condition": {
+          "and": [
+            { "===": [ { "var": "ctaType" }, "asset" ] },
+            { "!!": { "var": "subTextHeadline" } }
+          ]
+        }
+      },
+      {
+        "component": "text",
+        "name": "subTextHeadline-aria-label",
+        "label": "ARIA Label for Sub-text Headline",
+        "valueType": "string",
+        "description": "Enter ARIA label to comply ADA"
+      },
+      {
+        "component": "select",
+        "name": "subTexttargetPath1",
+        "label": "Target Path",
+        "description": "Select the target path for the authored CTA sub-text URL",
+        "value": "sameTab",
+        "options": [
+          {
+            "name": "Same Tab",
+            "value": "sameTab"
+          },
+          {
+            "name": "New Tab",
+            "value": "newTab"
+          }
+        ],
+        "condition": {
+          "and": [
+            { "===": [ { "var": "ctaType" }, "link" ] },
+            { "!!": { "var": "subTextHeadline" } }
+          ]
+        }
+      },
+      {
+        "component": "checkbox-group",
+        "label": "Exit Interstitial",
+        "name": "checkboxSubText",
+        "valueType": "string",
+        "description": "Select this checkbox to enable the modal experience that notifies user that they are leaving the site",
+        "options": [
+          {
+            "name": "Exit Interstitial",
+            "value": "true"
+          }
+        ],
+        "condition": {
+          "and": [
+            { "===": [ { "var": "ctaType" }, "link" ] },
+            { "!!": { "var": "subTextHeadline" } }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "resource-card",
+    "fields": [
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "image",
+        "label": "Image",
+        "required": true,
+        "description": "Select or upload an image for the feed."
+      },
+      {
+        "component": "text",
+        "name": "imageAlt",
+        "label": "Image Alt Text",
+        "valueType": "string",
+        "description": "Pick alt text from AEM DAM with ability to override it"
+      },
+      {
+        "component": "text",
+        "name": "title",
+        "label": "Title",
+        "description": "Enter the title.",
+        "required": true,
         "valueType": "string"
+      },
+      {
+        "component": "richtext",
+        "name": "description",
+        "label": "Description",
+        "valueType": "string",
+        "description": "Enter the description"
+      },
+      {
+        "component": "text",
+        "name": "ctalabel",
+        "label": "CTA Label",
+        "valueType": "string",
+        "description": "Enter label to display on the CTA for each card"
+      },
+      {
+        "component": "select",
+        "name": "ctaType",
+        "label": "CTA Type",
+        "description": "Select the CTA Type",
+        "options": [
+          {
+            "name": "Link",
+            "value": "link"
+          },
+          {
+            "name": "PDF",
+            "value": "pdf"
+          }
+        ],
+        "condition": {
+          "!!": {
+            "var": "ctaLabel"
+          }
+        }
+      },
+      {
+        "component": "aem-content",
+        "name": "ctaLink",
+        "label": "CTA Link",
+        "description": "Enter the URL to navigate when CTA is clicked for each card",
+        "validation": {
+          "rootPath": "/content"
+        },
+        "condition": {
+          "and": [
+            { "===": [ { "var": "ctaType" }, "link" ] },
+            { "!!": { "var": "ctaLabel" } }
+          ]
+        }
+      },
+      {
+        "component": "reference",
+        "name": "ctaAsset",
+        "label": "Asset (PDF/Image)",
+        "description": "Upload the Asset (PDF/Image)",
+        "valueType": "string",
+        "condition": {
+          "and": [
+            { "===": [ { "var": "ctaType" }, "asset" ] },
+            { "!!": { "var": "ctaLabel" } }
+          ]
+        }
+      },
+      {
+        "component": "text",
+        "name": "text-aria-label",
+        "label": "ARIA Label",
+        "valueType": "string",
+        "description": "Enter ARIA label to comply ADA"
+      },
+      {
+        "component": "select",
+        "name": "targetPath",
+        "label": "Target Path",
+        "description": "Select the target path for the authored CTA URL",
+        "value": "sameTab",
+        "options": [
+          {
+            "name": "Same Tab",
+            "value": "sameTab"
+          },
+          {
+            "name": "New Tab",
+            "value": "newTab"
+          }
+        ],
+        "condition": {
+          "and": [
+            { "===": [ { "var": "ctaType" }, "link" ] },
+            { "!!": { "var": "ctaLabel" } }
+          ]
+        }
+      },
+      {
+        "component": "checkbox-group",
+        "label": "Exit Interstitial",
+        "name": "exitInterstitial",
+        "valueType": "string",
+        "options": [
+          {
+            "name": "Exit Interstitial",
+            "value": "true"
+          }
+        ],
+        "condition": {
+          "and": [
+            { "===": [ { "var": "ctaType" }, "link" ] },
+            { "!!": { "var": "ctaLabel" } }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "search",
+    "fields": [
+      {
+        "component": "text",
+        "name": "search",
+        "label": "Search",
+        "description": "Search"
+      }
+    ]
+  },
+  {
+    "id": "small-width-media",
+    "fields": [
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "eyebrowtext",
+        "label": "Eyebrow Text",
+        "description": "Enter the Eyebrow text"
+      },
+      {
+        "component": "select",
+        "name": "textalignment",
+        "label": "Text Alignment",
+        "required": true,
+        "description": "Choose the text alignment within the Media Banner component",
+        "value": "center",
+        "options": [
+          {
+            "name": "Left",
+            "value": "left"
+          },
+          {
+            "name": "Center",
+            "value": "center"
+          },
+          {
+            "name": "Right",
+            "value": "right"
+          }
+        ]
+      },
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "image",
+        "label": "Image",
+        "description": "Upload background image for the Media Banner",
+        "required": true
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "imagealt",
+        "label": "Image Alt Text",
+        "required": true,
+        "description": "Pick alt text for background image from AEM DAM with ability to override it"
+      },
+      {
+        "component": "text",
+        "name": "title",
+        "label": "Title",
+        "required": true,
+        "valueType": "string",
+        "description": "Enter the title"
+      },
+      {
+        "component": "richtext",
+        "name": "description",
+        "label": "Description",
+        "valueType": "string",
+        "description": "Enter the description"
+      },
+      {
+        "component": "text",
+        "name": "ctaLabel",
+        "label": "CTA Label",
+        "valueType": "string",
+        "description": "Enter label to display on the CTA"
+      },
+      {
+        "component": "select",
+        "name": "ctaType",
+        "label": "CTA Type",
+        "description": "Select the CTA Type",
+        "options": [
+          {
+            "name": "Link",
+            "value": "link"
+          },
+          {
+            "name": "Asset (PDF/Image)",
+            "value": "asset"
+          }
+        ],
+        "condition": {
+          "!!": {
+            "var": "ctaLabel"
+          }
+        }
+      },
+      {
+        "component": "aem-content",
+        "name": "ctaLink",
+        "label": "CTA Link",
+        "valueType": "string",
+        "description": "Enter the URL to navigate when CTA is clicked",
+        "validation": {
+          "rootPath": "/content"
+        },
+        "condition": {
+            "and": [
+              { "===": [ { "var": "ctaType" }, "link" ] },
+              { "!!": { "var": "ctaLabel" } }
+            ]
+        }
+      },
+      {
+        "component": "reference",
+        "name": "ctaAsset",
+        "label": "Asset (PDF/Image)",
+        "description": "Upload the Asset (PDF/Image)",
+        "valueType": "string",
+        "condition": {
+            "and": [
+              { "===": [ { "var": "ctaType" }, "asset" ] },
+              { "!!": { "var": "ctaLabel" } }
+          ]
+        }
+      },
+      {
+        "component": "text",
+        "name": "small-width-aria-label",
+        "label": "ARIA Label",
+        "valueType": "string",
+        "description": "Enter ARIA label to comply ADA"
+      },
+      {
+        "component": "select",
+        "name": "targetPath",
+        "label": "Target Path",
+        "description": "Select the target path for the authored CTA URL",
+        "value": "sameTab",
+        "options": [
+          {
+            "name": "Same Tab",
+            "value": "sameTab"
+          },
+          {
+            "name": "New Tab",
+            "value": "newTab"
+          }
+        ],
+        "condition": {
+            "and": [
+              { "===": [ { "var": "ctaType" }, "link" ] },
+              { "!!": { "var": "ctaLabel" } }
+            ]
+        }
+      },
+      {
+        "component": "checkbox-group",
+        "name": "exitInterstitial",
+        "label": "Exit Interstitial",
+        "description": "Select this checkbox to enable the modal experience",
+        "valueType": "string",
+        "required": true,
+        "options": [
+          {
+            "name": "Exit Interstitial",
+            "value": "true"
+          }
+        ],
+        "condition": {
+          "and": [
+            { "===": [ { "var": "ctaType" }, "link" ] },
+            { "!!": { "var": "ctaLabel" } }
+          ]
+        }
+      },
+      {
+        "component": "select",
+        "name": "backgroundverticalposition",
+        "label": "Background Vertical Position",
+        "description": "This will alter the “background-position” CSS property of the media",
+        "value": "center",
+        "options": [
+          {
+            "name": "Top",
+            "value": "top"
+          },
+          {
+            "name": "Center",
+            "value": "center"
+          },
+          {
+            "name": "Bottom",
+            "value": "bottom"
+          }
+        ]
+      },
+      {
+        "component": "select",
+        "name": "backgroundhorizontalposition",
+        "label": "Background Horizontal Position",
+        "description": "This will alter the “background-position” CSS property of the media",
+        "value": "center",
+        "options": [
+          {
+            "name": "Left",
+            "value": "left"
+          },
+          {
+            "name": "Center",
+            "value": "center"
+          },
+          {
+            "name": "Right",
+            "value": "right"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "spacer-and-divider",
+    "fields": [
+      {
+        "component": "select",
+        "name": "elementselector",
+        "label": "Element Selector",
+        "description": "Select the appropriate option",
+        "value": "divider",
+        "required": true,
+        "options": [
+          {
+            "name": "Horizontal Divider",
+            "value": "divider"
+          },
+          {
+            "name": "Spacer",
+            "value": "spacer"
+          }
+        ]
+      },
+      {
+        "component": "select",
+        "name": "spacerheight",
+        "label": "Spacer height - Desktop",
+        "value": "small",
+        "description": "Select the appropriate spacer height. Mobile height will be auto calculated on selection made",
+        "options": [
+          {
+            "name": "Small",
+            "value": "small"
+          },
+          {
+            "name": "Medium",
+            "value": "medium"
+          },
+          {
+            "name": "Large",
+            "value": "large"
+          }
+        ],
+        "condition": {
+          "===": [
+            {
+              "var": "elementselector"
+            },
+            "spacer"
+          ]
+        }
+      },
+      {
+        "component": "select",
+        "name": "dividercolor",
+        "label": "Divider Color",
+        "description": "Select the Divider color",
+        "value": "primary",
+        "options": [
+          {
+            "name": "Primary",
+            "value": "primary"
+          },
+          {
+            "name": "Secondary",
+            "value": "secondary"
+          }
+        ],
+        "condition": {
+          "===": [
+            {
+              "var": "elementselector"
+            },
+            "divider"
+          ]
+        }
+      },
+      {
+        "component": "select",
+        "name": "topbottomspacing",
+        "label": "Top & Bottom spacing",
+        "value": "small",
+        "description": "Select the appropriate padding",
+        "options": [
+          {
+            "name": "Small",
+            "value": "small"
+          },
+          {
+            "name": "Medium",
+            "value": "medium"
+          },
+          {
+            "name": "Large",
+            "value": "large"
+          }
+        ],
+        "condition": {
+          "===": [
+            {
+              "var": "elementselector"
+            },
+            "divider"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "table-row",
+    "fields": [
+      {
+        "component": "richtext",
+        "valueType": "string",
+        "name": "column1text",
+        "label": "Column1"
+      }
+    ]
+  },
+  {
+    "id": "table-col-2",
+    "fields": [
+      {
+        "component": "richtext",
+        "valueType": "string",
+        "name": "column1text",
+        "label": "Column1 Description"
+      },
+      {
+        "component": "richtext",
+        "valueType": "string",
+        "name": "column2text",
+        "label": "Column2 Description"
+      }
+    ]
+  },
+  {
+    "id": "table-col-3",
+    "fields": [
+      {
+        "component": "richtext",
+        "valueType": "string",
+        "name": "column1text",
+        "label": "Column1 Description"
+      },
+      {
+        "component": "richtext",
+        "valueType": "string",
+        "name": "column2text",
+        "label": "Column2 Description"
+      },
+      {
+        "component": "richtext",
+        "valueType": "string",
+        "name": "column3text",
+        "label": "Column3 Description"
+      }
+    ]
+  },
+  {
+    "id": "table-col-4",
+    "fields": [
+      {
+        "component": "richtext",
+        "valueType": "string",
+        "name": "column1text",
+        "label": "Column1 Description"
+      },
+      {
+        "component": "richtext",
+        "valueType": "string",
+        "name": "column2text",
+        "label": "Column2 Description"
+      },
+      {
+        "component": "richtext",
+        "valueType": "string",
+        "name": "column3text",
+        "label": "Column3 Description"
+      },
+      {
+        "component": "richtext",
+        "valueType": "string",
+        "name": "column4text",
+        "label": "Column4 Description"
+      }
+    ]
+  },
+  {
+    "id": "table-col-5",
+    "fields": [
+      {
+        "component": "richtext",
+        "valueType": "string",
+        "name": "column1text",
+        "label": "Column1 Description"
+      },
+      {
+        "component": "richtext",
+        "valueType": "string",
+        "name": "column2text",
+        "label": "Column2 Description"
+      },
+      {
+        "component": "richtext",
+        "valueType": "string",
+        "name": "column3text",
+        "label": "Column3 Description"
+      },
+      {
+        "component": "richtext",
+        "valueType": "string",
+        "name": "column4text",
+        "label": "Column4 Description"
+      },
+      {
+        "component": "richtext",
+        "valueType": "string",
+        "name": "column5text",
+        "label": "Column5 Description"
+      }
+    ]
+  },
+  {
+    "id": "table-col-6",
+    "fields": [
+      {
+        "component": "richtext",
+        "valueType": "string",
+        "name": "column1text",
+        "label": "Column1 Description"
+      },
+      {
+        "component": "richtext",
+        "valueType": "string",
+        "name": "column2text",
+        "label": "Column2 Description"
+      },
+      {
+        "component": "richtext",
+        "valueType": "string",
+        "name": "column3text",
+        "label": "Column3 Description"
+      },
+      {
+        "component": "richtext",
+        "valueType": "string",
+        "name": "column4text",
+        "label": "Column4 Description"
+      },
+      {
+        "component": "richtext",
+        "valueType": "string",
+        "name": "column5text",
+        "label": "Column5 Description"
+      },
+      {
+        "component": "richtext",
+        "valueType": "string",
+        "name": "column6text",
+        "label": "Column6 Description"
+      }
+    ]
+  },
+  {
+    "id": "table",
+    "fields": [
+      {
+        "component": "select",
+        "name": "filter",
+        "label": "Columns",
+        "description": "Select Number Of Columns",
+        "valueType": "string",
+        "value": "table",
+        "options": [
+          {
+            "name": "2 Columns",
+            "value": "table-2-columns"
+          },
+          {
+            "name": "3 Columns",
+            "value": "table-3-columns"
+          },
+          {
+            "name": "4 Columns",
+            "value": "table-4-columns"
+          },
+          {
+            "name": "5 Columns",
+            "value": "table-5-columns"
+          },
+          {
+            "name": "6 Columns",
+            "value": "table-6-columns"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "tabs",
+    "fields": [
+      {
+        "component": "text",
+        "name": "text",
+        "required": true,
+        "label": "Tabs Title",
+        "valueType": "string",
+        "multi": true
+      },
+      {
+        "component": "number",
+        "name": "numberOfTabs",
+        "label": "Number of Tabs",
+        "value": 1,
+        "description": "The label shown for this section in the Content Tree",
+        "validation": {
+          "numberMin": 2,
+          "numberMax": 8,
+          "customErrorMsg": "Max fields reached."
+        }
+      },
+      {
+        "component": "text",
+        "name": "dropdownTitle",
+        "label": "Dropdown Title",
+        "description": "Enter the dropdown title",
+        "valueType": "String"
+      }
+    ]
+  },
+  {
+    "id": "text-callout",
+    "fields": [
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "image",
+        "label": "Icon",
+        "description": "Upload the icon image "
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "iconAlt",
+        "label": "Alt Text",
+        "required": "true",
+        "description": "Pick alt text from AEM DAM with ability to override it"
+      },
+      {
+        "component": "select",
+        "name": "textcolor",
+        "label": "Text Color",
+        "description": "Select the text color",
+        "value": "primary",
+        "options": [
+          {
+            "name": "Primary",
+            "value": "primary"
+          },
+          {
+            "name": "Secondary",
+            "value": "secondary"
+          }
+        ]
+      },
+      {
+        "component": "richtext",
+        "valueType": "string",
+        "name": "text",
+        "label": "Description",
+        "description": "Enter description for each card"
+      }
+    ]
+  },
+  {
+    "id": "text-component",
+    "fields": [
+      {
+        "component": "select",
+        "name": "alignment",
+        "label": "Alignment",
+        "description": "Select the alignment expected for entire block",
+        "value": "left",
+        "options": [
+          {
+            "name": "Left",
+            "value": "left"
+          },
+          {
+            "name": "Center",
+            "value": "center"
+          },
+          {
+            "name": "Right",
+            "value": "right"
+          }
+        ]
+      },
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "icon",
+        "label": "Icon",
+        "description": "Upload the icon image"
+      },
+      {
+        "component": "text",
+        "name": "imageAlt",
+        "label": "Icon Alt text",
+        "valueType": "string",
+        "description": "Pick alt text from AEM DAM with ability to override it"
+      },
+      {
+        "component": "text",
+        "name": "eyebrowText",
+        "label": "Eyebrow Text",
+        "valueType": "string",
+        "description": "Enter the Eyebrow text"
+      },
+      {
+        "component": "richtext",
+        "name": "titleRte",
+        "label": "Title",
+        "valueType": "string",
+        "description": "Enter the Title"
+      },
+      {
+        "component": "richtext",
+        "name": "descriptionRte",
+        "label": "Description",
+        "valueType": "string",
+        "description": "Enter description for additional context which can have styling such as Bold, italics and  ability to add text links."
+      },
+      {
+        "component": "text",
+        "name": "ctaLabel",
+        "label": "CTA Label",
+        "valueType": "string",
+        "description": "Enter label to display on the CTA"
+      },
+      {
+        "component": "select",
+        "name": "ctaType",
+        "label": "CTA Type",
+        "description": "Select the CTA Type",
+        "options": [
+          {
+            "name": "Link",
+            "value": "link"
+          },
+          {
+            "name": "Asset (PDF/Image)",
+            "value": "asset"
+          }
+        ],
+        "condition": {
+          "!!": {
+            "var": "ctaLabel"
+          }
+        }
+      },
+      {
+        "component": "aem-content",
+        "name": "ctaLink",
+        "label": "CTA Link",
+        "valueType": "string",
+        "description": "Enter the URL to navigate when CTA is clicked",
+        "validation": {
+          "rootPath": "/content"
+        },
+        "condition": {
+          "and": [
+            { "===": [ { "var": "ctaType" }, "link" ] },
+            { "!!": { "var": "ctaLabel" } }
+          ]
+        }
+      },
+      {
+        "component": "reference",
+        "name": "ctaAsset",
+        "label": "Asset (PDF/Image)",
+        "description": "Upload the Asset (PDF/Image)",
+        "valueType": "string",
+        "condition": {
+          "and": [
+            { "===": [ { "var": "ctaType" }, "asset" ] },
+            { "!!": { "var": "ctaLabel" } }
+          ]
+        }
+      },
+      {
+        "component": "text",
+        "name": "news-tile-aria-label",
+        "label": "ARIA Label",
+        "valueType": "string",
+        "description": "Enter ARIA label to comply ADA"
+      },
+      {
+        "component": "select",
+        "name": "targetPath",
+        "label": "Target Path",
+        "description": "Select the target path for the authored CTA URL",
+        "value": "sameTab",
+        "options": [
+          {
+            "name": "Same Tab",
+            "value": "sameTab"
+          },
+          {
+            "name": "New Tab",
+            "value": "newTab"
+          }
+        ],
+        "condition": {
+          "and": [
+            { "===": [ { "var": "ctaType" }, "link" ] },
+            { "!!": { "var": "ctaLabel" } }
+          ]
+        }
+      },
+      {
+        "component": "checkbox-group",
+        "name": "exitInterstitial",
+        "valueType": "boolean",
+        "label": "Exit Interstitial",
+        "description": "Select this checkbox to enable the modal experience that notifies user that they are leaving the site",
+        "options": [
+          {
+            "name": "Exit Interstitial",
+            "value": true
+          }
+        ],
+        "condition": {
+          "and": [
+            { "===": [ { "var": "ctaType" }, "link" ] },
+            { "!!": { "var": "ctaLabel" } }
+          ]
+        }
+      },
+      {
+        "component": "richtext",
+        "name": "footnoteRte",
+        "label": "Footnote",
+        "valueType": "string",
+        "description": "Enter the footnote text."
+      }
+    ]
+  },
+  {
+    "id": "timeline-item",
+    "fields": [
+      {
+        "component": "reference",
+        "name": "image",
+        "label": "Image",
+        "multi": false,
+        "required": true,
+        "description": "Upload images for the card"
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "imageAlt",
+        "label": "Image Alt text",
+        "description": "Pick alt text from AEM DAM with ability to override it",
+        "required": true
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "title",
+        "label": "Title",
+        "description": "Enter title for each card",
+        "required": true
+      },
+      {
+        "component": "richtext",
+        "name": "description",
+        "label": "Description",
+        "valueType": "string",
+        "description": "Enter description for each card"
+      }
+    ]
+  },
+  {
+    "id": "two-column-with-image",
+    "fields": [
+      {
+        "component": "select",
+        "name": "imagePlacement",
+        "label": "Image Placement",
+        "description": "Select the appropriate column for image placement   ⓘ Image will always be displayed at the top in mobile view",
+        "value": "left",
+        "required": true,
+        "options": [
+          {
+            "name": "Left",
+            "value": "left"
+          },
+          {
+            "name": "Right",
+            "value": "right"
+          }
+        ]
+      },
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "image",
+        "label": "Image",
+        "required": true,
+        "description": "Upload image for the Two Column with Image"
+      },
+      {
+        "component": "text",
+        "name": "altImage",
+        "label": "Image Alt text",
+        "valueType": "string",
+        "description": "Pick alt text from AEM DAM with ability to override it"
+      },
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "icon",
+        "label": "Icon",
+        "description": "Upload icon for the Two Column with Image"
+      },
+      {
+        "component": "text",
+        "name": "alt",
+        "label": "Icon Alt text",
+        "valueType": "string",
+        "description": "Pick alt text from AEM DAM with ability to override it"
+      },
+      {
+        "component": "text",
+        "name": "text",
+        "label": "Title",
+        "required": true,
+        "valueType": "string",
+        "description": "Enter the title"
+      },
+      {
+        "component": "richtext",
+        "name": "rte",
+        "label": "Description",
+        "valueType": "string",
+        "description": "Enter the description"
+      },
+      {
+        "component": "select",
+        "name": "ctaTypeField",
+        "label": "CTA Type",
+        "description": "Select the type of CTA for component",
+        "value": "button",
+        "options": [
+          {
+            "name": "Button",
+            "value": "button"
+          },
+          {
+            "name": "Text Link",
+            "value": "textLink"
+          }
+        ]
+      },
+      {
+        "component": "text",
+        "name": "ctaText",
+        "label": "CTA Text",
+        "valueType": "string",
+        "description": "Enter label to display on the CTA"
+      },
+      {
+        "component": "select",
+        "name": "ctaType",
+        "label": "CTA Type",
+        "description": "Select the CTA Type",
+        "options": [
+          {
+            "name": "Link",
+            "value": "link"
+          },
+          {
+            "name": "Asset (PDF/Image)",
+            "value": "asset"
+          }
+        ],
+        "condition": {
+          "!!": {
+            "var": "ctaText"
+          }
+        }
+      },
+      {
+        "component": "aem-content",
+        "name": "ctaLink",
+        "label": "CTA Link",
+        "valueType": "string",
+        "description": "Enter the URL to navigate when CTA is clicked",
+        "validation": {
+          "rootPath": "/content"
+        },
+        "condition": {
+          "and": [
+            { "===": [ { "var": "ctaType" }, "link" ] },
+            { "!!": { "var": "ctaText" } }
+          ]
+        }
+      },
+      {
+        "component": "reference",
+        "name": "ctaAsset",
+        "label": "Asset (PDF/Image)",
+        "description": "Upload the Asset (PDF/Image)",
+        "valueType": "string",
+        "condition": {
+          "and": [
+            { "===": [ { "var": "ctaType" }, "asset" ] },
+            { "!!": { "var": "ctaText" } }
+          ]
+        }
+      },
+      {
+        "component": "text",
+        "name": "two-column-aria-label",
+        "label": "ARIA Label",
+        "valueType": "string",
+        "description": "Enter ARIA label to comply ADA"
+      },
+      {
+        "component": "select",
+        "name": "targetPath",
+        "label": "Target Path",
+        "description": "Select the target path for the authored CTA URL",
+        "value": "sameTab",
+        "options": [
+          {
+            "name": "Same Tab",
+            "value": "sameTab"
+          },
+          {
+            "name": "New Tab",
+            "value": "newTab"
+          }
+        ],
+        "condition": {
+          "and": [
+            { "===": [ { "var": "ctaType" }, "link" ] },
+            { "!!": { "var": "ctaText" } }
+          ]
+        }
+      },
+      {
+        "component": "checkbox-group",
+        "label": "Checkbox Group",
+        "name": "checkbox",
+        "valueType": "string",
+        "description": "Select this checkbox to enable the modal experience that notifies user that they are leaving the site",
+        "options": [
+          {
+            "name": "Exit Interstitial",
+            "value": "true"
+          }
+        ],
+        "condition": {
+          "and": [
+            { "===": [ { "var": "ctaType" }, "link" ] },
+            { "!!": { "var": "ctaText" } }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "vertical-numeric-tile-item",
+    "fields": [
+      {
+        "component": "text",
+        "name": "red-text",
+        "label": "Red Text",
+        "description": "Enter the value to be displayed on the tile.",
+        "required": true,
+        "valueType": "string",
+        "validation": {
+          "minLength": 1,
+          "maxLength": 4,
+          "customErrorMsg": "Maximum characters length limit should not be more than 4"
+        }
+      },
+      {
+        "component": "richtext",
+        "name": "description",
+        "label": "Description",
+        "description": "Enter the description"
+      }
+    ]
+  },
+  {
+    "id": "vertical-numeric-tile",
+    "fields": [
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "vertical-numeric-tile-title",
+        "label": "Title",
+        "description": "Enter the title",
+        "required": true
       }
     ]
   }

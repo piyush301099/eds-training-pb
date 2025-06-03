@@ -2,41 +2,187 @@
   {
     "id": "main",
     "components": [
-      "section"
+      "section",
+      "cont-sec-container",
+      "column-container",
+      "tabs-section"
     ]
   },
   {
     "id": "section",
     "components": [
+      "image-block",
+      "spacer-and-divider",
+      "small-width-media",
       "text",
       "image",
       "button",
       "title",
       "hero",
+      "lcdp",
+      "horizontal-numeric-tile",
+      "search",
       "cards",
+      "timeline",
       "columns",
-      "fragment"
+      "fragment",
+      "relatedlinks",
+      "icon-tile",
+      "additional-resource-card",
+      "enhanced-related-links",
+      "text-component",
+      "two-column-with-image",
+      "accordion",
+      "additional-links",
+      "promo-banner",
+      "executive-tile",
+      "text-callout",
+      "pull-quote",
+      "table",
+      "table-2-columns",
+      "table-3-columns",
+      "table-4-columns",
+      "table-5-columns",
+      "table-6-columns",
+      "vertical-numeric-tile",
+      "bio-pagination",
+      "media-card",
+      "expanded-access-form",
+      "submission-form",
+      "news-tile",
+      "executive-grids",
+      "csr-form"
     ]
   },
   {
-    "id": "cards",
+    "id": "column-container",
     "components": [
-      "card"
+      "column-break",
+      "accordion",
+      "additional-links",
+      "cards",
+      "text",
+      "image",
+      "title",
+      "relatedlinks",
+      "enhanced-related-links",
+      "text-component",
+      "spacer-and-divider",
+      "image-block",
+      "executive-grids",
+      "text-callout",
+      "media-card"
     ]
   },
   {
-    "id": "columns",
-    "components": [
-      "column"
-    ]
+    "id": "tabs-section",
+    "components": ["tabs", "image", "text-component"]
   },
   {
-    "id": "column",
+    "id": "cont-sec-container",
     "components": [
+      "spacer-and-divider",
       "text",
       "image",
       "button",
-      "title"
+      "title",
+      "hero",
+      "lcdp",
+      "search",
+      "cards",
+      "columns",
+      "fragment",
+      "relatedlinks",
+      "icon-tile",
+      "additional-resource-card",
+      "enhanced-related-links",
+      "text-component",
+      "two-column-with-image",
+      "tabs",
+      "accordion",
+      "additional-links",
+      "promo-banner",
+      "pull-quote",
+      "table",
+      "table-2-columns",
+      "table-3-columns",
+      "table-4-columns",
+      "table-5-columns",
+      "table-6-columns",
+      "vertical-numeric-tile",
+      "image-block",
+      "expanded-access-form",
+      "news-tile",
+      "executive-grids",
+      "timeline"
     ]
+  },
+  {
+    "id": "accordion",
+    "components": ["accordion-item"]
+  },
+  {
+    "id": "additional-links",
+    "components": ["additional-link"]
+  },
+  {
+    "id": "cards",
+    "components": ["card"]
+  },
+  {
+    "id": "columns",
+    "components": ["column"]
+  },
+  {
+    "id": "executive-grids",
+    "components": ["executive-grid"]
+  },
+  {
+    "id": "hero",
+    "components": ["icongrid-tile"]
+  },
+  {
+    "id": "horizontal-numeric-tile",
+    "components": ["numeric-tile"]
+  },
+  {
+    "id": "icon-tile-grid",
+    "components": ["tile"]
+  },
+  {
+    "id": "lcdp",
+    "components": ["lcdp"]
+  },
+  {
+    "id": "media-card",
+    "components": ["media-card-link"]
+  },
+  {
+    "id": "promo-banner",
+    "components": ["promo-banner"]
+  },
+  {
+    "id": "pull-quote",
+    "components": ["pull-quote"]
+  },
+  {
+    "id": "search",
+    "components": ["search"]
+  },
+  {
+    "id": "small-width-media",
+    "components": ["small-width-media"]
+  },
+  {
+    "id": "table",
+    "components": ["table-row"]
+  },
+  {
+    "id": "tabs",
+    "components": ["text-component"]
+  },
+  {
+    "id": "vertical-numeric-tile",
+    "components": ["vertical-numeric-tile-item"]
   }
 ]
