@@ -20,26 +20,6 @@
         "name": "keywords",
         "multi": true,
         "label": "Keywords"
-      },
-      {
-        "component": "checkbox-group",
-        "name": "enableBreadcrumb",
-        "valueType": "string",
-        "description": "Select this checkbox to display the breadcrumb on the page",
-        "options": [{ "name": "Enable Breadcrumb", "value": "true" }]
-      },
-      {
-        "component": "select",
-        "name": "breadcrumbType",
-        "label": "Breadcrumb Type",
-        "description": "Select type of breadcrumb desired",
-        "required": true,
-        "value": "complete",
-        "options": [
-          { "name": "Partial", "value": "partial" },
-          { "name": "Complete", "value": "complete" }
-        ],
-        "condition": { "in": ["true", { "var": "enableBreadcrumb" }] }
       }
     ]
   },
@@ -461,11 +441,9 @@
           "rootPath": "/content"
         },
         "condition": {
-          "===": [
-            {
-              "var": "ctaType"
-            },
-            "link"
+          "and": [
+            { "===": [{ "var": "ctaType" }, "link"] },
+            { "!!": { "var": "linkHeadline" } }
           ]
         }
       },
@@ -476,11 +454,9 @@
         "description": "Upload the Asset (PDF/Image)",
         "valueType": "string",
         "condition": {
-          "===": [
-            {
-              "var": "ctaType"
-            },
-            "asset"
+          "and": [
+            { "===": [{ "var": "ctaType" }, "asset"] },
+            { "!!": { "var": "linkHeadline" } }
           ]
         }
       },
@@ -508,11 +484,9 @@
           }
         ],
         "condition": {
-          "===": [
-            {
-              "var": "ctaType"
-            },
-            "link"
+          "and": [
+            { "===": [{ "var": "ctaType" }, "link"] },
+            { "!!": { "var": "linkHeadline" } }
           ]
         }
       },
@@ -529,11 +503,9 @@
           }
         ],
         "condition": {
-          "===": [
-            {
-              "var": "ctaType"
-            },
-            "link"
+          "and": [
+            { "===": [{ "var": "ctaType" }, "link"] },
+            { "!!": { "var": "linkHeadline" } }
           ]
         }
       }
@@ -557,86 +529,6 @@
         "label": "Description",
         "valueType": "string",
         "required": true
-      }
-    ]
-  },
-  {
-    "id": "resource-card",
-    "fields": [
-      {
-        "component": "reference",
-        "valueType": "string",
-        "name": "image",
-        "label": "Image",
-        "required": true,
-        "description": "Select or upload an image for the feed."
-      },
-      {
-        "component": "text",
-        "name": "imageAlt",
-        "label": "Image Alt Text",
-        "valueType": "string",
-        "description": "Pick alt text from AEM DAM with ability to override it"
-      },
-      {
-        "component": "text",
-        "name": "title",
-        "label": "Title",
-        "description": "Enter the title.",
-        "required": true,
-        "valueType": "string"
-      },
-      {
-        "component": "richtext",
-        "name": "description",
-        "label": "Description",
-        "valueType": "string",
-        "description": "Enter the description"
-      },
-      {
-        "component": "text",
-        "name": "ctalabel",
-        "label": "CTA Label",
-        "valueType": "string",
-        "description": "Enter label to display on the CTA for each card"
-      },
-      {
-        "component": "aem-content",
-        "name": "ctaLink",
-        "label": "CTA Link",
-        "description": "Enter the URL to navigate when CTA is clicked for each card",
-        "validation": {
-          "rootPath": "/content/lilly-com-eds"
-        }
-      },
-      {
-        "component": "select",
-        "name": "targetPath",
-        "label": "Target Path",
-        "description": "Select the target path for the authored CTA URL",
-        "value": "sameTab",
-        "options": [
-          {
-            "name": "Same Tab",
-            "value": "sameTab"
-          },
-          {
-            "name": "New Tab",
-            "value": "newTab"
-          }
-        ]
-      },
-      {
-        "component": "checkbox-group",
-        "label": "Exit Interstitial",
-        "name": "exitInterstitial",
-        "valueType": "string",
-        "options": [
-          {
-            "name": "Exit Interstitial",
-            "value": "true"
-          }
-        ]
       }
     ]
   },
@@ -712,11 +604,9 @@
           "rootPath": "/content"
         },
         "condition": {
-          "===": [
-            {
-              "var": "ctaType"
-            },
-            "link"
+          "and": [
+            { "===": [{ "var": "ctaType" }, "link"] },
+            { "!!": { "var": "ctaLabel" } }
           ]
         }
       },
@@ -727,11 +617,9 @@
         "description": "Upload the Asset (PDF/Image)",
         "valueType": "string",
         "condition": {
-          "===": [
-            {
-              "var": "ctaType"
-            },
-            "asset"
+          "and": [
+            { "===": [{ "var": "ctaType" }, "asset"] },
+            { "!!": { "var": "ctaLabel" } }
           ]
         }
       },
@@ -759,11 +647,9 @@
           }
         ],
         "condition": {
-          "===": [
-            {
-              "var": "ctaType"
-            },
-            "link"
+          "and": [
+            { "===": [{ "var": "ctaType" }, "link"] },
+            { "!!": { "var": "ctaLabel" } }
           ]
         }
       }
@@ -863,11 +749,9 @@
           "rootPath": "/content"
         },
         "condition": {
-          "===": [
-            {
-              "var": "ctaType"
-            },
-            "link"
+          "and": [
+            { "===": [ { "var": "ctaType" }, "link" ] },
+            { "!!": { "var": "linkHeadline" } }
           ]
         }
       },
@@ -878,11 +762,9 @@
         "description": "Upload the Asset (PDF/Image)",
         "valueType": "string",
         "condition": {
-          "===": [
-            {
-              "var": "ctaType"
-            },
-            "asset"
+          "and": [
+            { "===": [ { "var": "ctaType" }, "asset" ] },
+            { "!!": { "var": "linkHeadline" } }
           ]
         }
       },
@@ -910,11 +792,9 @@
           }
         ],
         "condition": {
-          "===": [
-            {
-              "var": "ctaType"
-            },
-            "link"
+          "and": [
+            { "===": [ { "var": "ctaType" }, "link" ] },
+            { "!!": { "var": "linkHeadline" } }
           ]
         }
       },
@@ -931,11 +811,9 @@
           }
         ],
         "condition": {
-          "===": [
-            {
-              "var": "ctaType"
-            },
-            "link"
+          "and": [
+            { "===": [ { "var": "ctaType" }, "link" ] },
+            { "!!": { "var": "linkHeadline" } }
           ]
         }
       }
@@ -968,25 +846,23 @@
         ],
         "condition": {
           "!!": {
-            "var": "ctaLabel"
+            "var": "ctalabelprevious"
           }
         }
       },
       {
         "component": "aem-content",
         "name": "ctalinkprevious",
-        "label": "CTA Link  Previous Page",
+        "label": "CTA Link - Previous Page",
         "valueType": "string",
         "description": "Enter the URL to navigate when CTA is clicked",
         "validation": {
           "rootPath": "/content"
         },
         "condition": {
-          "===": [
-            {
-              "var": "ctaType"
-            },
-            "link"
+          "and": [
+            { "===": [ { "var": "ctaTypeprevious" }, "link" ] },
+            { "!!": { "var": "ctalabelprevious" } }
           ]
         }
       },
@@ -997,11 +873,9 @@
         "description": "Upload the Asset (PDF/Image)",
         "valueType": "string",
         "condition": {
-          "===": [
-            {
-              "var": "ctaType"
-            },
-            "asset"
+          "and": [
+            { "===": [ { "var": "ctaTypeprevious" }, "asset" ] },
+            { "!!": { "var": "ctalabelprevious" } }
           ]
         }
       },
@@ -1036,7 +910,7 @@
         ],
         "condition": {
           "!!": {
-            "var": "ctaLabel"
+            "var": "ctalabelnext"
           }
         }
       },
@@ -1050,11 +924,9 @@
           "rootPath": "/content"
         },
         "condition": {
-          "===": [
-            {
-              "var": "ctaType"
-            },
-            "link"
+          "and": [
+            { "===": [ { "var": "ctaTypenext" }, "link" ] },
+            { "!!": { "var": "ctalabelnext" } }
           ]
         }
       },
@@ -1065,11 +937,9 @@
         "description": "Upload the Asset (PDF/Image)",
         "valueType": "string",
         "condition": {
-          "===": [
-            {
-              "var": "ctaType"
-            },
-            "asset"
+          "and": [
+            { "===": [ { "var": "ctaTypenext" }, "asset" ] },
+            { "!!": { "var": "ctalabelnext" } }
           ]
         }
       },
@@ -1367,11 +1237,9 @@
           "rootPath": "content"
         },
         "condition": {
-          "===": [
-            {
-              "var": "ctaType"
-            },
-            "link"
+          "and": [
+            { "===": [ { "var": "ctaType" }, "link" ] },
+            { "!!": { "var": "ctaLabel" } }
           ]
         }
       },
@@ -1382,11 +1250,9 @@
         "description": "Upload the Asset (PDF/Image)",
         "valueType": "string",
         "condition": {
-          "===": [
-            {
-              "var": "ctaType"
-            },
-            "asset"
+          "and": [
+            { "===": [ { "var": "ctaType" }, "asset" ] },
+            { "!!": { "var": "ctaLabel" } }
           ]
         }
       },
@@ -1638,11 +1504,9 @@
           "rootPath": "/content"
         },
         "condition": {
-          "===": [
-            {
-              "var": "ctaType"
-            },
-            "link"
+          "and": [
+            { "===": [ { "var": "ctaType" }, "link" ] },
+            { "!!": { "var": "ctaLabel" } }
           ]
         }
       },
@@ -1653,11 +1517,9 @@
         "description": "Upload the Asset (PDF/Image)",
         "valueType": "string",
         "condition": {
-          "===": [
-            {
-              "var": "ctaType"
-            },
-            "asset"
+          "and": [
+            { "===": [ { "var": "ctaType" }, "asset" ] },
+            { "!!": { "var": "ctaLabel" } }
           ]
         }
       },
@@ -1701,7 +1563,8 @@
                 },
                 "link"
               ]
-            }
+            },
+            { "!!": { "var": "ctaLabel" } }
           ]
         }
       },
@@ -1733,7 +1596,8 @@
                 },
                 "link"
               ]
-            }
+            },
+            { "!!": { "var": "ctaLabel" } }
           ]
         }
       },
@@ -1814,31 +1678,6 @@
     ]
   },
   {
-    "id": "numeric-tile",
-    "fields": [
-      {
-        "component": "text",
-        "name": "title",
-        "label": "Title",
-        "description": "Enter the numeric value to be displayed on the tile.",
-        "required": true,
-        "valueType": "string",
-        "validation": {
-          "minLength": 1,
-          "maxLength": 4,
-          "customErrorMsg": "Maximum characters length limit should not be more than 4"
-        }
-      },
-      {
-        "component": "richtext",
-        "name": "description",
-        "label": "Description",
-        "valueType": "string",
-        "description": "Enter the description"
-      }
-    ]
-  },
-  {
     "id": "icon-tile-grid",
     "fields": [
       {
@@ -1866,6 +1705,42 @@
             "value": "3-col"
           }
         ]
+      }
+    ]
+  },
+  {
+    "id": "icongrid-tile",
+    "fields": [
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "image",
+        "label": "Icon/Logo",
+        "required": true,
+        "description": "Upload icon for the Icon Grid"
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "imageAlt",
+        "label": "Alt Text",
+        "description": "Add Image Alternate Text"
+      },
+      {
+        "component": "richtext",
+        "name": "text",
+        "label": "Icon Title",
+        "valueType": "string",
+        "description": "Enter title for the Icon Grid",
+        "required": true
+      },
+      {
+        "component": "richtext",
+        "name": "description",
+        "label": "Icon Description",
+        "valueType": "string",
+        "description": "Enter Description for the Icon Grid",
+        "required": true
       }
     ]
   },
@@ -2011,11 +1886,9 @@
           "rootPath": "/content"
         },
         "condition": {
-          "===": [
-            {
-              "var": "ctaType"
-            },
-            "link"
+          "and": [
+            { "===": [ { "var": "ctaType" }, "link" ] },
+            { "!!": { "var": "ctaLabel" } }
           ]
         }
       },
@@ -2026,11 +1899,9 @@
         "description": "Upload the Asset (PDF/Image)",
         "valueType": "string",
         "condition": {
-          "===": [
-            {
-              "var": "ctaType"
-            },
-            "asset"
+          "and": [
+            { "===": [ { "var": "ctaType" }, "asset" ] },
+            { "!!": { "var": "ctaLabel" } }
           ]
         }
       },
@@ -2128,11 +1999,9 @@
           "rootPath": "/content"
         },
         "condition": {
-          "===": [
-            {
-              "var": "ctaType"
-            },
-            "link"
+          "and": [
+            { "===": [ { "var": "ctaType" }, "link" ] },
+            { "!!": { "var": "ctaLabel" } }
           ]
         }
       },
@@ -2143,11 +2012,9 @@
         "description": "Upload the Asset (PDF/Image)",
         "valueType": "string",
         "condition": {
-          "===": [
-            {
-              "var": "ctaType"
-            },
-            "asset"
+          "and": [
+            { "===": [ { "var": "ctaType" }, "asset" ] },
+            { "!!": { "var": "ctaLabel" } }
           ]
         }
       },
@@ -2175,11 +2042,9 @@
           }
         ],
         "condition": {
-          "===": [
-            {
-              "var": "ctaType"
-            },
-            "link"
+          "and": [
+            { "===": [ { "var": "ctaType" }, "link" ] },
+            { "!!": { "var": "ctaLabel" } }
           ]
         }
       },
@@ -2196,13 +2061,36 @@
           }
         ],
         "condition": {
-          "===": [
-            {
-              "var": "ctaType"
-            },
-            "link"
+          "and": [
+            { "===": [ { "var": "ctaType" }, "link" ] },
+            { "!!": { "var": "ctaLabel" } }
           ]
         }
+      }
+    ]
+  },
+  {
+    "id": "numeric-tile",
+    "fields": [
+      {
+        "component": "text",
+        "name": "title",
+        "label": "Title",
+        "description": "Enter the numeric value to be displayed on the tile.",
+        "required": true,
+        "valueType": "string",
+        "validation": {
+          "minLength": 1,
+          "maxLength": 4,
+          "customErrorMsg": "Maximum characters length limit should not be more than 4"
+        }
+      },
+      {
+        "component": "richtext",
+        "name": "description",
+        "label": "Description",
+        "valueType": "string",
+        "description": "Enter the description"
       }
     ]
   },
@@ -2311,11 +2199,9 @@
           "rootPath": "/content"
         },
         "condition": {
-          "===": [
-            {
-              "var": "ctaType"
-            },
-            "link"
+          "and": [
+            { "===": [ { "var": "ctaType" }, "link" ] },
+            { "!!": { "var": "ctaLabel" } }
           ]
         }
       },
@@ -2326,11 +2212,9 @@
         "description": "Upload the Asset (PDF/Image)",
         "valueType": "string",
         "condition": {
-          "===": [
-            {
-              "var": "ctaType"
-            },
-            "asset"
+          "and": [
+            { "===": [ { "var": "ctaType" }, "asset" ] },
+            { "!!": { "var": "ctaLabel" } }
           ]
         }
       },
@@ -2358,11 +2242,9 @@
           }
         ],
         "condition": {
-          "===": [
-            {
-              "var": "ctaType"
-            },
-            "link"
+          "and": [
+            { "===": [ { "var": "ctaType" }, "link" ] },
+            { "!!": { "var": "ctaLabel" } }
           ]
         }
       },
@@ -2379,11 +2261,9 @@
           }
         ],
         "condition": {
-          "===": [
-            {
-              "var": "ctaType"
-            },
-            "link"
+          "and": [
+            { "===": [ { "var": "ctaType" }, "link" ] },
+            { "!!": { "var": "ctaLabel" } }
           ]
         }
       }
@@ -2547,11 +2427,9 @@
           "rootPath": "/content"
         },
         "condition": {
-          "===": [
-            {
-              "var": "ctaType"
-            },
-            "link"
+          "and": [
+            { "===": [ { "var": "ctaType" }, "link" ] },
+            { "!!": { "var": "linkHeadline" } }
           ]
         }
       },
@@ -2562,11 +2440,9 @@
         "description": "Upload the Asset (PDF/Image)",
         "valueType": "string",
         "condition": {
-          "===": [
-            {
-              "var": "ctaType"
-            },
-            "asset"
+          "and": [
+            { "===": [ { "var": "ctaType" }, "asset" ] },
+            { "!!": { "var": "linkHeadline" } }
           ]
         }
       },
@@ -2594,11 +2470,9 @@
           }
         ],
         "condition": {
-          "===": [
-            {
-              "var": "ctaType"
-            },
-            "link"
+          "and": [
+            { "===": [ { "var": "ctaType" }, "link" ] },
+            { "!!": { "var": "linkHeadline" } }
           ]
         }
       },
@@ -2622,11 +2496,9 @@
           }
         ],
         "condition": {
-          "===": [
-            {
-              "var": "ctaType"
-            },
-            "link"
+          "and": [
+            { "===": [ { "var": "ctaType" }, "link" ] },
+            { "!!": { "var": "linkHeadline" } }
           ]
         }
       },
@@ -2668,11 +2540,9 @@
           "rootPath": "/content"
         },
         "condition": {
-          "===": [
-            {
-              "var": "subTextCtaType"
-            },
-            "link"
+          "and": [
+            { "===": [ { "var": "ctaType" }, "link" ] },
+            { "!!": { "var": "subTextHeadline" } }
           ]
         }
       },
@@ -2683,11 +2553,9 @@
         "description": "Upload the Asset (PDF/Image)",
         "valueType": "string",
         "condition": {
-          "===": [
-            {
-              "var": "subTextCtaType"
-            },
-            "asset"
+          "and": [
+            { "===": [ { "var": "ctaType" }, "asset" ] },
+            { "!!": { "var": "subTextHeadline" } }
           ]
         }
       },
@@ -2715,11 +2583,9 @@
           }
         ],
         "condition": {
-          "===": [
-            {
-              "var": "subTextCtaType"
-            },
-            "link"
+          "and": [
+            { "===": [ { "var": "ctaType" }, "link" ] },
+            { "!!": { "var": "subTextHeadline" } }
           ]
         }
       },
@@ -2736,11 +2602,148 @@
           }
         ],
         "condition": {
-          "===": [
-            {
-              "var": "subTextCtaType"
-            },
-            "link"
+          "and": [
+            { "===": [ { "var": "ctaType" }, "link" ] },
+            { "!!": { "var": "subTextHeadline" } }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "resource-card",
+    "fields": [
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "image",
+        "label": "Image",
+        "required": true,
+        "description": "Select or upload an image for the feed."
+      },
+      {
+        "component": "text",
+        "name": "imageAlt",
+        "label": "Image Alt Text",
+        "valueType": "string",
+        "description": "Pick alt text from AEM DAM with ability to override it"
+      },
+      {
+        "component": "text",
+        "name": "title",
+        "label": "Title",
+        "description": "Enter the title.",
+        "required": true,
+        "valueType": "string"
+      },
+      {
+        "component": "richtext",
+        "name": "description",
+        "label": "Description",
+        "valueType": "string",
+        "description": "Enter the description"
+      },
+      {
+        "component": "text",
+        "name": "ctalabel",
+        "label": "CTA Label",
+        "valueType": "string",
+        "description": "Enter label to display on the CTA for each card"
+      },
+      {
+        "component": "select",
+        "name": "ctaType",
+        "label": "CTA Type",
+        "description": "Select the CTA Type",
+        "options": [
+          {
+            "name": "Link",
+            "value": "link"
+          },
+          {
+            "name": "PDF",
+            "value": "pdf"
+          }
+        ],
+        "condition": {
+          "!!": {
+            "var": "ctaLabel"
+          }
+        }
+      },
+      {
+        "component": "aem-content",
+        "name": "ctaLink",
+        "label": "CTA Link",
+        "description": "Enter the URL to navigate when CTA is clicked for each card",
+        "validation": {
+          "rootPath": "/content"
+        },
+        "condition": {
+          "and": [
+            { "===": [ { "var": "ctaType" }, "link" ] },
+            { "!!": { "var": "ctaLabel" } }
+          ]
+        }
+      },
+      {
+        "component": "reference",
+        "name": "ctaAsset",
+        "label": "Asset (PDF/Image)",
+        "description": "Upload the Asset (PDF/Image)",
+        "valueType": "string",
+        "condition": {
+          "and": [
+            { "===": [ { "var": "ctaType" }, "asset" ] },
+            { "!!": { "var": "ctaLabel" } }
+          ]
+        }
+      },
+      {
+        "component": "text",
+        "name": "text-aria-label",
+        "label": "ARIA Label",
+        "valueType": "string",
+        "description": "Enter ARIA label to comply ADA"
+      },
+      {
+        "component": "select",
+        "name": "targetPath",
+        "label": "Target Path",
+        "description": "Select the target path for the authored CTA URL",
+        "value": "sameTab",
+        "options": [
+          {
+            "name": "Same Tab",
+            "value": "sameTab"
+          },
+          {
+            "name": "New Tab",
+            "value": "newTab"
+          }
+        ],
+        "condition": {
+          "and": [
+            { "===": [ { "var": "ctaType" }, "link" ] },
+            { "!!": { "var": "ctaLabel" } }
+          ]
+        }
+      },
+      {
+        "component": "checkbox-group",
+        "label": "Exit Interstitial",
+        "name": "exitInterstitial",
+        "valueType": "string",
+        "options": [
+          {
+            "name": "Exit Interstitial",
+            "value": "true"
+          }
+        ],
+        "condition": {
+          "and": [
+            { "===": [ { "var": "ctaType" }, "link" ] },
+            { "!!": { "var": "ctaLabel" } }
           ]
         }
       }
@@ -2858,12 +2861,10 @@
           "rootPath": "/content"
         },
         "condition": {
-          "===": [
-            {
-              "var": "ctaType"
-            },
-            "link"
-          ]
+            "and": [
+              { "===": [ { "var": "ctaType" }, "link" ] },
+              { "!!": { "var": "ctaLabel" } }
+            ]
         }
       },
       {
@@ -2873,11 +2874,9 @@
         "description": "Upload the Asset (PDF/Image)",
         "valueType": "string",
         "condition": {
-          "===": [
-            {
-              "var": "ctaType"
-            },
-            "asset"
+            "and": [
+              { "===": [ { "var": "ctaType" }, "asset" ] },
+              { "!!": { "var": "ctaLabel" } }
           ]
         }
       },
@@ -2905,12 +2904,10 @@
           }
         ],
         "condition": {
-          "===": [
-            {
-              "var": "ctaType"
-            },
-            "link"
-          ]
+            "and": [
+              { "===": [ { "var": "ctaType" }, "link" ] },
+              { "!!": { "var": "ctaLabel" } }
+            ]
         }
       },
       {
@@ -2927,11 +2924,9 @@
           }
         ],
         "condition": {
-          "===": [
-            {
-              "var": "ctaType"
-            },
-            "link"
+          "and": [
+            { "===": [ { "var": "ctaType" }, "link" ] },
+            { "!!": { "var": "ctaLabel" } }
           ]
         }
       },
@@ -3086,6 +3081,17 @@
     ]
   },
   {
+    "id": "table-row",
+    "fields": [
+      {
+        "component": "richtext",
+        "valueType": "string",
+        "name": "column1text",
+        "label": "Column1"
+      }
+    ]
+  },
+  {
     "id": "table-col-2",
     "fields": [
       {
@@ -3227,17 +3233,6 @@
         "valueType": "string",
         "name": "column6text",
         "label": "Column6 Description"
-      }
-    ]
-  },
-  {
-    "id": "table-row",
-    "fields": [
-      {
-        "component": "richtext",
-        "valueType": "string",
-        "name": "column1text",
-        "label": "Column1"
       }
     ]
   },
@@ -3449,11 +3444,9 @@
           "rootPath": "/content"
         },
         "condition": {
-          "===": [
-            {
-              "var": "ctaType"
-            },
-            "link"
+          "and": [
+            { "===": [ { "var": "ctaType" }, "link" ] },
+            { "!!": { "var": "ctaLabel" } }
           ]
         }
       },
@@ -3464,11 +3457,9 @@
         "description": "Upload the Asset (PDF/Image)",
         "valueType": "string",
         "condition": {
-          "===": [
-            {
-              "var": "ctaType"
-            },
-            "asset"
+          "and": [
+            { "===": [ { "var": "ctaType" }, "asset" ] },
+            { "!!": { "var": "ctaLabel" } }
           ]
         }
       },
@@ -3496,11 +3487,9 @@
           }
         ],
         "condition": {
-          "===": [
-            {
-              "var": "ctaType"
-            },
-            "link"
+          "and": [
+            { "===": [ { "var": "ctaType" }, "link" ] },
+            { "!!": { "var": "ctaLabel" } }
           ]
         }
       },
@@ -3517,11 +3506,9 @@
           }
         ],
         "condition": {
-          "===": [
-            {
-              "var": "ctaType"
-            },
-            "link"
+          "and": [
+            { "===": [ { "var": "ctaType" }, "link" ] },
+            { "!!": { "var": "ctaLabel" } }
           ]
         }
       },
@@ -3531,64 +3518,6 @@
         "label": "Footnote",
         "valueType": "string",
         "description": "Enter the footnote text."
-      }
-    ]
-  },
-  {
-    "id": "timeline-card",
-    "fields": [
-      {
-        "component": "reference",
-        "valueType": "string",
-        "name": "image",
-        "label": "Image",
-        "required": true,
-        "description": "Upload background image for the Media Banner"
-      },
-      {
-        "component": "text",
-        "valueType": "string",
-        "name": "imageAlt",
-        "label": "Image Alt Text ",
-        "description": "Pick alt text from AEM DAM with ability to override it",
-        "required": true
-      },
-      {
-        "component": "select",
-        "name": "imagePlacement",
-        "label": "Image Placement",
-        "description": "Choose where the image should be placed",
-        "required": true,
-        "value": "left",
-        "options": [
-          {
-            "name": "Top",
-            "value": "top"
-          },
-          {
-            "name": "Left",
-            "value": "left"
-          },
-          {
-            "name": "Right",
-            "value": "right"
-          }
-        ]
-      },
-      {
-        "component": "text",
-        "name": "title",
-        "label": "Title",
-        "valueType": "string",
-        "description": "Enter the title",
-        "required": true
-      },
-      {
-        "component": "richtext",
-        "name": "description",
-        "label": "Description",
-        "valueType": "string",
-        "description": "Enter the description"
       }
     ]
   },
@@ -3748,11 +3677,9 @@
           "rootPath": "/content"
         },
         "condition": {
-          "===": [
-            {
-              "var": "ctaType"
-            },
-            "link"
+          "and": [
+            { "===": [ { "var": "ctaType" }, "link" ] },
+            { "!!": { "var": "ctaText" } }
           ]
         }
       },
@@ -3763,11 +3690,9 @@
         "description": "Upload the Asset (PDF/Image)",
         "valueType": "string",
         "condition": {
-          "===": [
-            {
-              "var": "ctaType"
-            },
-            "asset"
+          "and": [
+            { "===": [ { "var": "ctaType" }, "asset" ] },
+            { "!!": { "var": "ctaText" } }
           ]
         }
       },
@@ -3795,11 +3720,9 @@
           }
         ],
         "condition": {
-          "===": [
-            {
-              "var": "ctaType"
-            },
-            "link"
+          "and": [
+            { "===": [ { "var": "ctaType" }, "link" ] },
+            { "!!": { "var": "ctaText" } }
           ]
         }
       },
@@ -3816,11 +3739,9 @@
           }
         ],
         "condition": {
-          "===": [
-            {
-              "var": "ctaType"
-            },
-            "link"
+          "and": [
+            { "===": [ { "var": "ctaType" }, "link" ] },
+            { "!!": { "var": "ctaText" } }
           ]
         }
       }
