@@ -1,0 +1,92 @@
+.text-callout-wrapper {
+  display: flex;
+}
+
+.text-callout-wrapper .text-call-out-container {
+  display: flex;
+  gap: var(--lds-g-spacing-500);
+  height: auto;
+  align-items: stretch;
+}
+
+.text-callout-wrapper .text-call-out-icon-area {
+  width: 48px;
+  display: flex;
+  padding-top: var(--lds-g-spacing-100);
+  align-items: flex-start;
+  gap: var(--lds-g-spacing-300);
+  flex-direction: column;
+  flex-shrink: 0;
+}
+
+.text-callout-wrapper .text-call-out-description {
+  margin: 0;
+  overflow-wrap: break-word;
+  white-space: normal;
+  box-sizing: border-box;
+  flex-grow: 1;
+  height: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  color: var(--lds-g-color-neutral-base-100);
+  letter-spacing: var(--lds-g-typography-ringside-heading-2-letter-spacing);
+}
+
+.text-callout-wrapper .text-call-out-container.align-left {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+  align-items: flex-start;
+  gap: var(--lds-g-spacing-300);
+  align-self: stretch;
+}
+
+.text-callout-wrapper .text-call-out-description.align-left {
+  color: var(--lds-g-color-brand-1);
+  font: var(--lds-g-typography-ringside-heading-3-default);
+  letter-spacing: var(--lds-g-typography-letter-spacing-minus-4-half-rem);
+  padding-left: var(--lds-g-spacing-0);
+  line-height: var(--typography-ringside-heading-3-line-height);
+}
+
+@media (width <= 950px) {
+  .text-callout-wrapper .text-call-out-container,
+  .text-callout-wrapper .text-call-out-container.align-left {
+    gap: var(--lds-g-spacing-150);
+    align-self: stretch;
+  }
+
+  .text-callout-wrapper .text-call-out-icon-area {
+    padding-top: var(--lds-g-spacing-100);
+    width: 24px;
+    height: 24px;
+    align-items: center;
+    flex-shrink: 0;
+    aspect-ratio: 1 / 1;
+  }
+
+  .text-callout-wrapper .text-call-out-icon-area svg {
+    width: 24px;
+    height: 24px;
+    aspect-ratio: 1 / 1;
+  }
+
+  .text-callout-wrapper .text-call-out-description {
+    font-size: var(--typography-ringside-heading-5-font-size);
+    line-height: var(--typography-ringside-heading-5-1-line-height);
+    width: 100%;
+    letter-spacing: var(--lds-g-typography-ringside-heading-2-letter-spacing);
+    height: auto;
+  }
+
+  .text-callout-wrapper .text-call-out-description.align-left {
+    font: var(--lds-g-typography-ringside-heading-4-desktop);
+    width: 100%;
+    padding-left: var(--lds-g-spacing-0);
+    height: auto;
+    align-items: flex-start;
+    justify-content: flex-start;
+    letter-spacing: var(--lds-g-typography-ringside-heading-2-letter-spacing);
+  }
+}

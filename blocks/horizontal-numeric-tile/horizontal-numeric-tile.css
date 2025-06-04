@@ -1,0 +1,376 @@
+.horizontal-numeric-tile-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.horizontal-numeric-tile {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  align-self: stretch;
+}
+
+.horizontal-numeric-tile-content-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.horizontal-numeric-tile .section-title-description-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: var(--lds-g-spacing-300);
+}
+
+.horizontal-numeric-tile .horizontal-section-title {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  align-self: stretch;
+  width: 867px;
+  margin: 0;
+  word-wrap: break-word;
+  color: var(--lds-g-color-neutral-base-100);
+  font: var(--lds-g-typography-garamond-display-1-desktop);
+  line-height: var(--lds-g-font-line-height-20);
+  letter-spacing: var(--lds-g-typography-letter-spacing-9-4);
+}
+
+.horizontal-numeric-tile .horizontal-section-description {
+  width: 644px;
+  margin: 0;
+  word-wrap: break-word;
+  color: var(--lds-g-color-neutral-base-100);
+  font: var(--lds-g-typography-ringside-heading-5-default);
+  line-height: var(--lds-g-font-line-height-9);
+}
+
+.horizontal-grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding-top: var(--lds-g-spacing-900);
+  gap: var(--lds-g-spacing-600) var(--lds-g-spacing-300);
+}
+
+.horizontal-grid-container .divider {
+  width: 347px;
+  display: flex;
+  height: 2px;
+  padding-right: 0.333px;
+  justify-content: center;
+  align-items: center;
+  align-self: stretch;
+  background-color: #c5c5c5;
+  flex-shrink: 0;
+}
+
+.horizontal-grid-container .text-grid-item {
+  width: 347px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--lds-g-spacing-300);
+  flex: 1 0 0;
+}
+
+.horizontal-grid-container .content-paragraphs {
+  display: flex;
+  flex-direction: column;
+  width: 347px;
+  gap: var(--lds-g-spacing-150);
+}
+
+.horizontal-grid-container .text-grid-item .horizontal-grid-title {
+  white-space: normal;
+  overflow-wrap: break-word;
+  margin: 0;
+  color: var(--lds-g-color-neutral-base-100);
+  font: var(--lds-g-typography-ringside-display-2-desktop);
+  line-height: var(--lds-g-font-line-height-19);
+  letter-spacing: var(--lds-g-typography-letter-spacing-minus-15-half);
+}
+
+.horizontal-grid-container .text-grid-item .horizontal-grid-description {
+  white-space: normal;
+  overflow-wrap: break-word;
+  margin: 0;
+  color: var(--lds-g-color-neutral-base-100);
+  font: var(--lds-g-typography-ringside-heading-6-default);
+  line-height: var(--lds-g-font-line-height-8);
+}
+
+.horizontal-numeric-tile.red-black-variation {
+  background: var(--lds-g-color-palette-red-005);
+  display: flex;
+  width: 1088px;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.horizontal-numeric-tile
+  .horizontal-numeric-tile-content-wrapper.red-black-variation {
+  color: var(--lds-g-color-neutral-base-100);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--lds-g-spacing-600);
+  align-self: stretch;
+}
+
+.horizontal-numeric-tile .horizontal-section-title.red-black-variation {
+  width: 528px;
+  margin: 0;
+  word-wrap: break-word;
+  color: var(--lds-g-color-neutral-base-100);
+  font: var(--lds-g-typography-garamond-display-1-default);
+  line-height: var(--lds-g-font-line-height-17);
+  letter-spacing: var(--lds-g-typography-letter-spacing-minus-3-0);
+}
+
+.horizontal-numeric-tile .horizontal-section-description.red-black-variation {
+  color: var(--lds-g-color-neutral-base-100);
+  font: var(--lds-g-typography-ringside-heading-6-default);
+  line-height: var(--lds-g-font-line-height-8);
+}
+
+.horizontal-numeric-tile .content-paragraphs.red-black-variation {
+  display: flex;
+  width: auto;
+  flex-direction: row;
+  gap: var(--lds-g-spacing-200);
+}
+
+.horizontal-grid-container
+  .content-paragraphs.red-black-variation
+  .horizontal-grid-red-title {
+  color: var(--lds-g-color-palette-red-060);
+  font: var(--lds-g-typography-ringside-heading-3-default-bold);
+  line-height: var(--lds-g-font-line-height-12);
+  letter-spacing: var(--lds-g-typography-letter-spacing-minus-0-4);
+}
+
+.horizontal-grid-container
+  .content-paragraphs.red-black-variation
+  .horizontal-grid-red-description {
+  flex: 1 0 0;
+  color: var(--lds-g-color-neutral-base-100);
+  font: var(--lds-g-typography-ringside-heading-6-default);
+  line-height: var(--lds-g-font-line-height-8);
+}
+
+.red-bar-layout {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  align-self: stretch;
+}
+
+.horizontal-red-bar {
+  width: 59px;
+  height: 12px;
+  background: var(--lds-g-color-palette-red-060);
+  margin-top: var(--lds-g-spacing-100);
+}
+
+.red-bar-content {
+  display: flex;
+  width: 864px;
+  flex-direction: column;
+  gap: var(--lds-g-spacing-800);
+}
+
+.red-bar-content .horizontal-section-description {
+  width: auto;
+}
+
+.horizontal-grid-container.variation-2 {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: var(--lds-g-spacing-800) var(--lds-g-spacing-400);
+  padding: 0;
+}
+
+.horizontal-grid-container.variation-1 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--lds-g-spacing-600) var(--lds-g-spacing-300);
+}
+
+.horizontal-grid-container.variation-2 .text-grid-item {
+  display: flex;
+  width: 416px;
+  padding-bottom: var(--lds-g-spacing-400);
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--lds-g-spacing-400);
+  flex-shrink: 0;
+}
+
+.horizontal-grid-container.variation-2 .divider {
+  width: 416px;
+}
+
+.horizontal-grid-container.variation-2 .divider.wide-divider {
+  width: 864px;
+}
+
+.horizontal-grid-container .text-grid-item.wide-item {
+  width: 864px;
+  grid-column: 1 / -1;
+}
+
+.horizontal-grid-footer {
+  color: var(--lds-g-color-neutral-base-100);
+  font: var(--lds-g-typography-ringside-heading-6-default);
+  line-height: var(--lds-g-font-line-height-8);
+}
+
+@media (320px <= width <= 1024px) {
+  .horizontal-numeric-tile {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--lds-g-spacing-200);
+  }
+
+  .horizontal-grid-container .divider {
+    width: 166px;
+  }
+
+  .horizontal-grid-container .content-paragraphs {
+    width: 166px;
+  }
+
+  .horizontal-numeric-tile .horizontal-section-title {
+    width: 343px;
+    color: var(--lds-g-color-neutral-base-100);
+    font: var(--lds-g-typography-garamond-heading-2-desktop);
+    line-height: var(--lds-g-font-line-height-16);
+    letter-spacing: var(--lds-g-typography-letter-spacing-minus-4-half);
+  }
+
+  .horizontal-numeric-tile .horizontal-section-description {
+    width: 343px;
+    margin-bottom: 24px;
+    color: var(--lds-g-color-neutral-base-100);
+    font: var(--lds-g-typography-ringside-heading-6-default);
+    line-height: var(--lds-g-font-line-height-6);
+  }
+
+  .horizontal-grid-container.variation-1 {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    gap: var(--lds-g-spacing-150);
+    width: 344px;
+    height: auto;
+  }
+
+  .horizontal-grid-container .text-grid-item {
+    display: flex;
+    width: 166px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--lds-g-spacing-200);
+    flex-shrink: 0;
+    height: auto;
+  }
+
+  .horizontal-grid-container
+    .content-paragraphs.red-black-variation
+    .horizontal-grid-red-title {
+    color: var(--lds-g-color-palette-red-060);
+    font: var(--lds-g-typography-ringside-heading-4-default);
+    font-weight: var(--lds-g-font-weight-900);
+    line-height: var(--lds-g-font-line-height-10);
+    letter-spacing: var(--lds-g-typography-letter-spacing-minus-3-5);
+  }
+
+  .horizontal-grid-container .text-grid-item .horizontal-grid-title {
+    width: 166px;
+    height: auto;
+    margin: 0;
+    color: var(--lds-g-color-neutral-base-100);
+    font: var(--lds-g-typography-ringside-display-2-default);
+    line-height: var(--lds-g-font-line-height-15);
+    letter-spacing: var(--lds-g-typography-letter-spacing-9-4);
+  }
+
+  .horizontal-grid-container .text-grid-item .horizontal-grid-description {
+    width: 166px;
+    height: auto;
+    margin: 0;
+    color: var(--lds-g-color-neutral-base-100);
+    font: var(--lds-g-typography-ringside-body-large);
+    line-height: var(--lds-g-font-line-height-7);
+  }
+
+  .horizontal-numeric-tile.red-black-variation {
+    width: 328px;
+    padding: 0;
+  }
+
+  .horizontal-numeric-tile .content-paragraphs.red-black-variation {
+    display: flex;
+    flex-direction: column;
+    gap: var(--lds-g-spacing-150);
+  }
+
+  .horizontal-grid-container.variation-2 .text-grid-item {
+    width: 328px;
+    box-sizing: border-box;
+    gap: var(--lds-g-spacing-200);
+    padding: 0;
+  }
+
+  .horizontal-grid-container.variation-2 {
+    flex-direction: column;
+    gap: var(--lds-g-spacing-600);
+  }
+
+  .horizontal-numeric-tile .horizontal-section-title.red-black-variation,
+  .horizontal-numeric-tile .horizontal-section-description.red-black-variation,
+  .red-bar-content,
+  .horizontal-grid-footer {
+    width: 328px;
+    gap: var(--lds-g-spacing-600);
+  }
+
+  .horizontal-numeric-tile .horizontal-section-title.red-black-variation {
+    width: 328px;
+    margin: 0;
+    word-wrap: break-word;
+    color: var(--lds-g-color-neutral-base-100);
+    font: var(--lds-g-typography-garamond-heading-2-default);
+    line-height: var(--lds-g-font-line-height-13);
+    letter-spacing: var(--lds-g-typography-letter-spacing-minus-2-3);
+  }
+
+  .horizontal-numeric-tile .horizontal-section-description.red-black-variation,
+  .horizontal-grid-container
+    .content-paragraphs.red-black-variation
+    .horizontal-grid-red-description,
+  .horizontal-numeric-tile.red-black-variation .horizontal-grid-footer {
+    color: var(--lds-g-color-neutral-base-100);
+    font: var(--lds-g-typography-ringside-body-large);
+    line-height: var(--lds-g-font-line-height-7);
+  }
+
+  .red-bar-layout {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--lds-g-spacing-600);
+    width: 328px;
+  }
+
+  .horizontal-red-bar {
+    width: 59px;
+    height: 6px;
+  }
+
+  .horizontal-grid-container.variation-2 .divider,
+  .horizontal-grid-container.variation-2 .divider.wide-divider {
+    width: 328px;
+  }
+}

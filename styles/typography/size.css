@@ -1,0 +1,118 @@
+.fz-display {
+  font-size: var(--lds-typography-display-font-size);
+  line-height: var(--lds-typography-display-line-height);
+}
+
+.fz-h1 {
+  font-size: var(--lds-typography-h1-font-size);
+  line-height: var(--lds-typography-h1-line-height);
+}
+
+.fz-h2 {
+  font-size: var(--lds-typography-h2-font-size);
+  line-height: var(--lds-typography-h2-line-height);
+}
+
+.fz-h3 {
+  font-size: var(--lds-typography-h3-font-size);
+  line-height: var(--lds-typography-h3-line-height);
+}
+
+.fz-h4 {
+  font-size: var(--lds-typography-h4-font-size);
+  line-height: var(--lds-typography-h4-line-height);
+}
+
+.fz-h5 {
+  font-size: var(--lds-typography-h5-font-size);
+  line-height: var(--lds-typography-h5-line-height);
+}
+
+.fz-h6 {
+  font-size: var(--lds-typography-h6-font-size);
+  line-height: var(--lds-typography-h6-line-height);
+}
+
+.fz-xl {
+  font-size: var(--lds-typography-action-font-size);
+  line-height: var(--lds-typography-action-line-height);
+}
+
+.fz-lg {
+  font-size: var(--lds-typography-large-font-size);
+  line-height: var(--lds-typography-large-line-height);
+}
+
+.fz-md {
+  font-size: var(--lds-typography-medium-font-size);
+  line-height: var(--lds-typography-medium-line-height);
+}
+
+.fz-sm {
+  font-size: var(--lds-typography-small-font-size);
+  line-height: var(--lds-typography-small-line-height);
+}
+
+/* Desktop Transformations */
+@media (min-width: 768px) {
+  .fz-display {
+    font-size: var(--lds-typography-display-rwd-font-size);
+    line-height: var(--lds-typography-display-rwd-line-height);
+  }
+
+  .fz-h1 {
+    font-size: var(--lds-typography-h1-rwd-font-size);
+    line-height: var(--lds-typography-h1-rwd-line-height);
+  }
+
+  .fz-h2 {
+    font-size: var(--lds-typography-h2-rwd-font-size);
+    line-height: var(--lds-typography-h2-rwd-line-height);
+  }
+
+  .fz-h3 {
+    font-size: var(--lds-typography-h3-rwd-font-size);
+    line-height: var(--lds-typography-h3-rwd-line-height);
+  }
+
+  .fz-h4 {
+    font-size: var(--lds-typography-h4-rwd-font-size);
+    line-height: var(--lds-typography-h4-rwd-line-height);
+  }
+
+  .fz-h5 {
+    font-size: var(--lds-typography-h5-rwd-font-size);
+    line-height: var(--lds-typography-h5-rwd-line-height);
+  }
+
+  .fz-h6 {
+    font-size: var(--lds-typography-h6-rwd-font-size);
+    line-height: var(--lds-typography-h6-rwd-line-height);
+  }
+
+  .fz-xl,
+  .fz-extra-large,
+  .fz-action {
+    font-size: var(--lds-typography-action-rwd-font-size);
+    line-height: var(--lds-typography-action-rwd-line-height);
+  }
+
+  .fz-lg,
+  .fz-large,
+  .fz-default {
+    font-size: var(--lds-typography-large-rwd-font-size);
+    line-height: var(--lds-typography-large-rwd-line-height);
+  }
+
+  .fz-md,
+  .fz-medium {
+    font-size: var(--lds-typography-medium-rwd-font-size);
+    line-height: var(--lds-typography-medium-rwd-line-height);
+  }
+
+  .fz-sm,
+  .fz-small {
+    font-size: var(--lds-typography-small-rwd-font-size);
+    line-height: var(--lds-typography-small-rwd-line-height);
+  }
+}

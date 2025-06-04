@@ -1,0 +1,47 @@
+{
+  "definitions": [
+    {
+      "title": "Numeric Tile",
+      "id": "numeric-tile",
+      "plugins": {
+        "xwalk": {
+          "page": {
+            "resourceType": "core/franklin/components/block/v1/block/item",
+            "template": {
+              "name": "Numeric Tile",
+              "model": "numeric-tile"
+            }
+          }
+        }
+      }
+    }
+  ],
+  "filters": [],
+  "models": [
+    {
+      "id": "numeric-tile",
+      "fields": [
+        {
+          "component": "text",
+          "name": "title",
+          "label": "Title",
+          "description": "Enter the numeric value to be displayed on the tile.",
+          "required": true,
+          "valueType": "string",
+          "validation": {
+            "minLength": 1,
+            "maxLength": 4,
+            "customErrorMsg": "Maximum characters length limit should not be more than 4"
+          }
+        },
+        {
+          "component": "richtext",
+          "name": "description",
+          "label": "Description",
+          "valueType": "string",
+          "description": "Enter the description"
+        }
+      ]
+    }
+  ]
+}

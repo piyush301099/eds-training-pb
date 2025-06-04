@@ -1,0 +1,140 @@
+.promo-banner-container .pb-eyebrow {
+  padding-bottom: var(--lds-g-spacing-600);
+  color: var(--lds-g-color-neutral-base-100);
+  font: var(--lds-g-typography-ringside-special-eyebrow-pill);
+  text-transform: uppercase;
+}
+
+.promo-banner-container .pb-title {
+  color: var(--lds-g-color-neutral-base-100);
+  font: var(--lds-g-typography-garamond-display-1-desktop);
+  letter-spacing: var(--lds-g-typography-letter-spacing-9-4);
+  padding: 0 0 var(--lds-g-spacing-300);
+}
+
+.promo-banner-container .pb-title h2 {
+  width: 54.1875rem;
+  color: var(--lds-g-color-neutral-base-100);
+  font: var(--lds-g-typography-garamond-heading-2-desktop);
+  letter-spacing: var(--lds-g-typography-letter-spacing-minus-3-0);
+  line-height: var(--lds-g-font-line-height-17);
+  margin: 0;
+}
+
+.promo-banner-container .pb-description {
+  width: 100%;
+  max-width: 54.1875rem;
+  color: var(--lds-g-color-neutral-base-100);
+  font: var(--lds-g-typography-ringside-heading-5-default);
+  box-sizing: border-box;
+}
+
+.promo-banner-container .pb-description h2 {
+  color: var(--lds-g-color-neutral-base-100);
+  font: var(--lds-g-typography-ringside-body-large-desktop);
+}
+
+/* Alignment-specific widths for description */
+.promo-banner-container[style*="align-items: start"] .pb-description,
+.promo-banner-container[style*="align-items: end"] .pb-description {
+  max-width: 40.25rem;
+  /* 644px */
+}
+
+.promo-banner-container[style*="align-items: center"] .pb-description {
+  max-width: 54.1875rem;
+  /* 867px */
+}
+
+.promo-banner-container a.cta-button-filled.cta-icon-right {
+  margin-top: var(--lds-g-spacing-600);
+}
+
+.promo-banner-container .pb-cta-btn {
+  margin-top: var(--lds-g-spacing-600);
+  background-color: var(--lds-g-color-brand-1);
+  padding: var(--lds-g-spacing-150) var(--lds-g-spacing-300);
+  border-radius: var(--lds-g-radius-full);
+  color: var(--lds-g-color-palette-transparent-white-100);
+  font: var(--lds-g-typography-ringside-special-cta-button-desktop);
+  text-decoration: none;
+  border: none;
+  box-shadow: none;
+  width: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: var(--lds-g-spacing-150);
+  text-align: center;
+}
+
+.promo-banner-container .cta-arrow-icon {
+  width: var(--lds-g-sizing-6);
+  height: var(--lds-g-sizing-6);
+}
+
+.pb-highlight-primary {
+  color: var(--lds-g-color-brand-1);
+}
+
+.pb-highlight-secondary {
+  color: var(--lds-g-color-palette-sage-070);
+}
+
+@media (width <= 768px) {
+  .promo-banner-container .pb-eyebrow {
+    font-size: var(--lds-g-font-size-neg-2);
+    line-height: var(--lds-g-font-line-height-1);
+    padding-bottom: var(--lds-g-spacing-400);
+  }
+
+  .promo-banner-container .pb-title {
+    width: auto;
+    align-self: stretch;
+    color: var(--lds-g-color-neutral-base-100);
+    font: var(--lds-g-typography-garamond-display-1-default);
+    letter-spacing: var(--lds-g-typography-letter-spacing-minus-4-half-rem);
+    line-height: var(--lds-g-font-line-height-16);
+    padding: 0 0 var(--lds-g-spacing-200);
+  }
+
+  .promo-banner-container .pb-description {
+    width: auto;
+    align-self: stretch;
+    color: var(--lds-g-color-neutral-base-100);
+    font: var(--lds-g-typography-ringside-heading-6-default);
+  }
+
+  /* Alignment-specific widths for description */
+  .promo-banner-container[style*="align-items: start"] .pb-description,
+  .promo-banner-container[style*="align-items: end"] .pb-description {
+    width: auto;
+  }
+
+  .pb-highlight-primary {
+    color: var(--lds-g-color-brand-1);
+  }
+
+  .pb-highlight-secondary {
+    color: var(--lds-g-color-palette-sage-070);
+  }
+
+  .promo-banner-container .pb-title h2 {
+    width: auto;
+    color: var(--lds-g-color-neutral-base-100);
+    font: var(--lds-g-typography-garamond-heading-2-default);
+    line-height: var(--lds-g-font-line-height-13);
+    letter-spacing: var(--lds-g-typography-letter-spacing-minus-2-3);
+    margin: 0;
+  }
+
+  .promo-banner-container .pb-description h2 {
+    width: auto;
+    color: var(--lds-g-color-neutral-base-100);
+    font: var(--lds-g-typography-ringside-body-large);
+  }
+
+  .promo-banner-container a.cta-button-filled.cta-icon-right {
+    margin-top: var(--lds-g-spacing-400);
+  }
+}

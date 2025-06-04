@@ -1,0 +1,112 @@
+{
+  "definitions": [
+    {
+      "title": "Additional Link",
+      "id": "additional-link",
+      "plugins": {
+        "xwalk": {
+          "page": {
+            "resourceType": "core/franklin/components/block/v1/block/item",
+            "template": {
+              "name": "Additional Link",
+              "model": "additional-link"
+            }
+          }
+        }
+      }
+    }
+  ],
+  "filters": [],
+  "models": [
+    {
+      "id": "additional-link",
+      "fields": [
+        {
+          "component": "text",
+          "valueType": "string",
+          "name": "linkHeadline",
+          "label": "Link Headline",
+          "required": true,
+          "description": "Enter display text for the quick link"
+        },
+        {
+          "component": "select",
+          "name": "ctaType",
+          "label": "CTA Type",
+          "description": "Select the CTA Type",
+          "options": [
+            {
+              "name": "Link",
+              "value": "link"
+            },
+            {
+              "name": "Asset (PDF/Image)",
+              "value": "asset"
+            }
+          ],
+          "condition": {
+            "!!": { "var": "linkHeadline" }
+          }
+        },
+        {
+          "component": "aem-content",
+          "name": "ctaLink",
+          "label": "CTA Link",
+          "valueType": "string",
+          "description": "Enter the URL to navigate when CTA is clicked",
+          "validation": {
+            "rootPath": "/content"
+          },
+          "condition": { "===": [{ "var": "ctaType" }, "link"] }
+        },
+        {
+          "component": "reference",
+          "name": "ctaAsset",
+          "label": "Asset (PDF/Image)",
+          "description": "Upload the Asset (PDF/Image)",
+          "valueType": "string",
+          "condition": { "===": [{ "var": "ctaType" }, "asset"] }
+        },
+        {
+          "component": "text",
+          "name": "additional-aria-label",
+          "label": "ARIA Label",
+          "valueType": "string",
+          "description": "Enter ARIA label to comply ADA"
+        },
+        {
+          "component": "select",
+          "name": "targetPath",
+          "label": "Target Path",
+          "description": "Select the target path for the authored CTA URL",
+          "value": "sameTab",
+          "options": [
+            {
+              "name": "Same Tab",
+              "value": "sameTab"
+            },
+            {
+              "name": "New Tab",
+              "value": "newTab"
+            }
+          ],
+          "condition": { "===": [{ "var": "ctaType" }, "link"] }
+        },
+        {
+          "component": "checkbox-group",
+          "label": "Exit Interstitial",
+          "name": "checkbox",
+          "valueType": "string",
+          "description": "Select this checkbox to enable the modal experience that notifies user that they are leaving the site",
+          "options": [
+            {
+              "name": "Exit Interstitial",
+              "value": "true"
+            }
+          ],
+          "condition": { "===": [{ "var": "ctaType" }, "link"] }
+        }
+      ]
+    }
+  ]
+}

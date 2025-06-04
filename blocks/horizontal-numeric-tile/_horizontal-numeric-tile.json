@@ -1,0 +1,81 @@
+{
+  "definitions": [
+    {
+      "title": "Horizontal Numeric Tile",
+      "id": "horizontal-numeric-tile",
+      "plugins": {
+        "xwalk": {
+          "page": {
+            "resourceType": "core/franklin/components/block/v1/block",
+            "template": {
+              "name": "Horizontal Numeric Tile",
+              "model": "horizontal-numeric-tile",
+              "filter": "horizontal-numeric-tile"
+            }
+          }
+        }
+      }
+    }
+  ],
+  "filters": [
+    {
+      "id": "horizontal-numeric-tile",
+      "components": ["numeric-tile"]
+    }
+  ],
+  "models": [
+    {
+      "id": "horizontal-numeric-tile",
+      "fields": [
+        {
+          "component": "select",
+          "name": "horizontalTileType",
+          "label": "Variations",
+          "description": "Select between Variation 1 and Variation 2",
+          "value": "variation-1",
+          "options": [
+            {
+              "name": "Variation 1",
+              "value": "variation-1"
+            },
+            {
+              "name": "Variation 2",
+              "value": "variation-2"
+            }
+          ]
+        },
+        {
+          "component": "richtext",
+          "name": "title",
+          "label": "Section Title",
+          "valueType": "string",
+          "description": "Enter the title for the section.",
+          "required": true,
+          "maxLength": "70"
+        },
+        {
+          "component": "richtext",
+          "name": "description",
+          "label": "Section Description",
+          "valueType": "string",
+          "description": "Enter the description for the section"
+        },
+        {
+          "component": "richtext",
+          "name": "footer",
+          "label": "Footer",
+          "valueType": "string",
+          "description": "Enter the footer",
+          "condition": {
+            "===": [
+              {
+                "var": "horizontalTileType"
+              },
+              "variation-2"
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

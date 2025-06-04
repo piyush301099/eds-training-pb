@@ -1,0 +1,46 @@
+{
+  "definitions": [
+    {
+      "title": "Vertical Numeric Tile Item",
+      "id": "vertical-numeric-tile-item",
+      "plugins": {
+        "xwalk": {
+          "page": {
+            "resourceType": "core/franklin/components/block/v1/block/item",
+            "template": {
+              "name": "Vertical Numeric Tile Item",
+              "model": "vertical-numeric-tile-item"
+            }
+          }
+        }
+      }
+    }
+  ],
+  "filters": [],
+  "models": [
+    {
+      "id": "vertical-numeric-tile-item",
+      "fields": [
+        {
+          "component": "text",
+          "name": "red-text",
+          "label": "Red Text",
+          "description": "Enter the value to be displayed on the tile.",
+          "required": true,
+          "valueType": "string",
+          "validation": {
+            "minLength": 1,
+            "maxLength": 4,
+            "customErrorMsg": "Maximum characters length limit should not be more than 4"
+          }
+        },
+        {
+          "component": "richtext",
+          "name": "description",
+          "label": "Description",
+          "description": "Enter the description"
+        }
+      ]
+    }
+  ]
+}

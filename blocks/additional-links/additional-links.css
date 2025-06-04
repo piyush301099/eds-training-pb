@@ -1,0 +1,201 @@
+/* Cleaned up additional-links.css */
+
+/* .additional-links {
+    padding: 144px 100px;
+} */
+
+.additional-links ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* .additional-links .item-list {
+    max-width: 535px;
+} */
+
+.additional-links .span-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: var(--lds-g-spacing-1250);
+}
+
+.additional-links .title-div {
+  color: var(--lds-g-color-neutral-base-100);
+  padding-bottom: var(--lds-g-spacing-375);
+}
+
+.additional-links .link-container {
+  color: var(--lds-g-color-neutral-base-100);
+  border-top: var(--lds-g-sizing-border-2) solid
+    var(--lds-g-color-border-gray-1);
+  font: var(--lds-g-typography-ringside-heading-5-default);
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--lds-g-sizing-border-2);
+}
+
+.additional-links .link-container .headline a {
+  text-decoration: none;
+  color: var(--lds-g-color-neutral-base-100);
+  border-bottom: 1.5px solid transparent;
+  transition: border-color 0.4s ease-out;
+}
+
+.additional-links .link-container:hover .headline a {
+  border-color: var(--lds-g-color-neutral-base-100);
+}
+
+.additional-links .link-container .headline {
+  padding-top: var(--lds-g-spacing-400);
+  padding-bottom: var(--lds-g-spacing-350);
+}
+
+.additional-links .description-div {
+  flex: 0.5;
+  min-width: 400px;
+  color: var(--lds-g-color-neutral-base-100);
+  font: var(--lds-g-typography-ringside-body-large-desktop);
+}
+
+.additional-links .left-span {
+  flex: 1;
+
+  /* width: 422px; */
+}
+
+.additional-links .right-span {
+  padding-top: var(--lds-g-spacing-775);
+  flex: 2;
+
+  /* max-width: 536px; */
+}
+
+.additional-links .headline-container {
+  /* width: 501px; */
+  flex: 1;
+}
+
+.additional-links .icon-container {
+  height: var(--lds-g-spacing-400);
+  width: var(--lds-g-spacing-400);
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  cursor: pointer;
+}
+
+.additional-links .icon-container svg {
+  transition: none;
+}
+
+.additional-links .link-container:hover .icon-container svg {
+  animation: move-right-fade 200ms cubic-bezier(0.08, 0.32, 0.4, 1),
+    come-from-left 200ms cubic-bezier(0.08, 0.32, 0.4, 1);
+  animation-delay: 0s, 200ms;
+  animation-fill-mode: forwards;
+}
+
+.additional-links .link-container:not(:hover) .icon-container svg {
+  animation: move-left-fade 200ms cubic-bezier(0.08, 0.32, 0.4, 1),
+    come-from-right 200ms cubic-bezier(0.08, 0.32, 0.4, 1);
+  animation-delay: 0s, 200ms;
+  animation-fill-mode: forwards;
+}
+
+@keyframes move-right-fade {
+  0% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+}
+
+@keyframes come-from-left {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes move-left-fade {
+  0% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+}
+
+@keyframes come-from-right {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@media (width <= 768px) {
+  /* .additional-links {
+        padding: 24px;
+    } */
+  .additional-links .title-div {
+    font: var(--lds-g-typography-garamond-heading-1-desktop);
+  }
+
+  .additional-links .link-container {
+    max-width: 100%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  /* .additional-links .right-span .headline-container {
+        max-width: 310px;
+    } */
+
+  .additional-links .icon-container {
+    width: var(--lds-g-spacing-300);
+    height: var(--lds-g-spacing-300);
+  }
+
+  .additional-links .icon-container svg {
+    width: var(--lds-g-spacing-300);
+    height: var(--lds-g-spacing-300);
+  }
+
+  .additional-links .item-list {
+    max-width: 100%;
+  }
+
+  .additional-links .span-container {
+    flex-direction: column;
+    gap: var(--lds-g-spacing-300);
+  }
+
+  .additional-links .left-span,
+  .additional-links .right-span {
+    width: 100%;
+  }
+}

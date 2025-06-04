@@ -14,3 +14,15 @@ indices:
       robots:
         select: head > meta[name="robots"]
         value: attribute(el, "content")
+  
+  breadcrumb:
+      include:
+        /**
+      target: /api/breadcrumb.json
+      properties:
+        pageTitle:
+          select: head > meta[property="og:title"]
+          value: attribute(el, "content")
+        url:
+          select: head > meta[property="og:url"]
+          value: attribute(el, "content")

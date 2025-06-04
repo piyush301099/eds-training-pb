@@ -1,0 +1,106 @@
+{
+  "definitions": [
+    {
+      "title": "Column Container",
+      "id": "column-container",
+      "plugins": {
+        "xwalk": {
+          "page": {
+            "resourceType": "core/franklin/components/section/v1/section",
+            "template": {
+              "name": "Column Container",
+              "model": "column-container",
+              "filter": "column-container"
+            }
+          }
+        }
+      }
+    }
+  ],
+  "filters": [
+    {
+      "id": "column-container",
+      "components": [
+        "column-break",
+        "accordion",
+        "additional-links",
+        "cards",
+        "text",
+        "image",
+        "title",
+        "relatedlinks",
+        "enhanced-related-links",
+        "text-component",
+        "spacer-and-divider",
+        "image-block",
+        "executive-grids",
+        "text-callout"
+      ]
+    }
+  ],
+  "models": [
+    {
+      "id": "column-container",
+      "fields": [
+        {
+          "component": "multiselect",
+          "name": "extra-styles",
+          "description": "Select the Extra Styles for columns",
+          "label": "Extra Styles",
+          "valueType": "string",
+          "options": [
+            {
+              "name": "Apply Offset",
+              "value": "offset"
+            },
+            {
+              "name": "Apply Verticle Divider",
+              "value": "dividers"
+            }
+          ]
+        },
+        {
+          "component": "select",
+          "name": "style",
+          "description": "Select styles to decorate columns",
+          "label": "Select Styles for Columns",
+          "valueType": "string",
+          "options": [
+            {
+              "name": "50% - 50%",
+              "value": "two-col-50-50"
+            },
+            {
+              "name": "25% - 75%",
+              "value": "two-col-25-75"
+            },
+            {
+              "name": "75% - 25%",
+              "value": "two-col-75-25"
+            },
+            {
+              "name": "33% - 33% - 33%",
+              "value": "three-col-33-33-33"
+            },
+            {
+              "name": "25% - 25% - 50%",
+              "value": "three-col-25-25-50"
+            },
+            {
+              "name": "25% - 50% - 25%",
+              "value": "three-col-25-50-25"
+            },
+            {
+              "name": "50% - 25% - 25%",
+              "value": "three-col-50-25-25"
+            },
+            {
+              "name": "25% - 25% - 25% - 25%",
+              "value": "four-col-25-25-25-25"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -18,6 +18,15 @@
     "...": "./_section.json#/models"
   },
   {
+    "...": "./_column-container.json#/models"
+  },
+  {
+    "...": "./_tabs-section.json#/models"
+  },
+  {
+    "...": "./_cont-sec-container.json#/models"
+  },
+  {
     "...": "../blocks/*/_*.json#/models"
   }
 ]

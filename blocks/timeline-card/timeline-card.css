@@ -1,0 +1,84 @@
+.parent-container {
+  display: flex;
+  gap: 145px;
+}
+
+.title-container {
+  color: var(--lds-g-color-palette-red-060);
+  font: var(--lds-g-typography-ringside-display-1-desktop);
+  letter-spacing: -5px;
+}
+
+.description-container {
+  color: var(--lds-g-color-neutral-base-100);
+  font: var(--lds-g-typography-ringside-body-large-desktop);
+}
+
+.image-container {
+  display: flex;
+  width: 411px;
+  gap: var(--lds-g-font-list-spacing-3);
+}
+
+.text-container {
+  display: flex;
+  width: 526px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: var(--lds-g-spacing-200);
+  flex-shrink: 0;
+}
+
+.layout-row {
+  flex-direction: row;
+  align-items: center;
+}
+
+.layout-row-reverse {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+
+.layout-column {
+  flex-direction: column;
+  gap: var(--lds-g-spacing-300);
+  align-items: start;
+}
+
+.layout-column .image-container {
+  justify-content: center;
+  width: 100%;
+}
+
+.layout-column .text-container {
+  align-items: start;
+}
+
+@media (width <= 1024px) {
+  .layout-row,
+  .layout-row-reverse,
+  .layout-column,
+  .layout-column .image-container {
+    flex-direction: column;
+    gap: var(--lds-g-spacing-250);
+    align-items: start;
+  }
+
+  .text-container {
+    gap: var(--lds-g-spacing-250);
+    width: auto;
+  }
+
+  .title-container {
+    color: var(--lds-g-color-brand-base-060);
+    font: var(--lds-g-typography-ringside-display-1-default);
+    letter-spacing: var(--lds-g-typography-letter-spacing-minus-12-5);
+  }
+
+  .description-container {
+    color: var(--lds-g-color-neutral-base-100);
+    font: var(--lds-g-typography-ringside-body-large);
+  }
+}

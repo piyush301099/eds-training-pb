@@ -1,0 +1,60 @@
+{
+  "definitions": [
+    {
+      "title": "Tabs",
+      "id": "tabs",
+      "plugins": {
+        "xwalk": {
+          "page": {
+            "resourceType": "core/franklin/components/block/v1/block",
+            "template": {
+              "name": "Tabs",
+              "model": "tabs",
+              "filter": "tabs"
+            }
+          }
+        }
+      }
+    }
+  ],
+  "filters": [
+    {
+      "id": "tabs",
+      "components": ["text-component"]
+    }
+  ],
+  "models": [
+    {
+      "id": "tabs",
+      "fields": [
+        {
+          "component": "text",
+          "name": "text",
+          "required": true,
+          "label": "Tabs Title",
+          "valueType": "string",
+          "multi": true
+        },
+        {
+          "component": "number",
+          "name": "numberOfTabs",
+          "label": "Number of Tabs",
+          "value": 1,
+          "description": "The label shown for this section in the Content Tree",
+          "validation": {
+            "numberMin": 2,
+            "numberMax": 8,
+            "customErrorMsg": "Max fields reached."
+          }
+        },
+        {
+          "component": "text",
+          "name": "dropdownTitle",
+          "label": "Dropdown Title",
+          "description": "Enter the dropdown title",
+          "valueType": "String"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,86 @@
+/* stylelint-disable */
+.two-column-with-image-wrapper {
+  display: flex;
+  justify-content: center;
+  padding: var(--lds-g-spacing-0);
+  margin: var(--lds-g-spacing-0);
+  max-width: unset;
+}
+.two-column-with-image-wrapper p,
+.two-column-with-image-wrapper h1,
+.two-column-with-image-wrapper h2,
+.two-column-with-image-wrapper h3,
+.two-column-with-image-wrapper h4,
+.two-column-with-image-wrapper h5,
+.two-column-with-image-wrapper h6 {
+  margin: var(--lds-g-spacing-0);
+  padding: var(--lds-g-spacing-0);
+}
+.two-column-with-image-wrapper .two-column-container {
+  display: flex;
+  gap: 135px;
+}
+
+.two-column-with-image-wrapper .two-column-content-area {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 533px;
+}
+
+.two-column-with-image-wrapper .two-column-title {
+  margin-bottom: var(--lds-g-spacing-150);
+}
+
+.two-column-with-image-wrapper .two-column-description p {
+  margin: var(--lds-g-spacing-0);
+  margin-bottom: var(--lds-g-spacing-300);
+}
+.two-column-with-image-wrapper .two-column-description ul,
+.two-column-with-image-wrapper .two-column-description ol {
+  list-style-position: inside;
+  margin: var(--lds-g-spacing-0) var(--lds-g-spacing-0) var(--lds-g-spacing-300)
+    var(--lds-g-spacing-150);
+}
+.two-column-with-image-wrapper .two-column-image-area {
+  line-height: var(--lds-g-spacing-0);
+}
+.two-column-with-image-wrapper .two-column-image-area img {
+  max-width: 421px;
+  height: unset;
+  border-radius: var(--lds-g-radius-4);
+}
+
+.two-column-with-image-wrapper .icon-img {
+  width: var(--lds-g-spacing-400);
+  height: var(--lds-g-spacing-400);
+  margin-bottom: var(--lds-g-spacing-300);
+}
+
+.two-column-with-image-wrapper strong {
+  font-weight: var(--lds-g-font-weight-900);
+}
+
+@media screen and (max-width: 1300px) {
+  .two-column-with-image-wrapper .two-column-container {
+    margin: var(--lds-g-spacing-0) var(--lds-g-spacing-200);
+  }
+}
+@media screen and (max-width: 950px) {
+  .two-column-with-image-wrapper .two-column-container {
+    gap: var(--lds-g-spacing-300);
+    flex-direction: column;
+  }
+  .two-column-with-image-wrapper .two-column-content-area {
+    max-width: unset;
+    justify-content: unset;
+    width: 100%;
+  }
+  .two-column-with-image-wrapper .two-column-title {
+    margin-bottom: var(--lds-g-spacing-200);
+  }
+  .two-column-with-image-wrapper .two-column-image-area img {
+    height: unset;
+    width: 100%;
+  }
+}

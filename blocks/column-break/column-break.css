@@ -1,0 +1,158 @@
+/* General wrapper */
+.multi-column-split {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--lds-g-spacing-200);
+  align-items: stretch;
+}
+
+/* Base column styling */
+.column,
+.col-3,
+.col-4,
+.col-6 {
+  box-sizing: border-box;
+  padding: 0;
+  flex-grow: 1;
+  flex-basis: 0;
+  max-width: 100%;
+}
+
+/* Section offset */
+.section.offset {
+  padding: 0 var(--lds-g-spacing-2175) !important;
+}
+
+.multi-column-split.dividers > .col-6 {
+  position: relative;
+}
+
+/* Two-column layouts */
+.multi-column-split.two-col-50-50 > .col-6:nth-child(1),
+.multi-column-split.two-col-50-50 > .col-6:nth-child(2) {
+  flex: 1;
+}
+
+.multi-column-split.two-col-25-75 > .col-6:nth-child(1) {
+  flex: 1;
+}
+
+.multi-column-split.two-col-25-75 > .col-6:nth-child(2) {
+  flex: 3;
+}
+
+.multi-column-split.two-col-75-25 > .col-6:nth-child(1) {
+  flex: 3;
+}
+
+.multi-column-split.two-col-75-25 > .col-6:nth-child(2) {
+  flex: 1;
+}
+
+.multi-column-split.dividers > .col-4 {
+  position: relative;
+}
+
+.multi-column-split.three-col-25-25-50 > .col-4:nth-child(3) {
+  flex: 2;
+}
+
+.multi-column-split.three-col-25-25-50 > .col-4:nth-child(1),
+.multi-column-split.three-col-25-25-50 > .col-4:nth-child(2) {
+  flex: 1;
+}
+
+.multi-column-split.three-col-25-50-25 > .col-4:nth-child(1),
+.multi-column-split.three-col-25-50-25 > .col-4:nth-child(3) {
+  flex: 1;
+}
+
+.multi-column-split.three-col-25-50-25 > .col-4:nth-child(2) {
+  flex: 2;
+}
+
+.multi-column-split.three-col-50-25-25 > .col-4:nth-child(1) {
+  flex: 2;
+}
+
+.multi-column-split.three-col-50-25-25 > .col-4:nth-child(2),
+.multi-column-split.three-col-50-25-25 > .col-4:nth-child(3) {
+  flex: 1;
+}
+
+/* Four-column layout */
+
+/* Dividers */
+
+/* Divider in the middle of the gap using pseudo-element */
+.multi-column-split.dividers > .column:not(:last-child)::after,
+.multi-column-split.dividers > .col-3:not(:last-child)::after,
+.multi-column-split.dividers > .col-4:not(:last-child)::after,
+.multi-column-split.dividers > .col-6:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: calc(-1 * var(--lds-g-spacing-200) / 2 - 1px);
+  width: 2px;
+  height: 100%;
+  background: var(--lds-g-color-palette-stone-030);
+  z-index: 1;
+}
+
+.multi-column-split.dividers {
+  position: relative;
+}
+
+.multi-column-split.dividers > .column {
+  position: relative;
+}
+
+.multi-column-split.dividers > .col-3 {
+  position: relative;
+}
+
+.multi-column-split.four-col-25-25-25-25 > .col-3:nth-child(-n + 4) {
+  flex: 1;
+}
+
+/* Three-column layouts */
+.multi-column-split.three-col-33-33-33 > .col-4:nth-child(-n + 3) {
+  flex: 1;
+}
+
+/* Mobile styles */
+@media (width <= 768px) {
+  .multi-column-split {
+    display: flex;
+    flex-flow: column nowrap !important;
+  }
+
+  .multi-column-split > * {
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
+    width: 100% !important;
+  }
+
+  /* Remove vertical pseudo-element divider and add horizontal border on mobile */
+  .multi-column-split.dividers > .column:not(:last-child)::after,
+  .multi-column-split.dividers > .col-3:not(:last-child)::after,
+  .multi-column-split.dividers > .col-4:not(:last-child)::after,
+  .multi-column-split.dividers > .col-6:not(:last-child)::after {
+    display: none !important;
+  }
+
+  .multi-column-split.dividers > * {
+    border-right: none !important;
+    border-bottom: var(--lds-g-sizing-border-2) solid
+      var(--lds-g-color-palette-stone-030);
+  }
+
+  .multi-column-split.dividers > *:last-child {
+    border-bottom: none !important;
+  }
+
+  /* Optional: reduce padding on small viewports */
+  .section.offset {
+    padding: 0 var(--lds-g-spacing-200) !important;
+  }
+}

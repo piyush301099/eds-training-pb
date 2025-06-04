@@ -1,0 +1,158 @@
+.expanded-access-form .expanded-access-form-message {
+  text-align: center;
+  color: var(--lds-g-color-neutral-base-100);
+}
+
+.expanded-access-form .form-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--lds-g-spacing-300) var(--lds-g-spacing-400);
+}
+
+.expanded-access-form .form-wrapper > :last-child {
+  margin-bottom: var(--lds-g-spacing-500);
+}
+
+.expanded-access-form .form-fields {
+  margin: 0 auto;
+}
+
+.expanded-access-form .form-title {
+  padding-bottom: var(--lds-g-spacing-500);
+  max-width: 636px;
+}
+
+.expanded-access-form .form-description {
+  padding-bottom: var(--lds-g-spacing-1000);
+  max-width: 857px;
+}
+
+.expanded-access-form .form-section {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.expanded-access-form .form-field {
+  flex: 1 1 45%;
+  display: flex;
+  flex-direction: column;
+}
+
+.expanded-access-form .form-alert-banner {
+  width: 100%;
+  background: var(--lds-g-color-error-container-1);
+  color: var(--lds-g-color-on-error-1);
+  padding: var(--lds-g-spacing-200);
+  margin-bottom: var(--lds-g-spacing-200);
+  border-radius: var(--lds-g-sizing-border-4);
+  border: var(--lds-g-sizing-border-1) solid var(--lds-g-color-on-error-1);
+  display: flex;
+  align-items: flex-start;
+  gap: var(--lds-g-spacing-200);
+}
+
+.expanded-access-form .form-guideline {
+  font: var(--lds-g-typography-ringside-special-caption-default);
+  color: #666;
+  margin-top: var(--lds-g-spacing-100);
+  font-style: italic;
+  padding-bottom: var(--lds-g-spacing-100);
+}
+
+.expanded-access-form .form-field label {
+  color: var(--lds-g-color-neutral-base-060);
+  padding-bottom: var(--lds-g-spacing-100);
+}
+
+.expanded-access-form .form-field input {
+  padding: var(--lds-g-spacing-300);
+  border-radius: var(--lds-g-radius-8);
+  border: var(--lds-g-sizing-border-1) solid var(--lds-g-color-neutral-base-050);
+  background: var(--lds-g-color-neutral-base-000);
+}
+
+/* Fixed color for input placeholder */
+.expanded-access-form .form-field input::placeholder {
+  color: var(--lds-g-color-neutral-base-060) !important; /* Replace with desired fixed color */
+
+  opacity: 1;
+}
+
+.expanded-access-form .form-field input:invalid {
+  border-color: var(--lds-g-color-on-error-1);
+}
+
+.expanded-access-form .error-msg {
+  color: var(--lds-g-color-on-error-1);
+  font-size: var(--lds-g-font-size-neg-1);
+  margin-top: var(--lds-g-spacing-050);
+}
+
+.expanded-access-form .disclaimer {
+  width: 100%;
+  padding-bottom: var(--lds-g-spacing-500);
+}
+
+.expanded-access-form .form-captcha {
+  width: 100%;
+  padding-bottom: var(--lds-g-spacing-500);
+}
+
+.expanded-access-form input.success {
+  border-color: var(--lds-g-color-border-success-1); /* green */
+}
+
+.expanded-access-form input.error {
+  border: var(--lds-g-sizing-border-2) solid var(--lds-g-color-on-error-1);
+  border-color: var(--lds-g-color-on-error-1); /* var(--lds-g-color-on-error-1) */
+
+  background-color: var(--lds-g-color-error-container-1);
+}
+
+.expanded-access-form .error-line {
+  display: flex;
+  align-items: center;
+  gap: var(--lds-g-spacing-075);
+  color: var(--lds-g-color-on-error-1);
+  font-size: var(--lds-g-font-size-neg-1);
+  margin-bottom: var(--lds-g-spacing-050);
+}
+
+@media (width <= 768px) {
+  .expanded-access-form .form-title {
+    font: var(--lds-g-typography-ringside-heading-3-default);
+    padding-bottom: var(--lds-g-spacing-200);
+  }
+
+  .expanded-access-form .form-description {
+    padding-bottom: var(--lds-g-spacing-500);
+  }
+
+  .expanded-access-form .form-wrapper {
+    flex-direction: column;
+    gap: var(--lds-g-spacing-300) 0;
+  }
+
+  .expanded-access-form .form-field {
+    flex: 1 1 100%;
+    min-width: 0;
+  }
+
+  .expanded-access-form .form-section {
+    flex-direction: column;
+  }
+
+  .expanded-access-form .form-alert-banner {
+    font-size: var(--lds-g-font-size-base);
+    padding: var(--lds-g-spacing-150);
+  }
+
+  .expanded-access-form .form-captcha {
+    margin-bottom: var(--lds-g-spacing-300);
+  }
+
+  .expanded-access-form .cta-button-filled {
+    font-size: var(--lds-g-font-size-base);
+    width: 100%;
+  }
+}

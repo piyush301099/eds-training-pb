@@ -1,0 +1,122 @@
+/* stylelint-disable */
+.text-component-wrapper {
+  max-width: unset !important;
+  padding: var(--lds-g-spacing-0);
+}
+
+.text-component-wrapper p,
+.text-component-wrapper h1,
+.text-component-wrapper h2,
+.text-component-wrapper h3,
+.text-component-wrapper h4,
+.text-component-wrapper h5,
+.text-component-wrapper h6 {
+  margin: var(--lds-g-spacing-0);
+  padding: var(--lds-g-spacing-0);
+  margin-bottom: var(--lds-g-spacing-300);
+}
+
+.text-component-wrapper .eyebrow-text {
+  color: var(--lds-g-color-neutral-base-100);
+  font: var(--lds-g-typography-ringside-special-eyebrow-normal-desktop);
+  text-transform: uppercase;
+  margin-bottom: var(--lds-g-spacing-600);
+}
+
+.text-component-wrapper .icon-img {
+  width: 64px;
+  height: 64px;
+  margin-bottom: var(--lds-g-spacing-600);
+}
+
+.text-component-wrapper .title {
+  margin-bottom: var(--lds-g-spacing-600);
+  color: var(--lds-g-color-neutral-base-100);
+}
+
+.text-component-wrapper .description {
+  color: var(--lds-g-color-neutral-base-100);
+  margin-bottom: var(--lds-g-spacing-600);
+}
+
+.text-component-wrapper .footnote {
+  color: var(--lds-g-color-neutral-base-060);
+  margin-top: var(--lds-g-spacing-600);
+}
+
+.text-component-wrapper .footnote h1 {
+  color: var(--lds-g-color-neutral-base-060);
+}
+
+.text-component-wrapper .footnote h2 {
+  color: var(--lds-g-color-neutral-base-060);
+}
+
+.text-component-wrapper .footnote h3 {
+  color: var(--lds-g-color-neutral-base-060);
+}
+
+.text-component-wrapper .footnote h4 {
+  color: var(--lds-g-color-neutral-base-060);
+}
+
+.text-component-wrapper .description ul,
+.text-component-wrapper .description ol,
+.text-component-wrapper .footnote ul,
+.text-component-wrapper .footnote ol {
+  list-style-position: outside;
+  margin: var(--lds-g-spacing-0) var(--lds-g-spacing-0) var(--lds-g-spacing-300)
+    var(--lds-g-spacing-150);
+  padding-left: var(--lds-g-spacing-300);
+  display: inline-block;
+}
+
+.text-component-wrapper .footnote p {
+  color: var(--lds-g-color-neutral-base-060);
+}
+
+.text-component-wrapper .cta-button {
+  display: flex;
+}
+
+@media screen and (max-width: 950px) {
+  .text-component-wrapper {
+    padding: var(--lds-g-spacing-0);
+  }
+
+  .text-component-wrapper .eyebrow-text {
+    margin-top: var(--lds-g-spacing-0);
+    margin-bottom: var(--lds-g-spacing-400);
+    font-size: var(--typography-ringside-body-xsmall-font-size);
+    line-height: var(--typography-ringside-body-xxsmall-line-height);
+  }
+
+  .text-component-wrapper .icon-img {
+    margin-bottom: var(--lds-g-spacing-300);
+  }
+
+  .text-component-wrapper .title {
+    margin-bottom: var(--lds-g-spacing-300);
+  }
+
+  .text-component-wrapper .description {
+    margin-bottom: var(--lds-g-spacing-300);
+  }
+
+  .text-component-wrapper .footnote h1 {
+    color: var(--lds-g-color-neutral-base-060);
+  }
+
+  .text-component-wrapper .footnote h2 {
+    color: var(--lds-g-color-neutral-base-060);
+  }
+
+  .text-component-wrapper .footnote h3 {
+    color: var(--lds-g-color-neutral-base-060);
+  }
+
+  .text-component-wrapper .footnote p {
+    font: var(--lds-g-typography-ringside-body-xsmall);
+    color: var(--lds-g-color-neutral-base-060);
+  }
+}
