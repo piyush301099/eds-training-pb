@@ -51,7 +51,8 @@
       "submission-form",
       "news-tile",
       "executive-grids",
-      "csr-form"
+      "csr-form",
+      "demo-component"
     ]
   },
   {
@@ -184,5 +185,9 @@
   {
     "id": "vertical-numeric-tile",
     "components": ["vertical-numeric-tile-item"]
+  },
+  {
+    "id": "demo-component",
+    "components": ["demo-component"]
   }
 ]

@@ -3783,5 +3783,16 @@
         "required": true
       }
     ]
+  },
+  {
+    "id":"demo-component",
+    "fields":[
+      {
+        "component":"text",
+        "name":"text",
+        "label":"Test field",
+        "required":"true"
+      }
+    ]
   }
 ]
