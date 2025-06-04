@@ -1,0 +1,154 @@
+{
+  "definitions": [
+    {
+      "title": "Content Section Container",
+      "id": "cont-sec-container",
+      "plugins": {
+        "xwalk": {
+          "page": {
+            "resourceType": "core/franklin/components/section/v1/section",
+            "template": {
+              "name": "Content Section Container",
+              "model": "cont-sec-container"
+            }
+          }
+        }
+      }
+    }
+  ],
+  "filters": [
+    {
+      "id": "cont-sec-container",
+      "components": [
+        "spacer-and-divider",
+        "text",
+        "image",
+        "button",
+        "title",
+        "hero",
+        "lcdp",
+        "search",
+        "cards",
+        "columns",
+        "fragment",
+        "relatedlinks",
+        "icon-tile",
+        "additional-resource-card",
+        "enhanced-related-links",
+        "text-component",
+        "two-column-with-image",
+        "tabs",
+        "accordion",
+        "additional-links",
+        "promo-banner",
+        "pull-quote",
+        "table",
+        "table-2-columns",
+        "table-3-columns",
+        "table-4-columns",
+        "table-5-columns",
+        "table-6-columns",
+        "vertical-numeric-tile",
+        "image-block",
+        "expanded-access-form",
+        "news-tile",
+        "executive-grids",
+        "timeline"
+      ]
+    }
+  ],
+  "models": [
+    {
+      "id": "cont-sec-container",
+      "fields": [
+        {
+          "component": "select",
+          "name": "backgroundColor",
+          "label": "Background Color",
+          "description": "Select the background color",
+          "required": true,
+          "value": "none",
+          "options": [
+            {
+              "name": "Primary - Red",
+              "value": "primary-red"
+            },
+            {
+              "name": "Secondary - Green",
+              "value": "secondary-green"
+            },
+            {
+              "name": "Tertiary - Blue",
+              "value": "tertiary-blue"
+            },
+            {
+              "name": "Quaternary - Gray",
+              "value": "quaternary-gray"
+            },
+            {
+              "name": "None",
+              "value": "none"
+            }
+          ]
+        },
+        {
+          "component": "select",
+          "name": "additionalPadding",
+          "label": "Additional Padding",
+          "description": "Select the padding for each side so that authors have the ability to specify spacing",
+          "required": true,
+          "value": "none",
+          "options": [
+            {
+              "name": "None",
+              "value": "none"
+            },
+            {
+              "name": "Narrow",
+              "value": "narrow"
+            },
+            {
+              "name": "Wide",
+              "value": "wide"
+            }
+          ]
+        },
+        {
+          "component": "select",
+          "name": "additionalMargins",
+          "label": "Additional Margins",
+          "description": "Select the margins for each side so that authors have the ability to specify spacing",
+          "required": true,
+          "value": "none",
+          "options": [
+            {
+              "name": "None",
+              "value": "none"
+            },
+            {
+              "name": "Narrow",
+              "value": "narrow"
+            },
+            {
+              "name": "Wide",
+              "value": "wide"
+            }
+          ]
+        },
+        {
+          "component": "checkbox-group",
+          "name": "roundedBorders",
+          "label": "Rounded Borders",
+          "valueType": "string",
+          "description": "Select check or unchecked for rounded borders",
+          "options": [
+            {
+              "name": "Rounded Borders",
+              "value": "true"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

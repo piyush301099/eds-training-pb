@@ -1,0 +1,45 @@
+{
+  "definitions": [
+    {
+      "title": "Tabs Section",
+      "id": "tabs-section",
+      "plugins": {
+        "xwalk": {
+          "page": {
+            "resourceType": "core/franklin/components/section/v1/section",
+            "template": {
+              "name": "Tabs Section",
+              "model": "tabs-section",
+              "filter": "tabs-section"
+            }
+          }
+        }
+      }
+    }
+  ],
+  "filters": [
+    {
+      "id": "tabs-section",
+      "components": ["tabs", "image", "text-component"]
+    }
+  ],
+  "models": [
+    {
+      "id": "tabs-section",
+      "fields": [
+        {
+          "component": "number",
+          "name": "numberOfTabs",
+          "label": "Number of Tabs",
+          "value": 1,
+          "description": "The label shown for this section in the Content Tree",
+          "validation": {
+            "numberMin": 2,
+            "numberMax": 8,
+            "customErrorMsg": "You also need 1.21 gigawatts."
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -4,11 +4,19 @@ on: [push]
 jobs:
   build:
     runs-on: ubuntu-latest
+    env:
+      JF_ARTIFACTORY_AUTH: ${{ secrets.JF_ARTIFACTORY_AUTH }}
     steps:
-    - uses: actions/checkout@v4
-    - name: Use Node.js 20
-      uses: actions/setup-node@v4
-      with:
-        node-version: 20
-    - run: npm ci
-    - run: npm run lint
+      - uses: actions/checkout@v4
+      - name: Use Node.js 20
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Setup Biome
+        uses: biomejs/setup-biome@v2
+        with:
+          version: 1.9.4
+      - name: Run Biome
+        run: biome ci
+      - name: Install NPM deps
+        run: npm ci

@@ -1,0 +1,140 @@
+{
+  "definitions": [
+    {
+      "title": "Executive Grid",
+      "id": "executive-grid",
+      "plugins": {
+        "xwalk": {
+          "page": {
+            "resourceType": "core/franklin/components/block/v1/block/item",
+            "template": {
+              "name": "Executive Grid",
+              "model": "executive-grid"
+            }
+          }
+        }
+      }
+    }
+  ],
+  "filters": [],
+  "models": [
+    {
+      "id": "executive-grid",
+      "fields": [
+        {
+          "component": "select",
+          "name": "imagePlacement",
+          "label": "Image Placement",
+          "description": "Select the appropriate image placement option",
+          "required": true,
+          "value": "left",
+          "options": [
+            {
+              "name": "Top",
+              "value": "top"
+            },
+            {
+              "name": "Left",
+              "value": "left"
+            }
+          ]
+        },
+        {
+          "component": "reference",
+          "valueType": "string",
+          "name": "image",
+          "label": "Image",
+          "required": true,
+          "description": "Upload the image"
+        },
+        {
+          "component": "text",
+          "valueType": "string",
+          "name": "imageAlt",
+          "label": "Image Alt Text ",
+          "description": "Pick alt text from AEM DAM with ability to override it"
+        },
+        {
+          "component": "text",
+          "name": "executiveName",
+          "label": "Name",
+          "valueType": "string",
+          "description": "Enter the Executive\u2019s name",
+          "required": true
+        },
+        {
+          "component": "text",
+          "name": "designation",
+          "label": "Designation",
+          "valueType": "string",
+          "description": "Enter the Executive\u2019s Designation",
+          "required": true
+        },
+        {
+          "component": "text",
+          "name": "ctaLabel",
+          "label": "CTA Label",
+          "valueType": "string",
+          "description": "Enter the CTA Label",
+          "required": true
+        },
+        {
+          "component": "aem-content",
+          "name": "ctaLink",
+          "label": "Executive bio Link",
+          "valueType": "string",
+          "description": "Enter the CTA link",
+          "validation": {
+            "rootPath": "content/lilly-com-eds"
+          },
+          "condition": {
+            "!": {
+              "or": [
+                {
+                  "===": [
+                    {
+                      "var": "ctaLabel"
+                    },
+                    ""
+                  ]
+                },
+                {
+                  "===": [
+                    {
+                      "var": "ctaLabel"
+                    },
+                    ""
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        {
+          "component": "select",
+          "name": "targetPath",
+          "label": "Target Path",
+          "description": "Select the target path for the authored CTA URL",
+          "value": "sameTab",
+          "options": [
+            {
+              "name": "Same Tab",
+              "value": "sameTab"
+            },
+            {
+              "name": "New Tab",
+              "value": "newTab"
+            }
+          ]
+        },
+        {
+          "component": "text",
+          "name": "news-tile-aria-label",
+          "label": "ARIA Label",
+          "valueType": "string",
+          "description": "Enter ARIA label to comply ADA"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,5 @@
+/* Forced Overrides */
+.ff-lds,
+.ff-default {
+  font-family: var(--lds-typography-font-family) !important;
+}

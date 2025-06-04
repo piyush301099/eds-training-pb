@@ -1,0 +1,79 @@
+.vertical-numeric-tile {
+  padding: 0 var(--lds-g-spacing-1400) 0 0;
+  margin: auto;
+}
+
+.vertical-numeric-tile .title {
+  font: var(--lds-g-typography-ringside-heading-2-default);
+  letter-spacing: var(--lds-g-typography-letter-spacing-minus-4-half-rem);
+  padding-bottom: var(--lds-g-spacing-800);
+}
+
+.vertical-numeric-tile .item-container {
+  border-top: var(--lds-g-sizing-border-2) solid
+    var(--lds-g-color-neutral-base-020);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.vertical-numeric-tile .text-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--lds-g-spacing-400) 0;
+  gap: var(--lds-g-spacing-200);
+}
+
+.vertical-numeric-tile .content-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: var(--lds-g-spacing-300);
+}
+
+.vertical-numeric-tile .red-text {
+  flex: 0 0 auto;
+  margin-right: var(--lds-g-spacing-200);
+  color: var(--lds-g-color-palette-red-060);
+  font: var(--lds-g-typography-ringside-heading-3-bold);
+  letter-spacing: var(--lds-g-typography-letter-spacing-minus-4-half-rem);
+}
+
+.vertical-numeric-tile .description {
+  flex: 1 1 auto;
+  padding: var(--lds-g-spacing-075) 0;
+}
+
+@media (width <= 768px) {
+  .vertical-numeric-tile {
+    padding: 0;
+  }
+
+  .vertical-numeric-tile .title {
+    font: var(--lds-g-typography-ringside-heading-4-default);
+    padding-bottom: var(--lds-g-spacing-600);
+    letter-spacing: var(--lds-g-typography-letter-spacing-minus-3-half-rem);
+  }
+
+  .vertical-numeric-tile .item-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .vertical-numeric-tile .text-container {
+    flex-direction: row;
+    padding: var(--lds-g-spacing-400) 0;
+    gap: var(--lds-g-spacing-200);
+    align-items: flex-start;
+  }
+
+  .vertical-numeric-tile .description {
+    padding: 0;
+  }
+
+  .vertical-numeric-tile .red-text {
+    font: var(--lds-g-typography-ringside-heading-3-default-bold);
+    letter-spacing: var(--lds-g-typography-letter-spacing-minus-5-third);
+  }
+}

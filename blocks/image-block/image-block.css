@@ -1,0 +1,88 @@
+.image-block-wrapper .image-block-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  gap: 0;
+  border-radius: var(--corner-radius-48px, 48px);
+  justify-content: flex-start;
+}
+
+.image-block-wrapper .image-area {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  align-self: stretch;
+  flex: 1 1 0%;
+}
+
+.image-block-wrapper .image-area img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.image-block-wrapper .image-label {
+  display: flex;
+  align-items: center;
+  align-self: flex-start;
+  gap: 8px;
+  color: var(--lds-g-color-brand-1);
+  font: var(--lds-g-typography-ringside-body-special-large-desktop);
+  padding-bottom: var(--lds-g-spacing-600);
+  margin-top: var(--lds-g-spacing-600);
+  cursor: pointer;
+}
+
+.image-block-wrapper .image-label-icon {
+  display: inline-flex;
+  vertical-align: middle;
+  width: 1.5rem;
+  height: 1.5rem;
+  transition: transform 0.2s;
+}
+
+.image-block-wrapper .image-description {
+  display: flex;
+  padding: var(--lds-g-spacing-300);
+  justify-content: space-between;
+  align-items: flex-start;
+  align-self: stretch;
+  border-radius: 24px;
+  background: var(--lds-g-color-palette-stone-005);
+  color: var(--lds-g-color-neutral-base-100);
+  font: var(--lds-g-typography-ringside-body-large-desktop);
+  margin-top: 8px;
+  padding-bottom: var(--lds-g-spacing-400);
+}
+
+.image-block-wrapper .image-description ol {
+  padding: 0 var(--lds-g-spacing-300);
+}
+
+.image-block-wrapper .image-label-icon.rotated {
+  transform: rotate(180deg);
+}
+
+@media (width <= 768px) {
+  .image-label {
+    color: var(--lds-g-color-palette-red-060);
+    font: var(--lds-g-typography-ringside-special-cta-text-link-default);
+  }
+
+  .accordion .image {
+    max-width: 100%;
+    padding-bottom: var(--lds-g-spacing-300);
+    padding-top: var(--lds-g-spacing-300);
+  }
+
+  .image-block-wrapper .image-label {
+    padding-bottom: var(--lds-g-spacing-300);
+    margin-top: var(--lds-g-spacing-300);
+  }
+}

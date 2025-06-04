@@ -1,11 +1,15 @@
 /* stylelint-disable max-line-length */
+/* stylelint-disable */
 @font-face {
   font-family: roboto-condensed;
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-  src: url('../fonts/roboto-condensed-bold.woff2') format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  src: url("../fonts/roboto-condensed-bold.woff2") format("woff2");
+  unicode-range:
+    U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212,
+    U+2215, U+FEFF, U+FFFD;
 }
 
 @font-face {
@@ -13,8 +17,11 @@
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-  src: url('../fonts/roboto-bold.woff2') format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  src: url("../fonts/roboto-bold.woff2") format("woff2");
+  unicode-range:
+    U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212,
+    U+2215, U+FEFF, U+FFFD;
 }
 
 @font-face {
@@ -22,8 +29,11 @@
   font-style: normal;
   font-weight: 500;
   font-display: swap;
-  src: url('../fonts/roboto-medium.woff2') format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  src: url("../fonts/roboto-medium.woff2") format("woff2");
+  unicode-range:
+    U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212,
+    U+2215, U+FEFF, U+FFFD;
 }
 
 @font-face {
@@ -31,6 +41,316 @@
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url('../fonts/roboto-regular.woff2') format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  src: url("../fonts/roboto-regular.woff2") format("woff2");
+  unicode-range:
+    U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212,
+    U+2215, U+FEFF, U+FFFD;
+}
+
+/* FF-DIN_PRO */
+/* Regular */
+/* Regular */
+@font-face {
+  font-family: "FF-DIN-Pro-Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/FF-DIN-Pro/DINPro.ttf") format("truetype");
+}
+
+/* Bold */
+@font-face {
+  font-family: "FF-DIN-Pro-Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("../fonts/FF-DIN-Pro/DINPro-Bold.ttf") format("truetype");
+}
+
+/* Italic */
+@font-face {
+  font-family: "FF-DIN-Pro-Italic";
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/FF-DIN-Pro/DINPro-Italic.ttf") format("truetype");
+}
+
+/* Bold Italic */
+@font-face {
+  font-family: "FF-DIN-Pro-BoldItalic";
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+  src: url("../fonts/FF-DIN-Pro/DINPro-BoldItalic.ttf") format("truetype");
+}
+
+/* Condensed */
+@font-face {
+  font-family: "FF-DIN-Pro";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("../fonts/FF-DIN-Pro/DINPro-Cond.ttf") format("truetype");
+}
+
+/* Condensed Bold */
+@font-face {
+  font-family: "FF-DIN-Pro";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("../fonts/FF-DIN-Pro/DINPro-CondBold.ttf") format("truetype");
+}
+
+/* Condensed Bold Italic */
+@font-face {
+  font-family: "FF-DIN-Pro";
+  font-style: italic;
+  font-weight: 600;
+  font-display: swap;
+  src: url("../fonts/FF-DIN-Pro/DINPro-CondensedBoldItalic.ttf")
+    format("truetype");
+}
+
+/* ITC-Garamond */
+/* Bold */
+@font-face {
+  font-family: "ITC Garamond Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("../fonts/ITC-Garamond/ITCGaramondStd-Bd.otf") format("truetype");
+}
+
+/* Bold Condensed */
+@font-face {
+  font-family: "ITC Garamond-BdCond";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("../fonts/ITC-Garamond/ITCGaramondStd-BdCond.otf") format("truetype");
+}
+
+/* Bold Condensed Italic */
+@font-face {
+  font-family: "ITC Garamond-BdcondIta";
+  font-style: italic;
+  font-weight: 600;
+  font-display: swap;
+  src: url("../fonts/ITC-Garamond/ITCGaramondStd-BdCondIta.otf")
+    format("truetype");
+}
+
+/* Bold Narrow */
+@font-face {
+  font-family: "ITC Garamond Bold Narrow";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("../fonts/ITC-Garamond/ITCGaramondStd-BdNarrow.otf")
+    format("truetype");
+}
+
+/* Bold Narrow Italic */
+@font-face {
+  font-family: "ITC Garamond Narrow Italics";
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+  src: url("../fonts/ITC-Garamond/ITCGaramondStd-BdNarrowIta.otf")
+    format("truetype");
+}
+
+/* Black */
+@font-face {
+  font-family: "ITC Garamond Black";
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url("../fonts/ITC-Garamond/ITCGaramondStd-Bk.otf") format("truetype");
+}
+
+/* Black Condensed */
+@font-face {
+  font-family: "ITC Garamond Black CD";
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url("../fonts/ITC-Garamond/ITCGaramondStd-BkCond.otf") format("truetype");
+}
+
+/* Black Condensed Italic */
+@font-face {
+  font-family: "ITC Garamond Black CD Italic";
+  font-style: italic;
+  font-weight: 900;
+  font-display: swap;
+  src: url("../fonts/ITC-Garamond/ITCGaramondStd-BkCondIta.otf")
+    format("truetype");
+}
+
+/* Black Narrow */
+@font-face {
+  font-family: "ITC Garamond Black Narrow";
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url("../fonts/ITC-Garamond/ITCGaramondStd-BkNarrow.otf")
+    format("truetype");
+}
+
+/* Black Narrow Italic */
+@font-face {
+  font-family: "ITC Garamond Black Narrow Italics";
+  font-style: italic;
+  font-weight: 800;
+  font-display: swap;
+  src: url("../fonts/ITC-Garamond/ITCGaramondStd-BkNarrowIta.otf")
+    format("truetype");
+}
+
+/* Light */
+@font-face {
+  font-family: "ITC Garamond Light";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("../fonts/ITC-Garamond/ITCGaramondStd-Lt.otf") format("truetype");
+}
+
+/* Light Condensed */
+@font-face {
+  font-family: "ITC Garamond Light Condensed";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/ITC-Garamond/ITCGaramondStd-LtCond.otf") format("truetype");
+}
+
+/* Light Condensed Italic */
+@font-face {
+  font-family: "ITC Garamond Light Condensed Italic";
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/ITC-Garamond/ITCGaramondStd-LtCondIta.otf")
+    format("truetype");
+}
+
+/* ITC Garamond STD Default */
+@font-face {
+  font-family: "ITC Garamond";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("../fonts/ITC-Garamond/ITCGaramondStd-Bk.otf") format("truetype");
+}
+
+/* Light Narrow */
+@font-face {
+  font-family: "ITC Garamond Light Narrow";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("../fonts/ITC-Garamond/ITCGaramondStd-LtNarrow.otf")
+    format("truetype");
+}
+
+/* Light Narrow Italic */
+@font-face {
+  font-family: "ITC Garamond Light Narrow Italics";
+  font-style: italic;
+  font-weight: 300;
+  font-display: swap;
+  src: url("../fonts/ITC-Garamond/ITCGaramondStd-LtNarrowIta.otf")
+    format("truetype");
+}
+
+/* <---------------RINGSIDE FONT--------------> */
+@font-face {
+  font-family: "Ringside Extra Wide";
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url("../fonts/Ringside/RingsideExtraWideBlack_normal_normal.ttf")
+    format("truetype");
+  unicode-range:
+    U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212,
+    U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: "Ringside Extra Wide Normal";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/Ringside/RingsideExtraWideBook_normal_normal.ttf")
+    format("truetype");
+  unicode-range:
+    U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212,
+    U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: "Ringside Narrow";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/Ringside/RingsideNarrowBook_normal_condensed.ttf")
+    format("truetype");
+  unicode-range:
+    U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212,
+    U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: "Ringside";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/Ringside/RingsideRegularBook_normal_normal.ttf")
+    format("truetype");
+  unicode-range:
+    U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212,
+    U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: "ITC Garamond Std";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/ITCGaramond/ITCGaramondBookNarrow_normal_condensed.ttf")
+    format("truetype");
+  unicode-range:
+    U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212,
+    U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: "ITC Garamond Std Italic";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/ITCGaramond/ITCGaramondBookNarrowItalic_italic_condensed.ttf")
+    format("truetype");
+  unicode-range:
+    U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212,
+    U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: "Ringside";
+  src: url("../fonts/Ringside/RingsideRegularBlack_normal_normal.ttf")
+    format("truetype");
+  font-weight: 900;
+  font-style: normal;
 }

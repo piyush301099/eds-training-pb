@@ -1,0 +1,476 @@
+/* stylelint-disable */
+@import url("../../lds/lds.css");
+
+.lds-row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -0.5rem;
+  margin-right: -0.5rem;
+  width: 100%;
+  align-items: stretch; /* Ensures all columns stretch to the row height */
+}
+
+.lds-col {
+  box-sizing: border-box;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: var(--lds-g-spacing-200);
+  align-items: stretch;
+}
+
+.lds-col--12 {
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
+.lds-col--4 {
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .lds-col--4 {
+    flex: 0 0 33.3333%;
+    max-width: 33.3333%;
+  }
+}
+
+.lds-card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  border-radius: 24px;
+  border: 1px solid var(--lds-g-color-neutral-base-020);
+  background: var(--lds-g-color-neutral-base-000);
+  color: var(--lds-g-color-neutral-base-100);
+  margin: 0 0 var(--lds-g-spacing-300);
+
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  height: 100%; /* Make card fill the column height */
+}
+
+.lds-card-title {
+  color: var(--lds-g-color-neutral-base-100);
+
+  font-family: var(--Typography-Font-Family-Ringside, Ringside);
+  font-size: var(--Typography-Ringside-Body-Large-font-size, 20px);
+  font-style: normal;
+  font-weight: 900;
+  line-height: var(--Typography-Ringside-Body-Large-line-height, 30px);
+}
+
+.lds-card__meta-item {
+  align-self: stretch;
+  color: var(--lds-g-color-neutral-base-100);
+
+  font-family: var(--Typography-Font-Family-Ringside, Ringside);
+  font-size: var(--Typography-Ringside-Body-Medium-font-size, 16px);
+  font-style: normal;
+  font-weight: 400;
+  line-height: var(--Typography-Ringside-Body-Medium-line-height, 24px);
+}
+
+.lds-card__body {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+  padding: var(--lds-g-spacing-300);
+  gap: var(--lds-g-spacing-300);
+  height: 100%;
+}
+
+.lds-card__meta {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  flex: 0 0 auto; /* Do not grow, only take up needed space */
+}
+
+.lds-card__footer-link {
+  color: var(--lds-g-color-palette-red-060);
+  text-align: left;
+  font-family: var(--Typography-Font-Family-Ringside, Ringside);
+  font-size: var(--Typography-Ringside-Special-CTA-Text-Link-font-size, 20px);
+  font-style: normal;
+  font-weight: 900;
+  line-height: var(
+    --Typography-Ringside-Special-CTA-Text-Link-line-height,
+    24px
+  );
+  text-decoration-line: none;
+  text-decoration-style: solid;
+  text-decoration-skip-ink: none;
+  text-decoration-thickness: 4%;
+  text-underline-offset: 24%;
+  text-underline-position: from-font;
+  background: none;
+  border: none;
+  margin-top: 24px;
+  margin-top: auto;
+  align-self: flex-start;
+  margin-top: auto !important; /* Push to bottom of .lds-card__body */
+  align-self: flex-start;
+  margin-bottom: 0;
+}
+
+.lds-card__footer-link .lds-icon--chevron-right {
+  font-size: 1.2em;
+  margin-left: 0.25em;
+  vertical-align: middle;
+}
+
+.lds-card__meta {
+  gap: 1rem;
+  font-size: 0.95em;
+  color: var(--lds-g-color-neutral-base-060, #555);
+}
+
+.lds-card__title {
+  color: var(--lds-g-color-neutral-base-100);
+
+  /* Ringside/Body/Large/Bold */
+  font-family: var(--Typography-Font-Family-Ringside, "Ringside");
+  font-size: var(--Typography-Ringside-Body-Large-font-size, 20px);
+  font-style: normal;
+  font-weight: 900;
+  line-height: var(--Typography-Ringside-Body-Large-line-height, 30px); /* 150% */
+}
+
+.page-headline {
+  color: var(--lds-g-color-neutral-base-100);
+
+  /* Garamond/Heading 1/Regular */
+  font-family: var(--Font-Family-serif, "ITC Garamond Std");
+  font-size: var(--Typography-Garamond-Heading-1-font-size, 60px);
+  font-style: normal;
+  font-weight: 400;
+  line-height: var(--Typography-Garamond-Heading-1-line-height, 66px); /* 110% */
+  letter-spacing: -0.6px;
+}
+
+.molecule-group-filters-title {
+  color: var(lds-g-color-neutral-base-100);
+
+  /* Garamond/Heading 1/Regular */
+  font-family: var(--Font-Family-serif, "ITC Garamond Std");
+  font-size: var(--Typography-Garamond-Heading-1-font-size, 60px);
+  font-style: normal;
+  font-weight: 400;
+  line-height: var(--Typography-Garamond-Heading-1-line-height, 66px); /* 110% */
+  letter-spacing: -0.6px;
+
+  margin: var(--lds-g-spacing-1800) 0 var(--lds-g-spacing-900);
+}
+
+.therapeutic-area-pill {
+  display: inline-block;
+  font-size: 0.9rem;
+  padding: 0.3rem 0.6rem;
+  border-radius: 20px;
+  margin-bottom: 0.5rem;
+  text-align: center;
+  width: fit-content;
+}
+
+.therapeutic-area-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.filter-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.filter-pill,
+.therapeutic-area-pill {
+  display: flex;
+  height: 48px;
+  padding: 12px 24px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-radius: 100px;
+  border: none;
+  background: var(--lds-g-color-palette-stone-010);
+}
+
+.filter-pill,
+.therapeutic-area-pill {
+  border-radius: 100px;
+  background: var(--lds-g-color-neutral-base-005);
+}
+
+.lds-pill--cancer {
+  background: var(--lds-g-color-palette-stone-010);
+  border: 1px solid var(--lds-g-color-palette-stone-030);
+}
+
+.lds-pill--cardiometabolic-health {
+  background: var(--lds-g-color-palette-pink-010);
+  border: 1px solid var(--lds-g-color-palette-pink-020);
+}
+
+.lds-pill--immunology {
+  background: var(--lds-g-color-palette-gold-010);
+  border: 1px solid var(--lds-g-color-palette-gold-030);
+}
+
+.lds-pill--neurodegeneration {
+  background: var(--lds-g-color-palette-orange-020);
+  border: 1px solid var(--lds-g-color-palette-orange-030);
+}
+
+.lds-pill--pain {
+  background: var(--lds-g-color-palette-green-010);
+  border: 1px solid var(--lds-g-color-palette-green-030);
+}
+
+.lds-card.expanded .lds-pill {
+  color: var(--lds-g-color-neutral-base-000);
+  border: none;
+}
+.lds-card.expanded .lds-pill--cancer {
+  background: var(--lds-g-color-palette-stone-060);
+}
+.lds-card.expanded .lds-pill--cardiometabolic-health {
+  background: var(--lds-g-color-palette-pink-060);
+}
+.lds-card.expanded .lds-pill--immunology {
+  background: var(--lds-g-color-palette-gold-050);
+}
+.lds-card.expanded .lds-pill--neurodegeneration {
+  background: var(--lds-g-color-palette-orange-050);
+}
+.lds-card.expanded .lds-pill--pain {
+  background: var(--lds-g-color-palette-green-060);
+}
+
+.filter-pill,
+.therapeutic-area-pill {
+  border: none;
+}
+
+.lds-card__body .lds-pill {
+  display: flex;
+  padding: 0.25rem 0.5rem;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  width: fit-content;
+  border-radius: 100px;
+  border: none;
+
+  color: var(lds-g-color-neutral-base-100);
+
+  /* Ringside/Body/Medium/Regular */
+  font-family: var(--Typography-Font-Family-Ringside, Ringside);
+  font-size: var(--Typography-Ringside-Body-Medium-font-size, 16px);
+  font-style: normal;
+  font-weight: 400;
+  line-height: var(--Typography-Ringside-Body-Medium-line-height, 24px); /* 150% */
+}
+
+.lds-card__details {
+  border-radius: 24px;
+  background: var(--lds-card-area-color, #f7f7f7);
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.04);
+  overflow: hidden;
+
+  transition: none;
+  will-change: auto;
+  pointer-events: none;
+  margin-left: 0;
+  margin-right: 0;
+
+  transition: height 0.5s ease, opacity 0.5s ease;
+  height: 0;
+  opacity: 0;
+}
+
+.lds-card__details.open {
+  height: 100%;
+  opacity: 1;
+  padding: 1rem;
+  pointer-events: auto;
+  margin: 0 0 var(--lds-g-spacing-300);
+
+  display: flex;
+  padding: var(--lds-g-spacing-500) var(--lds-g-spacing-300)
+    var(--lds-g-spacing-1000);
+  flex-direction: column;
+  align-items: flex-end;
+  gap: var(--lds-g-spacing-300);
+  align-self: stretch;
+}
+
+.lds-card__details.lds-pill--cancer {
+  background: var(--lds-g-color-palette-stone-010);
+  border: 1px solid var(--lds-g-color-palette-stone-030);
+}
+.lds-card__details.lds-pill--cardiometabolic-health {
+  background: var(--lds-g-color-palette-pink-010);
+  border: 1px solid var(--lds-g-color-palette-pink-020);
+}
+.lds-card__details.lds-pill--immunology {
+  background: var(--lds-g-color-palette-gold-010);
+  border: 1px solid var(--lds-g-color-palette-gold-030);
+}
+.lds-card__details.lds-pill--neurodegeneration {
+  background: var(--lds-g-color-palette-orange-020);
+  border: 1px solid var(--lds-g-color-palette-orange-030);
+}
+.lds-card__details.lds-pill--pain {
+  background: var(--lds-g-color-palette-green-010);
+  border: 1px solid var(--lds-g-color-palette-green-030);
+}
+
+.lds-card__details-body {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 1.5rem;
+  align-items: flex-start;
+}
+
+.lds-card__details-news a {
+  color: var(--lds-g-color-palette-red-060);
+}
+
+.lds-card__details-col--left {
+  font-size: 1.1em;
+  font-weight: 600;
+  color: var(--lds-g-color-neutral-base-100, #222);
+  word-break: break-word;
+}
+
+.lds-card__details-molecule-name {
+  color: var(--lds-g-color-neutral-base-100);
+
+  /* Ringside/Body/Large/Bold */
+  font-family: var(--Typography-Font-Family-Ringside, "Ringside");
+  font-size: var(--Typography-Ringside-Body-Large-font-size, 20px);
+  font-style: normal;
+  font-weight: 900;
+  line-height: var(--Typography-Ringside-Body-Large-line-height, 30px); /* 150% */
+}
+
+.lds-card__details-col--right {
+  font-size: 1em;
+  color: var(--lds-g-color-neutral-base-100, #222);
+}
+
+@media (max-width: 700px) {
+  .lds-card__details-body {
+    grid-template-columns: 1fr;
+  }
+
+  .lds-card__details-col--left {
+    margin-bottom: 1rem;
+  }
+}
+
+.lds-card__details-news ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.lds-card__details-news-type,
+.lds-card__details-news-date {
+  color: var(--lds-g-color-neutral-base-100);
+
+  /* Ringside/Body/Small/Bold */
+  font-family: var(--Typography-Font-Family-Ringside, Ringside);
+  font-size: var(--lds-g-typography-ringside-body-small-font-size);
+  font-style: normal;
+  font-weight: 900;
+  line-height: var(--Typography-Ringside-Body-Small-line-height, 20px); /* 142.857% */
+  display: inline-block;
+  padding: 0 0 var(--lds-g-spacing-150);
+}
+
+.lds-card__details-news li {
+  margin: var(--lds-g-spacing-300) 0 0;
+}
+
+.news-date-range {
+  color: var(--lds-g-color-neutral-base-100);
+
+  /* Ringside/Body/Medium/Regular */
+  font-family: var(--Typography-Font-Family-Ringside, "Ringside");
+  font-size: var(--Typography-Ringside-Body-Medium-font-size, 16px);
+  font-style: normal;
+  font-weight: 400;
+  line-height: var(--Typography-Ringside-Body-Medium-line-height, 24px); /* 150% */
+
+  margin-top: var(--lds-g-spacing-500);
+}
+
+.therapeutic-area-title,
+.type-and-modality-title {
+  color: var(--lds-g-color-neutral-base-100);
+
+  /* Ringside/Special/Eyebrow-Pill Label */
+  font-family: var(
+    --Typography-Font-Family-Ringside-Extra-Wide,
+    "Ringside Extra Wide"
+  );
+  font-size: var(--Typography-Ringside-Special-Eyebrow-font-size, 14px);
+  font-style: normal;
+  font-weight: 400;
+  line-height: var(--Typography-Ringside-Special-Eyebrow-line-height, 18px); /* 128.571% */
+  text-transform: uppercase;
+  margin: var(--lds-g-spacing-300) 0 20px;
+}
+
+.pipeline-legend {
+  margin: var(--lds-g-spacing-1000) 0 var(--lds-g-spacing-400);
+}
+
+.legend-item {
+  display: inline-flex;
+  align-items: center;
+  color: var(--lds-g-color-neutral-base-100);
+
+  /* Ringside/Body/Medium/Regular */
+  font-family: var(--Typography-Font-Family-Ringside, Ringside);
+  font-size: var(--Typography-Ringside-Body-Medium-font-size, 16px);
+  font-style: normal;
+  font-weight: 400;
+  line-height: var(--Typography-Ringside-Body-Medium-line-height, 24px); /* 150% */
+}
+
+.legend-icon:not(:first-child),
+.regulatory_approval_achieved:not(:first-child),
+.milestone_achieved:not(:first-child),
+.new_to_pipeline:not(:first-child) {
+  margin-left: var(--lds-g-spacing-300);
+}
+
+.pipeline-phase-section {
+  display: flex;
+  padding: var(--lds-g-spacing-900) 0;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--lds-g-spacing-0);
+  align-self: stretch;
+}
+
+.pipeline-phase-section h3 {
+  color: var(--lds-g-color-neutral-base-100);
+
+  /* Garamond/Heading 2/Regular */
+  font-family: var(--Font-Family-serif, "ITC Garamond Std");
+  font-size: var(--Typography-Garamond-Heading-2-font-size, 48px);
+  font-style: normal;
+  font-weight: 400;
+  line-height: var(--Typography-Garamond-Heading-2-line-height, 52px); /* 108.333% */
+  letter-spacing: -0.48px;
+  margin: 0 0 var(--lds-g-spacing-500);
+}

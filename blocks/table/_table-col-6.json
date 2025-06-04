@@ -1,0 +1,69 @@
+{
+  "definitions": [
+    {
+      "title": "Row",
+      "id": "table-col-6",
+      "plugins": {
+        "xwalk": {
+          "page": {
+            "resourceType": "core/franklin/components/block/v1/block/item",
+            "template": {
+              "name": "Row",
+              "model": "table-col-6",
+              "column1text": "Column1 Description",
+              "column2text": "Column2 Description",
+              "column3text": "Column3 Description",
+              "column4text": "Column4 Description",
+              "column5text": "Column5 Description",
+              "column6text": "Column6 Description"
+            }
+          }
+        }
+      }
+    }
+  ],
+  "filters": [],
+  "models": [
+    {
+      "id": "table-col-6",
+      "fields": [
+        {
+          "component": "richtext",
+          "valueType": "string",
+          "name": "column1text",
+          "label": "Column1 Description"
+        },
+        {
+          "component": "richtext",
+          "valueType": "string",
+          "name": "column2text",
+          "label": "Column2 Description"
+        },
+        {
+          "component": "richtext",
+          "valueType": "string",
+          "name": "column3text",
+          "label": "Column3 Description"
+        },
+        {
+          "component": "richtext",
+          "valueType": "string",
+          "name": "column4text",
+          "label": "Column4 Description"
+        },
+        {
+          "component": "richtext",
+          "valueType": "string",
+          "name": "column5text",
+          "label": "Column5 Description"
+        },
+        {
+          "component": "richtext",
+          "valueType": "string",
+          "name": "column6text",
+          "label": "Column6 Description"
+        }
+      ]
+    }
+  ]
+}

@@ -9,6 +9,9 @@
  * OF ANY KIND, either express or implied. See the License for the specific language
  * governing permissions and limitations under the License.
  */
+import decorateRteText from '../utils/rteText.js';
+
+import createBreadcrumbs from '../utils/breadcrumb.js';
 
 /* eslint-env browser */
 function sampleRUM(checkpoint, data) {
@@ -16,12 +19,12 @@ function sampleRUM(checkpoint, data) {
   const timeShift = () => (window.performance ? window.performance.now() : Date.now() - window.hlx.rum.firstReadTime);
   try {
     window.hlx = window.hlx || {};
+    sampleRUM.enhance = () => {};
     if (!window.hlx.rum) {
-      sampleRUM.enhance = () => {};
       const param = new URLSearchParams(window.location.search).get('rum');
-      const weight = (param === 'on' && 1)
-        || (window.SAMPLE_PAGEVIEWS_AT_RATE === 'high' && 10)
+      const weight = (window.SAMPLE_PAGEVIEWS_AT_RATE === 'high' && 10)
         || (window.SAMPLE_PAGEVIEWS_AT_RATE === 'low' && 1000)
+        || (param === 'on' && 1)
         || 100;
       const id = Math.random().toString(36).slice(-4);
       const isSelected = param !== 'off' && Math.random() * weight < 1;
@@ -377,13 +380,25 @@ function wrapTextNodes(block) {
       // move the instrumentation from the cell to the new paragraph, also keep the class
       // in case the content is a buttton and the cell the button-container
       .filter(({ nodeName }) => nodeName === 'class'
-        || nodeName.startsWith('data-aue')
-        || nodeName.startsWith('data-richtext'))
+        || nodeName.startsWith('data-aue'))
       .forEach(({ nodeName, nodeValue }) => {
         wrapper.setAttribute(nodeName, nodeValue);
         el.removeAttribute(nodeName);
       });
     el.append(wrapper);
+
+    const rteWrapper = document.createElement('p');
+    rteWrapper.append(...el.childNodes);
+    [...el.attributes]
+      // move the instrumentation from the cell to the new paragraph, also keep the class
+      // in case the content is a buttton and the cell the button-container
+      .filter(({ nodeName }) => nodeName.startsWith('data-richtext'))
+      .forEach(({ nodeName, nodeValue }) => {
+        rteWrapper.setAttribute(nodeName, nodeValue);
+        el.removeAttribute(nodeName);
+      });
+    const decoratedRte = decorateRteText(rteWrapper);
+    el.append(decoratedRte);
   };
 
   block.querySelectorAll(':scope > div > div').forEach((blockColumn) => {
@@ -511,7 +526,59 @@ function decorateSections(main) {
       });
       sectionMeta.parentNode.remove();
     }
+
+    const {
+      backgroundcolor, additionalpadding, additionalmargins, roundedborders,
+    } = section.dataset;
+
+    const classes = [
+      backgroundcolor && `lds-content-section-${backgroundcolor.trim().toLowerCase()}`,
+      additionalpadding === 'narrow' && 'lds-content-section-padding-narrow',
+      additionalpadding === 'wide' && 'lds-content-section-padding-wide',
+      additionalmargins === 'narrow' && 'lds-content-section-margin-narrow',
+      additionalmargins === 'wide' && 'lds-content-section-margin-wide',
+      roundedborders === 'true' && 'lds-content-section-rounded-borders',
+    ].filter(Boolean);
+
+    section.classList.add(...classes);
   });
+}
+
+/**
+ * Gets placeholders object.
+ * @param {string} [prefix] Location of placeholders
+ * @returns {object} Window placeholders object
+ */
+// eslint-disable-next-line import/prefer-default-export
+async function fetchPlaceholders(prefix = 'default') {
+  window.placeholders = window.placeholders || {};
+  if (!window.placeholders[prefix]) {
+    window.placeholders[prefix] = new Promise((resolve) => {
+      fetch(`${prefix === 'default' ? '' : prefix}/placeholders.json`)
+        .then((resp) => {
+          if (resp.ok) {
+            return resp.json();
+          }
+          return {};
+        })
+        .then((json) => {
+          const placeholders = {};
+          json.data
+            .filter((placeholder) => placeholder.Key)
+            .forEach((placeholder) => {
+              placeholders[toCamelCase(placeholder.Key)] = placeholder.Text;
+            });
+          window.placeholders[prefix] = placeholders;
+          resolve(window.placeholders[prefix]);
+        })
+        .catch(() => {
+          // error loading placeholders
+          window.placeholders[prefix] = {};
+          resolve(window.placeholders[prefix]);
+        });
+    });
+  }
+  return window.placeholders[`${prefix}`];
 }
 
 /**
@@ -595,6 +662,7 @@ function decorateBlock(block) {
     wrapTextNodes(block);
     const blockWrapper = block.parentElement;
     blockWrapper.classList.add(`${shortBlockName}-wrapper`);
+    blockWrapper.classList.add('lds-max-width');
     const section = block.closest('.section');
     if (section) section.classList.add(`${shortBlockName}-container`);
     // eslint-disable-next-line no-use-before-define
@@ -679,6 +747,12 @@ async function loadSection(section, loadCallback) {
 async function loadSections(element) {
   const sections = [...element.querySelectorAll('div.section')];
   for (let i = 0; i < sections.length; i += 1) {
+    if (i === 0) {
+      // eslint-disable-next-line no-await-in-loop
+      await loadSection(sections[i]);
+      const firstBlock = sections[i].querySelector('div.block');
+      createBreadcrumbs(firstBlock);
+    }
     // eslint-disable-next-line no-await-in-loop
     await loadSection(sections[i]);
     if (i === 0 && sampleRUM.enhance) {
@@ -696,8 +770,10 @@ export {
   decorateBlocks,
   decorateButtons,
   decorateIcons,
+  decorateIcon,
   decorateSections,
   decorateTemplateAndTheme,
+  fetchPlaceholders,
   getMetadata,
   loadBlock,
   loadCSS,

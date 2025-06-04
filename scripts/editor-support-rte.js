@@ -5,6 +5,7 @@
 // group editable texts in single wrappers if applicable.
 // this script should execute after script.js but before the the universal editor cors script
 // and any block being loaded
+import decorateRteText from '../utils/rteText.js';
 
 export function decorateRichtext(container = document) {
   function deleteInstrumentation(element) {
@@ -51,10 +52,11 @@ export function decorateRichtext(container = document) {
         + 'the first paragraph', orphanElements);
       orphanElements.forEach((orphanElement) => deleteInstrumentation(orphanElement));
     } else {
-      const group = document.createElement('div');
+      let group = document.createElement('div');
       if (richtextResource) {
         group.dataset.aueResource = richtextResource;
         group.dataset.aueBehavior = 'component';
+        group = decorateRteText(group);
       }
       if (richtextProp) group.dataset.aueProp = richtextProp;
       if (richtextLabel) group.dataset.aueLabel = richtextLabel;
@@ -62,6 +64,11 @@ export function decorateRichtext(container = document) {
       group.dataset.aueType = 'richtext';
       element.replaceWith(group);
       group.append(element, ...siblings);
+
+      // changing font size of bold text
+      group.querySelectorAll('strong').forEach((boldText) => {
+        boldText.classList.add('fw-900');
+      });
     }
   }
 }

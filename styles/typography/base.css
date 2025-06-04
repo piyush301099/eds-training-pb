@@ -1,0 +1,93 @@
+:root {
+  /* ITC Garamond STD font family tokens */
+  --typography-font-family-garamond-std: "ITC Garamond Std", serif;
+  --typography-font-family-garamond-std-italic: "ITC Garamond Std Italic", serif;
+  --typography-font-family-garamond-std-bold: "ITC Garamond Bold", serif;
+  --typography-font-family-garamond-std-bold-condensed: "ITC Garamond-BdCond",
+    serif;
+  --typography-font-family-garamond-std-bold-condensed-italic: "ITC Garamond-BdcondIta",
+    serif;
+  --typography-font-family-garamond-std-bold-narrow: "ITC Garamond Bold Narrow",
+    serif;
+  --typography-font-family-garamond-std-bold-narrow-italic: "ITC Garamond Narrow Italics",
+    serif;
+  --typography-font-family-garamond-std-black: "ITC Garamond Black", serif;
+  --typography-font-family-garamond-std-black-condensed: "ITC Garamond Black CD",
+    serif;
+  --typography-font-family-garamond-std-black-condensed-italic: "ITC Garamond Black CD Italic",
+    serif;
+  --typography-font-family-garamond-std-black-narrow: "ITC Garamond Black Narrow",
+    serif;
+  --typography-font-family-garamond-std-black-narrow-italic: "ITC Garamond Black Narrow Italics",
+    serif;
+  --typography-font-family-garamond-std-light: "ITC Garamond Light", serif;
+  --typography-font-family-garamond-std-light-condensed: "ITC Garamond Light Condensed",
+    serif;
+  --typography-font-family-garamond-std-light-condensed-italic: "ITC Garamond Light Condensed Italic",
+    serif;
+  --typography-font-family-garamond-std-light-narrow: "ITC Garamond Light Narrow",
+    serif;
+  --typography-font-family-garamond-std-light-narrow-italic: "ITC Garamond Light Narrow Italics",
+    serif;
+  /* Add more if needed for other weights/styles */
+
+  /* Font families */
+  --typography-font-family-ringside-extra-wide: "Ringside Extra Wide",
+    sans-serif; /* Ringside Extra Wide font */
+  --typography-font-family-ringside: "Ringside", sans-serif; /* Ringside font */
+  --typography-font-family-ringside-narrow: "Ringside Narrow", sans-serif; /* Ringside font */
+  --typography-font-family-garamond: "ITC Garamond Std"; /* Garamond font */
+  --typography-font-family-garamond-italic: "ITC Garamond Std Italic"; /* Garamond Italic font */
+
+  /* Font sizes for Ringside */
+  --typography-ringside-display-1-font-size: 100px; /* Display 1 font size */
+  --typography-ringside-display-2-font-size: 60px; /* Display 2 font size */
+  --typography-ringside-heading-1-font-size: 60px; /* Heading 1 font size */
+  --typography-ringside-heading-2-font-size: 48px; /* Heading 2 font size */
+  --typography-ringside-heading-3-font-size: 36px; /* Heading 3 font size */
+  --typography-ringside-heading-4-font-size: 32px; /* Heading 4 font size */
+  --typography-ringside-heading-5-font-size: 28px; /* Heading 5 font size */
+  --typography-ringside-heading-6-font-size: 24px; /* Heading 6 font size */
+  --typography-ringside-body-large-font-size: 20px; /* Body large font size */
+  --typography-ringside-body-medium-font-size: 16px; /* Body medium font size */
+  --typography-ringside-body-small-font-size: 14px; /* Body small font size */
+  --typography-ringside-body-xsmall-font-size: 12px; /* Body xsmall font size */
+
+  /* Font sizes for Garamond */
+  --typography-garamond-display-1-font-size: 100px; /* Display 1 font size */
+  --typography-garamond-heading-1-font-size: 60px; /* Heading 1 font size */
+  --typography-garamond-heading-2-font-size: 48px; /* Heading 2 font size */
+  --typography-garamond-heading-3-font-size: 36px; /* Heading 3 font size */
+  --typography-garamond-heading-4-font-size: 32px; /* Heading 4 font size */
+  --typography-garamond-heading-5-font-size: 28px; /* Heading 5 font size */
+  --typography-garamond-heading-6-font-size: 24px; /* Heading 6 font size */
+  --typography-garamond-body-large-font-size: 20px; /* Body large font size */
+  --typography-garamond-body-medium-font-size: 18px; /* Body medium font size */
+
+  /* Line heights for Ringside */
+  --typography-ringside-display-1-line-height: 100px; /* Display 1 line height */
+  --typography-ringside-display-2-line-height: 66px; /* Display 2 line height */
+  --typography-ringside-heading-1-line-height: 66px; /* Heading 1 line height */
+  --typography-ringside-heading-2-line-height: 58px; /* Heading 2 line height */
+  --typography-ringside-heading-3-line-height: 44px; /* Heading 3 line height */
+  --typography-ringside-heading-4-line-height: 38px; /* Heading 4 line height */
+  --typography-ringside-heading-5-line-height: 36px; /* Heading 5 line height */
+  --typography-ringside-heading-5-1-line-height: 34px; /* Heading 5 line height */
+  --typography-ringside-heading-6-line-height: 32px; /* Heading 6 line height */
+  --typography-ringside-body-large-line-height: 30px; /* Body large line height */
+  --typography-ringside-body-medium-line-height: 24px; /* Body medium line height */
+  --typography-ringside-body-small-line-height: 20px; /* Body small line height */
+  --typography-ringside-body-xsmall-line-height: 18px; /* Body xsmall line height */
+  --typography-ringside-body-xxsmall-line-height: 16px; /* Body xsmall line height */
+
+  /* Line heights for Garamond */
+  --typography-garamond-display-1-line-height: 100px; /* Display 1 line height */
+  --typography-garamond-heading-1-line-height: 66px; /* Heading 1 line height */
+  --typography-garamond-heading-2-line-height: 52px; /* Heading 2 line height */
+  --typography-garamond-heading-3-line-height: 44px; /* Heading 3 line height */
+  --typography-garamond-heading-4-line-height: 38px; /* Heading 4 line height */
+  --typography-garamond-heading-5-line-height: 36px; /* Heading 5 line height */
+  --typography-garamond-heading-6-line-height: 32px; /* Heading 6 line height */
+  --typography-garamond-body-large-line-height: 30px; /* Body large line height */
+  --typography-garamond-body-medium-line-height: 28px; /* Body medium line height */
+}

@@ -16,6 +16,7 @@
       }
     }
   ],
+  "filters": [],
   "models": [
     {
       "id": "fragment",
@@ -27,6 +28,5 @@
         }
       ]
     }
-  ],
-  "filters": []
+  ]
 }

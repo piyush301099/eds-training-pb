@@ -1,0 +1,368 @@
+.lds-text-display {
+  color: var(--lds-typography-display-color);
+  font-size: var(--lds-typography-display-font-size);
+  font-weight: var(--lds-typography-display-font-weight);
+  line-height: var(--lds-typography-display-line-height);
+}
+
+.lds-text-extra-large,
+.lds-text-xl,
+.lds-text-action {
+  color: var(--lds-typography-action-color);
+  font-size: var(--lds-typography-action-font-size);
+  font-weight: var(--lds-typography-action-font-weight);
+  line-height: var(--lds-typography-action-line-height);
+}
+
+.lds-text-large,
+.lds-text-lg,
+.lds-text-default {
+  color: var(--lds-typography-large-color);
+  font-size: var(--lds-typography-large-font-size);
+  font-weight: var(--lds-typography-large-font-weight);
+  line-height: var(--lds-typography-large-line-height);
+}
+
+.lds-text-medium,
+.lds-text-md {
+  color: var(--lds-typography-medium-color);
+  font-size: var(--lds-typography-medium-font-size);
+  font-weight: var(--lds-typography-medium-font-weight);
+  line-height: var(--lds-typography-medium-line-height);
+}
+
+.lds-text-small,
+.lds-text-sm,
+.caption {
+  color: var(--lds-typography-small-color);
+  font-size: var(--lds-typography-small-font-size);
+  font-weight: var(--lds-typography-small-font-weight);
+  line-height: var(--lds-typography-small-line-height);
+}
+
+/* Desktop Transformations */
+@media (min-width: 768px) {
+  .lds-text-display {
+    font-size: var(--lds-typography-display-rwd-font-size);
+    font-weight: var(--lds-typography-display-rwd-font-weight);
+    line-height: var(--lds-typography-display-rwd-line-height);
+  }
+
+  .lds-text-extra-large,
+  .lds-text-xl,
+  .lds-text-action {
+    font-size: var(--lds-typography-action-rwd-font-size);
+    font-weight: var(--lds-typography-action-rwd-font-weight);
+    line-height: var(--lds-typography-action-rwd-line-height);
+  }
+
+  .lds-text-large,
+  .lds-text-lg,
+  .lds-text-default {
+    font-size: var(--lds-typography-large-rwd-font-size);
+    font-weight: var(--lds-typography-large-rwd-font-weight);
+    line-height: var(--lds-typography-large-rwd-line-height);
+  }
+
+  .lds-text-medium,
+  .lds-text-md {
+    font-size: var(--lds-typography-medium-rwd-font-size);
+    font-weight: var(--lds-typography-medium-rwd-font-weight);
+    line-height: var(--lds-typography-medium-rwd-line-height);
+  }
+
+  .lds-text-small,
+  .lds-text-sm,
+  .lds-caption,
+  .caption {
+    font-size: var(--lds-typography-small-rwd-font-size);
+    font-weight: var(--lds-typography-small-rwd-font-weight);
+    line-height: var(--lds-typography-small-rwd-line-height);
+  }
+}
+
+/* New Styles - LDS 3.0 */
+/* Extra Large Display Style */
+.lds-ringside-display-extra-large {
+  color: var(--lds-g-color-neutral-base-100);
+  /* Ringside/Display 1 */
+  font: var(--lds-g-typography-ringside-display-1-default);
+  letter-spacing: var(--lds-g-typography-ringside-display-1-letter-spacing);
+}
+
+/* Extra Display Style */
+.lds-ringside-display-extra {
+  color: var(--lds-g-color-neutral-base-100);
+  /* Ringside/Display 2 */
+  font: var(--lds-g-typography-ringside-display-2-default);
+  letter-spacing: var(--lds-g-typography-ringside-display-2-letter-spacing);
+}
+
+/* Heading Styles */
+.lds-ringside-heading-1 {
+  color: var(--lds-g-color-neutral-base-100);
+  /* Ringside/Heading 1 */
+  font: var(--lds-g-typography-ringside-heading-1-default);
+  letter-spacing: var(--lds-g-typography-ringside-heading-1-letter-spacing);
+}
+
+.lds-ringside-heading-2 {
+  color: var(--lds-g-color-neutral-base-100);
+  /* Ringside/Heading 2 */
+  font: var(--lds-g-typography-ringside-heading-2-default);
+  letter-spacing: var(--lds-g-typography-ringside-heading-2-letter-spacing);
+}
+
+.lds-ringside-heading-3 {
+  color: var(--lds-g-color-neutral-base-100);
+  /* Ringside/Heading 3 */
+  font: var(--lds-g-typography-ringside-heading-3-default);
+  letter-spacing: var(--lds-g-typography-ringside-heading-3-letter-spacing);
+}
+
+.lds-ringside-heading-3-desktop {
+  color: var(--lds-g-color-neutral-base-100);
+  /* Ringside/Heading 3 */
+  font: var(--lds-g-typography-ringside-heading-3-desktop);
+  letter-spacing: var(--lds-g-typography-ringside-heading-3-letter-spacing);
+}
+
+.lds-ringside-heading-4 {
+  color: var(--lds-g-color-neutral-base-100);
+  /* Ringside/Heading 4 */
+  font: var(--lds-g-typography-ringside-heading-4-default);
+  letter-spacing: var(--lds-g-typography-ringside-heading-4-letter-spacing);
+}
+
+.lds-ringside-heading-5 {
+  color: var(--lds-g-color-neutral-base-100);
+  /* Ringside/Heading 5 */
+  font: var(--lds-g-typography-ringside-heading-5-default);
+}
+
+.lds-ringside-heading-6 {
+  color: var(--lds-g-color-neutral-base-100);
+  /* Ringside/Heading 6 */
+  font: var(--lds-g-typography-ringside-heading-6-default);
+}
+
+/* Body Text Styles */
+.lds-ringside-body-large {
+  color: var(--lds-g-color-neutral-base-100);
+  /* Ringside/Body Large */
+  font: var(--lds-g-typography-ringside-body-large);
+}
+
+.lds-ringside-body-medium {
+  color: var(--lds-g-color-neutral-base-100);
+  /* Ringside/Body Medium */
+  font: var(--lds-g-typography-ringside-body-medium);
+}
+
+.lds-ringside-body-small {
+  color: var(--lds-g-color-neutral-base-100);
+  /* Ringside/Body Small */
+  font: var(--lds-g-typography-ringside-body-small);
+}
+
+/* CTA Styles */
+.lds-ringside-cta-button {
+  color: var(--lds-g-color-neutral-base-100);
+  /* Ringside/CTA Button */
+  font: var(--lds-g-typography-ringside-special-cta-button-default);
+}
+
+.lds-ringside-cta-text-link {
+  color: var(--lds-g-color-neutral-base-100);
+  /* Ringside/CTA Text Link */
+  font: var(--lds-g-typography-ringside-special-cta-text-link-default);
+}
+
+/* Caption Style */
+.lds-ringside-caption {
+  color: var(--lds-g-color-neutral-base-100);
+  /* Ringside/Caption */
+  font: var(--lds-g-typography-ringside-special-caption-default);
+}
+
+/* Garamond Styles */
+.lds-ringside-garamond-extra {
+  color: var(--lds-g-color-neutral-base-100);
+  /* Garamond/Display 1 */
+  font: var(--lds-g-typography-garamond-display-1-default);
+  letter-spacing: var(--lds-g-typography-garamond-display-1-letter-spacing);
+}
+
+.lds-garamond-heading-1 {
+  color: var(--lds-g-color-neutral-base-100);
+  /* Garamond/Heading 1 */
+  font: var(--lds-g-typography-garamond-heading-1-default);
+  letter-spacing: var(--lds-g-typography-garamond-heading-1-letter-spacing);
+}
+
+.lds-garamond-heading-2 {
+  color: var(--lds-g-color-neutral-base-100);
+  /* Garamond/Heading 2 */
+  font: var(--lds-g-typography-garamond-heading-2-default);
+  letter-spacing: var(--lds-g-typography-garamond-heading-2-letter-spacing);
+}
+
+.lds-garamond-heading-3 {
+  color: var(--lds-g-color-neutral-base-100);
+  /* Garamond/Heading 3 */
+  font: var(--lds-g-typography-garamond-heading-3-default);
+  letter-spacing: var(--lds-g-typography-garamond-heading-3-letter-spacing);
+}
+
+.lds-garamond-heading-4 {
+  color: var(--lds-g-color-neutral-base-100);
+  /* Garamond/Heading 4 */
+  font: var(--lds-g-typography-garamond-heading-4-default);
+}
+
+.lds-garamond-heading-5 {
+  color: var(--lds-g-color-neutral-base-100);
+  /* Garamond/Heading 5 */
+  font: var(--lds-g-typography-garamond-heading-5-default);
+}
+
+.lds-garamond-heading-6 {
+  color: var(--lds-g-color-neutral-base-100);
+  /* Garamond/Heading 6 */
+  font: var(--lds-g-typography-garamond-heading-6-default);
+}
+
+/* Desktop Transformations */
+@media (min-width: 768px) {
+  /* Extra Large Display Style */
+  .lds-ringside-display-extra-large {
+    color: var(--lds-g-color-neutral-base-100);
+    font: var(--lds-g-typography-ringside-display-1-desktop);
+    letter-spacing: var(--lds-g-typography-ringside-display-1-letter-spacing);
+  }
+
+  /* Extra Display Style */
+  .lds-ringside-display-extra {
+    color: var(--lds-g-color-neutral-base-100);
+    font: var(--lds-g-typography-ringside-display-2-desktop);
+    letter-spacing: var(--lds-g-typography-ringside-display-2-letter-spacing);
+  }
+
+  /* Heading Styles */
+  .lds-ringside-heading-1 {
+    color: var(--lds-g-color-neutral-base-100);
+    font: var(--lds-g-typography-ringside-heading-1-desktop);
+    letter-spacing: var(--lds-g-typography-ringside-heading-1-letter-spacing);
+  }
+
+  .lds-ringside-heading-2 {
+    color: var(--lds-g-color-neutral-base-100);
+    font: var(--lds-g-typography-ringside-heading-2-desktop);
+    letter-spacing: var(--lds-g-typography-ringside-heading-2-letter-spacing);
+  }
+
+  .lds-ringside-heading-3 {
+    color: var(--lds-g-color-neutral-base-100);
+    font: var(--lds-g-typography-ringside-heading-3-desktop);
+    letter-spacing: var(--lds-g-typography-ringside-heading-3-letter-spacing);
+  }
+
+  .lds-ringside-heading-4 {
+    color: var(--lds-g-color-neutral-base-100);
+    font: var(--lds-g-typography-ringside-heading-4-desktop);
+    letter-spacing: var(--lds-g-typography-ringside-heading-4-letter-spacing);
+  }
+
+  .lds-ringside-heading-5 {
+    color: var(--lds-g-color-neutral-base-100);
+    font: var(--lds-g-typography-ringside-heading-5-desktop);
+  }
+
+  .lds-ringside-heading-6 {
+    color: var(--lds-g-color-neutral-base-100);
+    font: var(--lds-g-typography-ringside-heading-6-desktop);
+  }
+
+  /* Body Text Styles */
+  .lds-ringside-body-large {
+    color: var(--lds-g-color-neutral-base-100);
+    font: var(--lds-g-typography-ringside-body-large-desktop);
+  }
+
+  .lds-ringside-body-medium {
+    color: var(--lds-g-color-neutral-base-100);
+    font: var(--lds-g-typography-ringside-body-medium-desktop);
+  }
+
+  .lds-ringside-body-small {
+    color: var(--lds-g-color-neutral-base-100);
+    font: var(--lds-g-typography-ringside-body-small-desktop);
+  }
+
+  .lds-ringside-body-xsmall {
+    font: var(--lds-g-typography-ringside-body-xsmall);
+  }
+
+  /* CTA Styles */
+  .lds-ringside-cta-button {
+    color: var(--lds-g-color-neutral-base-100);
+    font: var(--lds-g-typography-ringside-special-cta-button-desktop);
+  }
+
+  .lds-ringside-cta-text-link {
+    color: var(--lds-g-color-neutral-base-100);
+    font: var(--lds-g-typography-ringside-special-cta-text-link-desktop);
+  }
+
+  /* Caption Style */
+  .lds-ringside-caption {
+    color: var(--lds-g-color-neutral-base-100);
+    font: var(--lds-g-typography-ringside-special-caption-desktop);
+  }
+
+  /* Garamond Styles */
+  .lds-ringside-garamond-extra {
+    color: var(--lds-g-color-neutral-base-100);
+    font: var(--lds-g-typography-garamond-display-1-desktop);
+    letter-spacing: var(--lds-g-typography-garamond-display-1-letter-spacing);
+  }
+
+  .lds-garamond-heading-1 {
+    color: var(--lds-g-color-neutral-base-100);
+    /* Garamond/Heading 1 */
+    font: var(--lds-g-typography-garamond-heading-1-desktop);
+    letter-spacing: var(--lds-g-typography-garamond-heading-1-letter-spacing);
+  }
+
+  .lds-garamond-heading-2 {
+    color: var(--lds-g-color-neutral-base-100);
+    /* Garamond/Heading 2 */
+    font: var(--lds-g-typography-garamond-heading-2-desktop);
+    letter-spacing: var(--lds-g-typography-garamond-heading-2-letter-spacing);
+  }
+
+  .lds-garamond-heading-3 {
+    color: var(--lds-g-color-neutral-base-100);
+    /* Garamond/Heading 3 */
+    font: var(--lds-g-typography-garamond-heading-3-desktop);
+    letter-spacing: var(--lds-g-typography-garamond-heading-3-letter-spacing);
+  }
+
+  .lds-garamond-heading-4 {
+    color: var(--lds-g-color-neutral-base-100);
+    /* Garamond/Heading 4 */
+    font: var(--lds-g-typography-garamond-heading-4-desktop);
+  }
+
+  .lds-garamond-heading-5 {
+    color: var(--lds-g-color-neutral-base-100);
+    /* Garamond/Heading 5 */
+    font: var(--lds-g-typography-garamond-heading-5-desktop);
+  }
+
+  .lds-garamond-heading-6 {
+    color: var(--lds-g-color-neutral-base-100);
+    /* Garamond/Heading 6 */
+    font: var(--lds-g-typography-garamond-heading-6-desktop);
+  }
+}

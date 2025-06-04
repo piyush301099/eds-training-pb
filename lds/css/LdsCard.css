@@ -1,0 +1,68 @@
+.lds-card {
+    background-color: var(--lds-color-card-background);
+    border-radius: 4px;
+    box-shadow: var(--lds-shadow-card);
+    color: var(--lds-color-card-foreground);
+    display: block;
+    position: relative;
+}
+.lds-card.grow {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+.lds-card .img,
+.lds-card img,
+.lds-card svg {
+    display: block;
+    width: 100%;
+}
+.lds-card .card-body {
+    display: flex;
+    flex-direction: column;
+    padding: var(--lds-spacing-card-padding-sm);
+}
+.lds-card.reverse {
+    display: flex;
+    flex-direction: column-reverse;
+}
+@media (min-width: 768px) {
+    .lds-card .card-body {
+        padding: var(--lds-spacing-card-padding-md);
+    }
+}
+@media (min-width: 992px) {
+    .lds-card .card-body {
+        padding: var(--lds-spacing-card-padding-lg);
+    }
+}
+@media (min-width: 1200px) {
+    .lds-card .card-body {
+        padding: var(--lds-spacing-card-padding-xl);
+    }
+}
+.lds-card .card-footer {
+    display: flex;
+    flex-direction: column;
+    margin-top: auto;
+    padding: var(--lds-spacing-card-padding-sm);
+    padding-top: 0;
+}
+@media (min-width: 768px) {
+    .lds-card .card-footer {
+        padding: var(--lds-spacing-card-padding-md);
+        padding-top: 0;
+    }
+}
+@media (min-width: 992px) {
+    .lds-card .card-footer {
+        padding: var(--lds-spacing-card-padding-lg);
+        padding-top: 0;
+    }
+}
+@media (min-width: 1200px) {
+    .lds-card .card-footer {
+        padding: var(--lds-spacing-card-padding-xl);
+        padding-top: 0;
+    }
+}

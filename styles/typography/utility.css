@@ -1,0 +1,133 @@
+/* CSS 'font-style' Overrides */
+.fs-normal {
+  font-style: normal !important;
+}
+.fs-italic,
+.i,
+.italic {
+  font-style: italic !important;
+}
+
+/* CSS 'font-weight' Overrides (Using LDS ALLOWED font weights) */
+.fw-100,
+.fw-thin {
+  font-weight: var(--lds-typography-font-weight-thin) !important;
+}
+.fw-200,
+.fw-extra-light {
+  font-weight: var(--lds-typography-font-weight-extra-light) !important;
+}
+.fw-300,
+.fw-light {
+  font-weight: var(--lds-typography-font-weight-light) !important;
+}
+.fw-400,
+.fw-regular {
+  font-weight: var(--lds-typography-font-weight-regular) !important;
+}
+.fw-500,
+.fw-medium {
+  font-weight: var(--lds-typography-font-weight-medium) !important;
+}
+.fw-600,
+.fw-semi-bold {
+  font-weight: var(--lds-typography-font-weight-semi-bold) !important;
+}
+.fw-700,
+.fw-bold,
+.b,
+.bold {
+  font-weight: var(--lds-typography-font-weight-bold) !important;
+}
+.fw-800,
+.fw-extra-bold {
+  font-weight: var(--lds-typography-font-weight-extra-bold) !important;
+}
+.fw-900,
+.fw-black {
+  font-weight: var(--lds-g-font-weight-900) !important;
+}
+
+/* CSS 'text-align' Overrides */
+.ta-center {
+  text-align: center !important;
+}
+.ta-end {
+  text-align: end !important;
+}
+.ta-justify {
+  text-align: justify !important;
+}
+.ta-left {
+  text-align: left !important;
+}
+.ta-right {
+  text-align: right !important;
+}
+.ta-start {
+  text-align: start !important;
+}
+
+/* CSS 'align-items' Overrides */
+.ai-center {
+  align-items: center !important;
+}
+.ai-end {
+  align-items: end !important;
+}
+.ai-start {
+  align-items: start !important;
+}
+
+/* CSS 'text-decoration' Overrides */
+.td-none {
+  text-decoration: none !important;
+}
+.td-underline,
+.u,
+.underline {
+  text-decoration: underline !important;
+}
+.td-line-through,
+.s,
+.strike {
+  text-decoration: line-through !important;
+}
+.td-overline,
+.o,
+.overline {
+  text-decoration: overline !important;
+}
+
+/* CSS 'text-transform' Overrides */
+.tt-none {
+  text-transform: none !important;
+}
+.tt-upper,
+.tt-uppercase {
+  text-transform: uppercase !important;
+}
+.tt-lower,
+.tt-lowercase {
+  text-transform: lowercase !important;
+}
+.tt-caps,
+.tt-captialize {
+  text-transform: capitalize !important;
+}
+.tt-full,
+.tt-full-width {
+  text-transform: full-width !important;
+}
+
+/* Misc Generic CSS Typography */
+.nowrap,
+.no-wrap {
+  white-space: nowrap;
+}
+
+.lds-max-width {
+  padding: 0 !important;
+  margin: 0 auto !important;
+  max-width: 1440px;
+}

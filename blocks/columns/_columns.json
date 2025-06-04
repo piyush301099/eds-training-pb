@@ -16,6 +16,12 @@
       }
     }
   ],
+  "filters": [
+    {
+      "id": "columns",
+      "components": ["column"]
+    }
+  ],
   "models": [
     {
       "id": "columns",
@@ -34,23 +40,6 @@
           "value": "",
           "label": "Rows"
         }
-      ]
-    }
-  ],
-  "filters": [
-    {
-      "id": "columns",
-      "components": [
-        "column"
-      ]
-    },
-    {
-      "id": "column",
-      "components": [
-        "text",
-        "image",
-        "button",
-        "title"
       ]
     }
   ]

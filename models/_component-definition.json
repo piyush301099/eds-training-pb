@@ -24,6 +24,15 @@
       "components": [
         {
           "...": "./_section.json#/definitions"
+        },
+        {
+          "...": "./_column-container.json#/definitions"
+        },
+        {
+          "...": "./_tabs-section.json#/definitions"
+        },
+        {
+          "...": "./_cont-sec-container.json#/definitions"
         }
       ]
     },

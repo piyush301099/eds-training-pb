@@ -1,0 +1,27 @@
+.submission-iframe-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: auto;
+}
+
+.submission-form-desc {
+  margin-top: 12px;
+  margin-bottom: 48px;
+}
+
+.submission-form-iframe {
+  width: 100%;
+  height: 2168px;
+  border: none;
+  overflow: hidden;
+}
+
+@media screen and (width <= 950px) {
+  .submission-form-iframe {
+    width: 100%;
+    height: 2873px;
+    border: none;
+    overflow: hidden;
+  }
+}
