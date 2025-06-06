@@ -933,6 +933,21 @@
             }
           }
         },
+        {
+          "title": "Numerated-Tile-Item",
+          "id": "numerated-tile-item",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block/item",
+                "template": {
+                  "name": "Numerated-Tile-Item",
+                  "model": "numerated-tile-item"
+                }
+              }
+            }
+          }
+        },
          {
           "title": "Numerated Tile",
           "id":"numerated-tile",
@@ -943,7 +958,12 @@
                 "template":{
                   "model":"numerated-tile",
                   "filter":"numerated-tile",
-                  "name":"Numerated Tile"
+                  "name":"Numerated Tile",
+                  "item0": {
+                    "sling:resourceType": "core/franklin/components/block/v1/block/item",
+                    "name": "Numerated-Tile-Item",
+                    "model": "numerated-tile-item"
+                  }
                 }
               }
             }

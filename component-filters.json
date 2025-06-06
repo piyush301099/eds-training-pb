@@ -193,6 +193,6 @@
   },
   {
     "id": "numerated-tile",
-    "components": ["numerated-tile"]
+    "components": ["numerated-tile-item"]
   }
 ]
