@@ -3803,14 +3803,14 @@
         "name":"eyebrow",
         "label":"Eyebrow",
         "description": "Enter the eyebrow text",
-        "required":"true"
+        "required":true
       },
       {
         "component":"text",
         "name":"title",
         "label":"Title",
         "description": "Enter the title",
-        "required":"true"
+        "required":true
       },
       {
         "component":"text",
@@ -3836,7 +3836,7 @@
         "name":"image-alt-text",
         "label":"Image Alt Text",
         "description": "Pick alt text from AEM DAM with ability to override it",
-        "required":"true",
+        "required":true,
         "condition":{
           "!!":{
             "var":"image"
