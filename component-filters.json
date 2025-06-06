@@ -52,7 +52,8 @@
       "news-tile",
       "executive-grids",
       "csr-form",
-      "demo-component"
+      "demo-component",
+      "numerated-tile"
     ]
   },
   {
@@ -189,5 +190,9 @@
   {
     "id": "demo-component",
     "components": ["demo-component"]
+  },
+  {
+    "id": "numerated-tile",
+    "components": ["numerated-tile"]
   }
 ]

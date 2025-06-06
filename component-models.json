@@ -3794,5 +3794,55 @@
         "required":"true"
       }
     ]
+  },
+  {
+    "id":"numerated-tile",
+    "fields":[
+      {
+        "component":"text",
+        "name":"eyebrow",
+        "label":"Eyebrow",
+        "description": "Enter the eyebrow text",
+        "required":"true"
+      },
+      {
+        "component":"text",
+        "name":"title",
+        "label":"Title",
+        "description": "Enter the title",
+        "required":"true"
+      },
+      {
+        "component":"text",
+        "name":"subtitle",
+        "label":"Subtitle",
+        "description": "Enter the subtitle"
+      },
+      {
+        "component":"text",
+        "name":"description",
+        "label":"Description",
+        "description": "Enter the description"
+      },
+      {
+        "component":"reference",
+        "name":"image",
+        "label":"Image",
+        "description": "Upload the image",
+        "default": "None"
+      },
+      {
+        "component":"reference",
+        "name":"image-alt-text",
+        "label":"Image Alt Text",
+        "description": "Pick alt text from AEM DAM with ability to override it",
+        "required":"true",
+        "condition":{
+          "!!":{
+            "var":"image"
+          }
+        }
+      }
+    ]
   }
 ]
