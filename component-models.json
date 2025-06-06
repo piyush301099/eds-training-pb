@@ -3843,6 +3843,7 @@
         "label":"Image Alt Text",
         "description": "Pick alt text from AEM DAM with ability to override it",
         "required":true,
+        "default":"Alt text from AEM DAM",
         "condition":{
           "!!":{
             "var":"image"
