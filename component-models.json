@@ -3800,6 +3800,7 @@
     "fields":[
       {
         "component":"text",
+        "valueType": "string",
         "name":"eyebrow",
         "label":"Eyebrow",
         "description": "Enter the eyebrow text",
@@ -3807,6 +3808,7 @@
       },
       {
         "component":"text",
+        "valueType": "string",
         "name":"title",
         "label":"Title",
         "description": "Enter the title",
@@ -3814,18 +3816,21 @@
       },
       {
         "component":"text",
+        "valueType": "string",
         "name":"subtitle",
         "label":"Subtitle",
         "description": "Enter the subtitle"
       },
       {
         "component":"text",
+        "valueType": "string",
         "name":"description",
         "label":"Description",
         "description": "Enter the description"
       },
       {
         "component":"reference",
+        "valueType": "string",
         "name":"image",
         "label":"Image",
         "description": "Upload the image",
@@ -3833,6 +3838,7 @@
       },
       {
         "component":"text",
+        "valueType": "string",
         "name":"image-alt-text",
         "label":"Image Alt Text",
         "description": "Pick alt text from AEM DAM with ability to override it",
