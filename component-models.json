@@ -3862,10 +3862,54 @@
      {
         "component":"text",
         "valueType": "string",
-        "name":"eyebrow",
-        "label":"Eyebrow",
-        "description": "Enter the eyebrow text",
-        "required":true
+        "name":"title",
+        "label":"Title",
+        "description": "Enter the title"
+      },
+      {
+        "component":"reference",
+        "valueType": "string",
+        "name":"image",
+        "label":"Image",
+        "description": "Upload the image",
+        "default": "None",
+        "required": true
+      },
+      {
+        "component":"text",
+        "valueType": "string",
+        "name":"image-alt-text",
+        "label":"Image Alt Text",
+        "description": "Pick alt text from AEM DAM with ability to override it",
+        "required":true,
+        "default":"Alt text from AEM DAM",
+        "condition":{
+          "!!":{
+            "var":"image"
+          }
+        }
+      },
+      {
+        "component":"reference",
+        "valueType": "string",
+        "name":"icon",
+        "label":"Icon",
+        "description": "Select or upload an icon for the tile.",
+        "default": "None"
+      },
+      {
+        "component":"text",
+        "valueType": "string",
+        "name":"icon-alt-text",
+        "label":"Icon Alt text",
+        "description": "Pick alt text from AEM DAM with ability to override it",
+        "required":true,
+        "default":"Alt text from AEM DAM",
+        "condition":{
+          "!!":{
+            "var":"icon"
+          }
+        }
       }
     ]
   },
