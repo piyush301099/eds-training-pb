@@ -3855,5 +3855,22 @@
   {
     "id":"numerated-tile",
     "fields":[]
+  },
+  {
+    "id": "small-media-carousel-item",
+    "fields":[
+     {
+        "component":"text",
+        "valueType": "string",
+        "name":"eyebrow",
+        "label":"Eyebrow",
+        "description": "Enter the eyebrow text",
+        "required":true
+      }
+    ]
+  },
+  {
+    "id":"small-media-carousel",
+    "fields":[]
   }
 ]
