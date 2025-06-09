@@ -53,7 +53,8 @@
       "executive-grids",
       "csr-form",
       "demo-component",
-      "numerated-tile"
+      "numerated-tile",
+      "small-media-carousel"
     ]
   },
   {
@@ -194,5 +195,9 @@
   {
     "id": "numerated-tile",
     "components": ["numerated-tile-item"]
+  },
+  {
+    "id": "small-media-carousel",
+    "components":["small-media-carousel-item"]
   }
 ]
