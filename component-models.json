@@ -3916,5 +3916,133 @@
   {
     "id":"small-media-carousel",
     "fields":[]
+  },
+  {
+    "id": "external-video-player-link-item",
+    "fields":[
+      {
+        "component": "reference",
+        "valueType": "String",
+        "label": "Image",
+        "name": "image",
+        "description": "Upload the image thumbnail",
+        "required": true,
+        "default": "None"
+      },
+      {
+        "component":"text",
+        "valueType": "string",
+        "name":"image-alt-text",
+        "label":"Image Alt Text",
+        "description": "Pick alt text from AEM DAM with ability to override it",
+        "required":true,
+        "default":"Alt text from AEM DAM",
+        "condition":{
+          "!!":{
+            "var":"image"
+          }
+        }
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name":"title",
+        "label":"Title",
+        "description": "Enter the title of the title"
+      },
+      {
+        "component": "text",
+        "valueType": "String",
+        "name": "ctaText",
+        "label": "CTA Text",
+        "description": "Enter label to display on the CTA"
+      },
+      {
+        "component": "select",
+        "name": "ctaType",
+        "label": "CTA Type",
+        "description": "Select the CTA Type",
+        "options": [
+          {
+            "name": "Link",
+            "value": "link" 
+          },
+          {
+            "name": "PDF",
+            "value": "pdf"
+          }
+        ],
+        "condition": {
+          "!!": {
+            "var": "ctaText"
+          }
+        }
+      },
+      {
+        "component": "aem-content",
+        "name": "ctaLink",
+        "label": "CTA Link",
+        "valueType": "string",
+        "description": "Enter the URL to navigate when CTA is clicked",
+        "validation": {
+          "rootPath": "/content"
+        },
+        "condition": {
+          "and": [
+            { "===": [ { "var": "ctaType" }, "link" ] },
+            { "!!": { "var": "ctaText" } }
+          ]
+        }
+      },
+      {
+        "component": "text",
+        "name": "text-aria-label",
+        "label": "ARIA Label",
+        "valueType": "string",
+        "description": "Enter ARIA label to comply ADA"
+      },
+        {
+        "component": "select",
+        "name": "targetPath",
+        "label": "Target Path",
+        "description": "Select the target path for the authored CTA URL",
+        "value": "sameTab",
+        "options": [
+          {
+            "name": "Same Tab",
+            "value": "sameTab"
+          },
+          {
+            "name": "New Tab",
+            "value": "newTab"
+          }
+        ],
+        "condition": {
+          "and": [
+            { "===": [ { "var": "ctaType" }, "link" ] },
+            { "!!": { "var": "ctaText" } }
+          ]
+        }
+      },
+      {
+        "component": "checkbox-group",
+        "name": "exitInterstitial",
+        "valueType": "String",
+        "label": "Exit Interstitial",
+        "description": "Select this checkbox to enable the modal experience that notifies user that they are leaving the site. No additional authoring required",
+        "options": [
+          {
+            "name": "Exit Interstitial",
+            "value": "true"
+          }
+        ],
+        "condition": {
+          "and": [
+            { "===": [ { "var": "ctaType" }, "link" ] },
+            { "!!": { "var": "ctaLabel" } }
+          ]
+        }
+      }
+    ]
   }
 ]

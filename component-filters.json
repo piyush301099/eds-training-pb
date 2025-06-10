@@ -54,7 +54,8 @@
       "csr-form",
       "demo-component",
       "numerated-tile",
-      "small-media-carousel"
+      "small-media-carousel",
+      "external-video-player-link"
     ]
   },
   {
@@ -199,5 +200,9 @@
   {
     "id": "small-media-carousel",
     "components":["small-media-carousel-item"]
+  },
+  {
+    "id": "external-video-player-link",
+    "components":["external-video-player-link-item"]
   }
 ]
