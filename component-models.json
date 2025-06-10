@@ -3922,7 +3922,7 @@
     "fields":[
       {
         "component": "reference",
-        "valueType": "String",
+        "valueType": "string",
         "label": "Image",
         "name": "image",
         "description": "Upload the image thumbnail",
@@ -3952,7 +3952,7 @@
       },
       {
         "component": "text",
-        "valueType": "String",
+        "valueType": "string",
         "name": "ctaText",
         "label": "CTA Text",
         "description": "Enter label to display on the CTA"
@@ -4027,7 +4027,7 @@
       {
         "component": "checkbox-group",
         "name": "exitInterstitial",
-        "valueType": "String",
+        "valueType": "string",
         "label": "Exit Interstitial",
         "description": "Select this checkbox to enable the modal experience that notifies user that they are leaving the site. No additional authoring required",
         "options": [
@@ -4044,5 +4044,9 @@
         }
       }
     ]
+  },
+  {
+    "id":"external-video-player-link",
+    "fields":[]
   }
 ]
