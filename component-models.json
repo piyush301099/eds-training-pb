@@ -3995,6 +3995,19 @@
         }
       },
       {
+        "component": "reference",
+        "name": "ctaAsset",
+        "label": "Asset (PDF/Image)",
+        "description": "Upload the Asset (PDF/Image)",
+        "valueType": "string",
+        "condition": {
+          "and": [
+            { "===": [ { "var": "ctaType" }, "pdf" ] },
+            { "!!": { "var": "ctaText" } }
+          ]
+        }
+      },
+      {
         "component": "text",
         "name": "text-aria-label",
         "label": "ARIA Label",
@@ -4039,7 +4052,7 @@
         "condition": {
           "and": [
             { "===": [ { "var": "ctaType" }, "link" ] },
-            { "!!": { "var": "ctaLabel" } }
+            { "!!": { "var": "ctaText" } }
           ]
         }
       }
