@@ -4061,5 +4061,53 @@
   {
     "id":"external-video-player-link",
     "fields":[]
+  },
+  {
+    "id": "icon-list-with-eyebrow-item",
+    "fields":[
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "icon",
+        "label": "Icon",
+        "description": "Select or upload an icon for the tile.",
+        "required": true
+      },
+      {
+        "component": "text",
+        "name": "eyebrow",
+        "label": "Eyebrow",
+        "valueType": "string",
+        "description": "Enter the eyebrow text"
+      },
+      {
+        "component":"text",
+        "valueType": "string",
+        "name":"icon-alt-text",
+        "label":"Icon Alt text",
+        "description": "Pick alt text from AEM DAM with ability to override it",
+        "required":true,
+        "default":"Alt text from AEM DAM",
+        "condition":{
+          "!!":{
+            "var":"icon"
+          }
+        }
+      },
+      {
+        "component": "richtext",
+        "valueType": "string",
+        "name": "title",
+        "label": "Title",
+        "description": "Enter the title",
+        "required": true
+      },
+      {
+        "component": "richtext",
+        "name": "description",
+        "label": "Description",
+        "description": "Enter the description."
+      }
+    ]
   }
 ]
