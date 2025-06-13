@@ -1066,7 +1066,12 @@
                 "template": {
                   "name": "Icon List with eyebrow",
                   "model": "icon-list-with-eyebrow",
-                  "filter": "icon-list-with-eyebrow"
+                  "filter": "icon-list-with-eyebrow",
+                  "item0":{
+                    "sling:resourceType":"core/franklin/components/block/v1/block/item",
+                    "model": "icon-list-with-eyebrow-item",
+                    "name": "Icon List with eyebrow Item"
+                  }
                 }
               }
             }
