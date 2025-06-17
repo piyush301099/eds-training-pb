@@ -442,8 +442,19 @@
         },
         "condition": {
           "and": [
-            { "===": [{ "var": "ctaType" }, "link"] },
-            { "!!": { "var": "linkHeadline" } }
+            {
+              "===": [
+                {
+                  "var": "ctaType"
+                },
+                "link"
+              ]
+            },
+            {
+              "!!": {
+                "var": "linkHeadline"
+              }
+            }
           ]
         }
       },
@@ -455,8 +466,19 @@
         "valueType": "string",
         "condition": {
           "and": [
-            { "===": [{ "var": "ctaType" }, "asset"] },
-            { "!!": { "var": "linkHeadline" } }
+            {
+              "===": [
+                {
+                  "var": "ctaType"
+                },
+                "asset"
+              ]
+            },
+            {
+              "!!": {
+                "var": "linkHeadline"
+              }
+            }
           ]
         }
       },
@@ -485,8 +507,19 @@
         ],
         "condition": {
           "and": [
-            { "===": [{ "var": "ctaType" }, "link"] },
-            { "!!": { "var": "linkHeadline" } }
+            {
+              "===": [
+                {
+                  "var": "ctaType"
+                },
+                "link"
+              ]
+            },
+            {
+              "!!": {
+                "var": "linkHeadline"
+              }
+            }
           ]
         }
       },
@@ -504,8 +537,19 @@
         ],
         "condition": {
           "and": [
-            { "===": [{ "var": "ctaType" }, "link"] },
-            { "!!": { "var": "linkHeadline" } }
+            {
+              "===": [
+                {
+                  "var": "ctaType"
+                },
+                "link"
+              ]
+            },
+            {
+              "!!": {
+                "var": "linkHeadline"
+              }
+            }
           ]
         }
       }
@@ -605,8 +649,19 @@
         },
         "condition": {
           "and": [
-            { "===": [{ "var": "ctaType" }, "link"] },
-            { "!!": { "var": "ctaLabel" } }
+            {
+              "===": [
+                {
+                  "var": "ctaType"
+                },
+                "link"
+              ]
+            },
+            {
+              "!!": {
+                "var": "ctaLabel"
+              }
+            }
           ]
         }
       },
@@ -618,8 +673,19 @@
         "valueType": "string",
         "condition": {
           "and": [
-            { "===": [{ "var": "ctaType" }, "asset"] },
-            { "!!": { "var": "ctaLabel" } }
+            {
+              "===": [
+                {
+                  "var": "ctaType"
+                },
+                "asset"
+              ]
+            },
+            {
+              "!!": {
+                "var": "ctaLabel"
+              }
+            }
           ]
         }
       },
@@ -648,8 +714,19 @@
         ],
         "condition": {
           "and": [
-            { "===": [{ "var": "ctaType" }, "link"] },
-            { "!!": { "var": "ctaLabel" } }
+            {
+              "===": [
+                {
+                  "var": "ctaType"
+                },
+                "link"
+              ]
+            },
+            {
+              "!!": {
+                "var": "ctaLabel"
+              }
+            }
           ]
         }
       }
@@ -750,8 +827,19 @@
         },
         "condition": {
           "and": [
-            { "===": [ { "var": "ctaType" }, "link" ] },
-            { "!!": { "var": "linkHeadline" } }
+            {
+              "===": [
+                {
+                  "var": "ctaType"
+                },
+                "link"
+              ]
+            },
+            {
+              "!!": {
+                "var": "linkHeadline"
+              }
+            }
           ]
         }
       },
@@ -763,8 +851,19 @@
         "valueType": "string",
         "condition": {
           "and": [
-            { "===": [ { "var": "ctaType" }, "asset" ] },
-            { "!!": { "var": "linkHeadline" } }
+            {
+              "===": [
+                {
+                  "var": "ctaType"
+                },
+                "asset"
+              ]
+            },
+            {
+              "!!": {
+                "var": "linkHeadline"
+              }
+            }
           ]
         }
       },
@@ -793,8 +892,19 @@
         ],
         "condition": {
           "and": [
-            { "===": [ { "var": "ctaType" }, "link" ] },
-            { "!!": { "var": "linkHeadline" } }
+            {
+              "===": [
+                {
+                  "var": "ctaType"
+                },
+                "link"
+              ]
+            },
+            {
+              "!!": {
+                "var": "linkHeadline"
+              }
+            }
           ]
         }
       },
@@ -812,8 +922,19 @@
         ],
         "condition": {
           "and": [
-            { "===": [ { "var": "ctaType" }, "link" ] },
-            { "!!": { "var": "linkHeadline" } }
+            {
+              "===": [
+                {
+                  "var": "ctaType"
+                },
+                "link"
+              ]
+            },
+            {
+              "!!": {
+                "var": "linkHeadline"
+              }
+            }
           ]
         }
       }
@@ -861,8 +982,19 @@
         },
         "condition": {
           "and": [
-            { "===": [ { "var": "ctaTypeprevious" }, "link" ] },
-            { "!!": { "var": "ctalabelprevious" } }
+            {
+              "===": [
+                {
+                  "var": "ctaTypeprevious"
+                },
+                "link"
+              ]
+            },
+            {
+              "!!": {
+                "var": "ctalabelprevious"
+              }
+            }
           ]
         }
       },
@@ -874,8 +1006,19 @@
         "valueType": "string",
         "condition": {
           "and": [
-            { "===": [ { "var": "ctaTypeprevious" }, "asset" ] },
-            { "!!": { "var": "ctalabelprevious" } }
+            {
+              "===": [
+                {
+                  "var": "ctaTypeprevious"
+                },
+                "asset"
+              ]
+            },
+            {
+              "!!": {
+                "var": "ctalabelprevious"
+              }
+            }
           ]
         }
       },
@@ -925,8 +1068,19 @@
         },
         "condition": {
           "and": [
-            { "===": [ { "var": "ctaTypenext" }, "link" ] },
-            { "!!": { "var": "ctalabelnext" } }
+            {
+              "===": [
+                {
+                  "var": "ctaTypenext"
+                },
+                "link"
+              ]
+            },
+            {
+              "!!": {
+                "var": "ctalabelnext"
+              }
+            }
           ]
         }
       },
@@ -938,8 +1092,19 @@
         "valueType": "string",
         "condition": {
           "and": [
-            { "===": [ { "var": "ctaTypenext" }, "asset" ] },
-            { "!!": { "var": "ctalabelnext" } }
+            {
+              "===": [
+                {
+                  "var": "ctaTypenext"
+                },
+                "asset"
+              ]
+            },
+            {
+              "!!": {
+                "var": "ctalabelnext"
+              }
+            }
           ]
         }
       },
@@ -1238,8 +1403,19 @@
         },
         "condition": {
           "and": [
-            { "===": [ { "var": "ctaType" }, "link" ] },
-            { "!!": { "var": "ctaLabel" } }
+            {
+              "===": [
+                {
+                  "var": "ctaType"
+                },
+                "link"
+              ]
+            },
+            {
+              "!!": {
+                "var": "ctaLabel"
+              }
+            }
           ]
         }
       },
@@ -1251,8 +1427,19 @@
         "valueType": "string",
         "condition": {
           "and": [
-            { "===": [ { "var": "ctaType" }, "asset" ] },
-            { "!!": { "var": "ctaLabel" } }
+            {
+              "===": [
+                {
+                  "var": "ctaType"
+                },
+                "asset"
+              ]
+            },
+            {
+              "!!": {
+                "var": "ctaLabel"
+              }
+            }
           ]
         }
       },
@@ -1505,8 +1692,19 @@
         },
         "condition": {
           "and": [
-            { "===": [ { "var": "ctaType" }, "link" ] },
-            { "!!": { "var": "ctaLabel" } }
+            {
+              "===": [
+                {
+                  "var": "ctaType"
+                },
+                "link"
+              ]
+            },
+            {
+              "!!": {
+                "var": "ctaLabel"
+              }
+            }
           ]
         }
       },
@@ -1518,8 +1716,19 @@
         "valueType": "string",
         "condition": {
           "and": [
-            { "===": [ { "var": "ctaType" }, "asset" ] },
-            { "!!": { "var": "ctaLabel" } }
+            {
+              "===": [
+                {
+                  "var": "ctaType"
+                },
+                "asset"
+              ]
+            },
+            {
+              "!!": {
+                "var": "ctaLabel"
+              }
+            }
           ]
         }
       },
@@ -1564,7 +1773,11 @@
                 "link"
               ]
             },
-            { "!!": { "var": "ctaLabel" } }
+            {
+              "!!": {
+                "var": "ctaLabel"
+              }
+            }
           ]
         }
       },
@@ -1597,7 +1810,11 @@
                 "link"
               ]
             },
-            { "!!": { "var": "ctaLabel" } }
+            {
+              "!!": {
+                "var": "ctaLabel"
+              }
+            }
           ]
         }
       },
@@ -1887,8 +2104,19 @@
         },
         "condition": {
           "and": [
-            { "===": [ { "var": "ctaType" }, "link" ] },
-            { "!!": { "var": "ctaLabel" } }
+            {
+              "===": [
+                {
+                  "var": "ctaType"
+                },
+                "link"
+              ]
+            },
+            {
+              "!!": {
+                "var": "ctaLabel"
+              }
+            }
           ]
         }
       },
@@ -1900,8 +2128,19 @@
         "valueType": "string",
         "condition": {
           "and": [
-            { "===": [ { "var": "ctaType" }, "asset" ] },
-            { "!!": { "var": "ctaLabel" } }
+            {
+              "===": [
+                {
+                  "var": "ctaType"
+                },
+                "asset"
+              ]
+            },
+            {
+              "!!": {
+                "var": "ctaLabel"
+              }
+            }
           ]
         }
       },
@@ -2000,8 +2239,19 @@
         },
         "condition": {
           "and": [
-            { "===": [ { "var": "ctaType" }, "link" ] },
-            { "!!": { "var": "ctaLabel" } }
+            {
+              "===": [
+                {
+                  "var": "ctaType"
+                },
+                "link"
+              ]
+            },
+            {
+              "!!": {
+                "var": "ctaLabel"
+              }
+            }
           ]
         }
       },
@@ -2013,8 +2263,19 @@
         "valueType": "string",
         "condition": {
           "and": [
-            { "===": [ { "var": "ctaType" }, "asset" ] },
-            { "!!": { "var": "ctaLabel" } }
+            {
+              "===": [
+                {
+                  "var": "ctaType"
+                },
+                "asset"
+              ]
+            },
+            {
+              "!!": {
+                "var": "ctaLabel"
+              }
+            }
           ]
         }
       },
@@ -2043,8 +2304,19 @@
         ],
         "condition": {
           "and": [
-            { "===": [ { "var": "ctaType" }, "link" ] },
-            { "!!": { "var": "ctaLabel" } }
+            {
+              "===": [
+                {
+                  "var": "ctaType"
+                },
+                "link"
+              ]
+            },
+            {
+              "!!": {
+                "var": "ctaLabel"
+              }
+            }
           ]
         }
       },
@@ -2062,8 +2334,19 @@
         ],
         "condition": {
           "and": [
-            { "===": [ { "var": "ctaType" }, "link" ] },
-            { "!!": { "var": "ctaLabel" } }
+            {
+              "===": [
+                {
+                  "var": "ctaType"
+                },
+                "link"
+              ]
+            },
+            {
+              "!!": {
+                "var": "ctaLabel"
+              }
+            }
           ]
         }
       }
@@ -2200,8 +2483,19 @@
         },
         "condition": {
           "and": [
-            { "===": [ { "var": "ctaType" }, "link" ] },
-            { "!!": { "var": "ctaLabel" } }
+            {
+              "===": [
+                {
+                  "var": "ctaType"
+                },
+                "link"
+              ]
+            },
+            {
+              "!!": {
+                "var": "ctaLabel"
+              }
+            }
           ]
         }
       },
@@ -2213,8 +2507,19 @@
         "valueType": "string",
         "condition": {
           "and": [
-            { "===": [ { "var": "ctaType" }, "asset" ] },
-            { "!!": { "var": "ctaLabel" } }
+            {
+              "===": [
+                {
+                  "var": "ctaType"
+                },
+                "asset"
+              ]
+            },
+            {
+              "!!": {
+                "var": "ctaLabel"
+              }
+            }
           ]
         }
       },
@@ -2243,8 +2548,19 @@
         ],
         "condition": {
           "and": [
-            { "===": [ { "var": "ctaType" }, "link" ] },
-            { "!!": { "var": "ctaLabel" } }
+            {
+              "===": [
+                {
+                  "var": "ctaType"
+                },
+                "link"
+              ]
+            },
+            {
+              "!!": {
+                "var": "ctaLabel"
+              }
+            }
           ]
         }
       },
@@ -2262,8 +2578,19 @@
         ],
         "condition": {
           "and": [
-            { "===": [ { "var": "ctaType" }, "link" ] },
-            { "!!": { "var": "ctaLabel" } }
+            {
+              "===": [
+                {
+                  "var": "ctaType"
+                },
+                "link"
+              ]
+            },
+            {
+              "!!": {
+                "var": "ctaLabel"
+              }
+            }
           ]
         }
       }
@@ -2428,8 +2755,19 @@
         },
         "condition": {
           "and": [
-            { "===": [ { "var": "ctaType" }, "link" ] },
-            { "!!": { "var": "linkHeadline" } }
+            {
+              "===": [
+                {
+                  "var": "ctaType"
+                },
+                "link"
+              ]
+            },
+            {
+              "!!": {
+                "var": "linkHeadline"
+              }
+            }
           ]
         }
       },
@@ -2441,8 +2779,19 @@
         "valueType": "string",
         "condition": {
           "and": [
-            { "===": [ { "var": "ctaType" }, "asset" ] },
-            { "!!": { "var": "linkHeadline" } }
+            {
+              "===": [
+                {
+                  "var": "ctaType"
+                },
+                "asset"
+              ]
+            },
+            {
+              "!!": {
+                "var": "linkHeadline"
+              }
+            }
           ]
         }
       },
@@ -2471,8 +2820,19 @@
         ],
         "condition": {
           "and": [
-            { "===": [ { "var": "ctaType" }, "link" ] },
-            { "!!": { "var": "linkHeadline" } }
+            {
+              "===": [
+                {
+                  "var": "ctaType"
+                },
+                "link"
+              ]
+            },
+            {
+              "!!": {
+                "var": "linkHeadline"
+              }
+            }
           ]
         }
       },
@@ -2497,8 +2857,19 @@
         ],
         "condition": {
           "and": [
-            { "===": [ { "var": "ctaType" }, "link" ] },
-            { "!!": { "var": "linkHeadline" } }
+            {
+              "===": [
+                {
+                  "var": "ctaType"
+                },
+                "link"
+              ]
+            },
+            {
+              "!!": {
+                "var": "linkHeadline"
+              }
+            }
           ]
         }
       },
@@ -2541,8 +2912,19 @@
         },
         "condition": {
           "and": [
-            { "===": [ { "var": "ctaType" }, "link" ] },
-            { "!!": { "var": "subTextHeadline" } }
+            {
+              "===": [
+                {
+                  "var": "ctaType"
+                },
+                "link"
+              ]
+            },
+            {
+              "!!": {
+                "var": "subTextHeadline"
+              }
+            }
           ]
         }
       },
@@ -2554,8 +2936,19 @@
         "valueType": "string",
         "condition": {
           "and": [
-            { "===": [ { "var": "ctaType" }, "asset" ] },
-            { "!!": { "var": "subTextHeadline" } }
+            {
+              "===": [
+                {
+                  "var": "ctaType"
+                },
+                "asset"
+              ]
+            },
+            {
+              "!!": {
+                "var": "subTextHeadline"
+              }
+            }
           ]
         }
       },
@@ -2584,8 +2977,19 @@
         ],
         "condition": {
           "and": [
-            { "===": [ { "var": "ctaType" }, "link" ] },
-            { "!!": { "var": "subTextHeadline" } }
+            {
+              "===": [
+                {
+                  "var": "ctaType"
+                },
+                "link"
+              ]
+            },
+            {
+              "!!": {
+                "var": "subTextHeadline"
+              }
+            }
           ]
         }
       },
@@ -2603,8 +3007,19 @@
         ],
         "condition": {
           "and": [
-            { "===": [ { "var": "ctaType" }, "link" ] },
-            { "!!": { "var": "subTextHeadline" } }
+            {
+              "===": [
+                {
+                  "var": "ctaType"
+                },
+                "link"
+              ]
+            },
+            {
+              "!!": {
+                "var": "subTextHeadline"
+              }
+            }
           ]
         }
       }
@@ -2681,8 +3096,19 @@
         },
         "condition": {
           "and": [
-            { "===": [ { "var": "ctaType" }, "link" ] },
-            { "!!": { "var": "ctaLabel" } }
+            {
+              "===": [
+                {
+                  "var": "ctaType"
+                },
+                "link"
+              ]
+            },
+            {
+              "!!": {
+                "var": "ctaLabel"
+              }
+            }
           ]
         }
       },
@@ -2694,8 +3120,19 @@
         "valueType": "string",
         "condition": {
           "and": [
-            { "===": [ { "var": "ctaType" }, "asset" ] },
-            { "!!": { "var": "ctaLabel" } }
+            {
+              "===": [
+                {
+                  "var": "ctaType"
+                },
+                "asset"
+              ]
+            },
+            {
+              "!!": {
+                "var": "ctaLabel"
+              }
+            }
           ]
         }
       },
@@ -2724,8 +3161,19 @@
         ],
         "condition": {
           "and": [
-            { "===": [ { "var": "ctaType" }, "link" ] },
-            { "!!": { "var": "ctaLabel" } }
+            {
+              "===": [
+                {
+                  "var": "ctaType"
+                },
+                "link"
+              ]
+            },
+            {
+              "!!": {
+                "var": "ctaLabel"
+              }
+            }
           ]
         }
       },
@@ -2742,8 +3190,19 @@
         ],
         "condition": {
           "and": [
-            { "===": [ { "var": "ctaType" }, "link" ] },
-            { "!!": { "var": "ctaLabel" } }
+            {
+              "===": [
+                {
+                  "var": "ctaType"
+                },
+                "link"
+              ]
+            },
+            {
+              "!!": {
+                "var": "ctaLabel"
+              }
+            }
           ]
         }
       }
@@ -2861,10 +3320,21 @@
           "rootPath": "/content"
         },
         "condition": {
-            "and": [
-              { "===": [ { "var": "ctaType" }, "link" ] },
-              { "!!": { "var": "ctaLabel" } }
-            ]
+          "and": [
+            {
+              "===": [
+                {
+                  "var": "ctaType"
+                },
+                "link"
+              ]
+            },
+            {
+              "!!": {
+                "var": "ctaLabel"
+              }
+            }
+          ]
         }
       },
       {
@@ -2874,9 +3344,20 @@
         "description": "Upload the Asset (PDF/Image)",
         "valueType": "string",
         "condition": {
-            "and": [
-              { "===": [ { "var": "ctaType" }, "asset" ] },
-              { "!!": { "var": "ctaLabel" } }
+          "and": [
+            {
+              "===": [
+                {
+                  "var": "ctaType"
+                },
+                "asset"
+              ]
+            },
+            {
+              "!!": {
+                "var": "ctaLabel"
+              }
+            }
           ]
         }
       },
@@ -2904,10 +3385,21 @@
           }
         ],
         "condition": {
-            "and": [
-              { "===": [ { "var": "ctaType" }, "link" ] },
-              { "!!": { "var": "ctaLabel" } }
-            ]
+          "and": [
+            {
+              "===": [
+                {
+                  "var": "ctaType"
+                },
+                "link"
+              ]
+            },
+            {
+              "!!": {
+                "var": "ctaLabel"
+              }
+            }
+          ]
         }
       },
       {
@@ -2925,8 +3417,19 @@
         ],
         "condition": {
           "and": [
-            { "===": [ { "var": "ctaType" }, "link" ] },
-            { "!!": { "var": "ctaLabel" } }
+            {
+              "===": [
+                {
+                  "var": "ctaType"
+                },
+                "link"
+              ]
+            },
+            {
+              "!!": {
+                "var": "ctaLabel"
+              }
+            }
           ]
         }
       },
@@ -3445,8 +3948,19 @@
         },
         "condition": {
           "and": [
-            { "===": [ { "var": "ctaType" }, "link" ] },
-            { "!!": { "var": "ctaLabel" } }
+            {
+              "===": [
+                {
+                  "var": "ctaType"
+                },
+                "link"
+              ]
+            },
+            {
+              "!!": {
+                "var": "ctaLabel"
+              }
+            }
           ]
         }
       },
@@ -3458,8 +3972,19 @@
         "valueType": "string",
         "condition": {
           "and": [
-            { "===": [ { "var": "ctaType" }, "asset" ] },
-            { "!!": { "var": "ctaLabel" } }
+            {
+              "===": [
+                {
+                  "var": "ctaType"
+                },
+                "asset"
+              ]
+            },
+            {
+              "!!": {
+                "var": "ctaLabel"
+              }
+            }
           ]
         }
       },
@@ -3488,8 +4013,19 @@
         ],
         "condition": {
           "and": [
-            { "===": [ { "var": "ctaType" }, "link" ] },
-            { "!!": { "var": "ctaLabel" } }
+            {
+              "===": [
+                {
+                  "var": "ctaType"
+                },
+                "link"
+              ]
+            },
+            {
+              "!!": {
+                "var": "ctaLabel"
+              }
+            }
           ]
         }
       },
@@ -3507,8 +4043,19 @@
         ],
         "condition": {
           "and": [
-            { "===": [ { "var": "ctaType" }, "link" ] },
-            { "!!": { "var": "ctaLabel" } }
+            {
+              "===": [
+                {
+                  "var": "ctaType"
+                },
+                "link"
+              ]
+            },
+            {
+              "!!": {
+                "var": "ctaLabel"
+              }
+            }
           ]
         }
       },
@@ -3678,8 +4225,19 @@
         },
         "condition": {
           "and": [
-            { "===": [ { "var": "ctaType" }, "link" ] },
-            { "!!": { "var": "ctaText" } }
+            {
+              "===": [
+                {
+                  "var": "ctaType"
+                },
+                "link"
+              ]
+            },
+            {
+              "!!": {
+                "var": "ctaText"
+              }
+            }
           ]
         }
       },
@@ -3691,8 +4249,19 @@
         "valueType": "string",
         "condition": {
           "and": [
-            { "===": [ { "var": "ctaType" }, "asset" ] },
-            { "!!": { "var": "ctaText" } }
+            {
+              "===": [
+                {
+                  "var": "ctaType"
+                },
+                "asset"
+              ]
+            },
+            {
+              "!!": {
+                "var": "ctaText"
+              }
+            }
           ]
         }
       },
@@ -3721,8 +4290,19 @@
         ],
         "condition": {
           "and": [
-            { "===": [ { "var": "ctaType" }, "link" ] },
-            { "!!": { "var": "ctaText" } }
+            {
+              "===": [
+                {
+                  "var": "ctaType"
+                },
+                "link"
+              ]
+            },
+            {
+              "!!": {
+                "var": "ctaText"
+              }
+            }
           ]
         }
       },
@@ -3740,8 +4320,19 @@
         ],
         "condition": {
           "and": [
-            { "===": [ { "var": "ctaType" }, "link" ] },
-            { "!!": { "var": "ctaText" } }
+            {
+              "===": [
+                {
+                  "var": "ctaType"
+                },
+                "link"
+              ]
+            },
+            {
+              "!!": {
+                "var": "ctaText"
+              }
+            }
           ]
         }
       }
@@ -3785,141 +4376,141 @@
     ]
   },
   {
-    "id":"demo-component",
-    "fields":[
+    "id": "demo-component",
+    "fields": [
       {
-        "component":"text",
-        "name":"text",
-        "label":"Test field",
-        "required":"true"
+        "component": "text",
+        "name": "text",
+        "label": "Test field",
+        "required": "true"
       }
     ]
   },
   {
-    "id":"numerated-tile-item",
-    "fields":[
+    "id": "numerated-tile-item",
+    "fields": [
       {
-        "component":"text",
+        "component": "text",
         "valueType": "string",
-        "name":"eyebrow",
-        "label":"Eyebrow",
+        "name": "eyebrow",
+        "label": "Eyebrow",
         "description": "Enter the eyebrow text",
-        "required":true
+        "required": true
       },
       {
-        "component":"text",
+        "component": "text",
         "valueType": "string",
-        "name":"title",
-        "label":"Title",
+        "name": "title",
+        "label": "Title",
         "description": "Enter the title",
-        "required":true
+        "required": true
       },
       {
-        "component":"text",
+        "component": "text",
         "valueType": "string",
-        "name":"subtitle",
-        "label":"Subtitle",
+        "name": "subtitle",
+        "label": "Subtitle",
         "description": "Enter the subtitle"
       },
       {
-        "component":"text",
+        "component": "text",
         "valueType": "string",
-        "name":"description",
-        "label":"Description",
+        "name": "description",
+        "label": "Description",
         "description": "Enter the description"
       },
       {
-        "component":"reference",
+        "component": "reference",
         "valueType": "string",
-        "name":"image",
-        "label":"Image",
+        "name": "image",
+        "label": "Image",
         "description": "Upload the image",
         "default": "None"
       },
       {
-        "component":"text",
+        "component": "text",
         "valueType": "string",
-        "name":"image-alt-text",
-        "label":"Image Alt Text",
+        "name": "image-alt-text",
+        "label": "Image Alt Text",
         "description": "Pick alt text from AEM DAM with ability to override it",
-        "required":true,
-        "default":"Alt text from AEM DAM",
-        "condition":{
-          "!!":{
-            "var":"image"
+        "required": true,
+        "default": "Alt text from AEM DAM",
+        "condition": {
+          "!!": {
+            "var": "image"
           }
         }
       }
     ]
   },
   {
-    "id":"numerated-tile",
-    "fields":[]
+    "id": "numerated-tile",
+    "fields": []
   },
   {
     "id": "small-media-carousel-item",
-    "fields":[
-     {
-        "component":"text",
+    "fields": [
+      {
+        "component": "text",
         "valueType": "string",
-        "name":"title",
-        "label":"Title",
+        "name": "title",
+        "label": "Title",
         "description": "Enter the title"
       },
       {
-        "component":"reference",
+        "component": "reference",
         "valueType": "string",
-        "name":"image",
-        "label":"Image",
+        "name": "image",
+        "label": "Image",
         "description": "Upload the image",
         "default": "None",
         "required": true
       },
       {
-        "component":"text",
+        "component": "text",
         "valueType": "string",
-        "name":"image-alt-text",
-        "label":"Image Alt Text",
+        "name": "image-alt-text",
+        "label": "Image Alt Text",
         "description": "Pick alt text from AEM DAM with ability to override it",
-        "required":true,
-        "default":"Alt text from AEM DAM",
-        "condition":{
-          "!!":{
-            "var":"image"
+        "required": true,
+        "default": "Alt text from AEM DAM",
+        "condition": {
+          "!!": {
+            "var": "image"
           }
         }
       },
       {
-        "component":"reference",
+        "component": "reference",
         "valueType": "string",
-        "name":"icon",
-        "label":"Icon",
+        "name": "icon",
+        "label": "Icon",
         "description": "Select or upload an icon for the tile.",
         "default": "None"
       },
       {
-        "component":"text",
+        "component": "text",
         "valueType": "string",
-        "name":"icon-alt-text",
-        "label":"Icon Alt text",
+        "name": "icon-alt-text",
+        "label": "Icon Alt text",
         "description": "Pick alt text from AEM DAM with ability to override it",
-        "required":true,
-        "default":"Alt text from AEM DAM",
-        "condition":{
-          "!!":{
-            "var":"icon"
+        "required": true,
+        "default": "Alt text from AEM DAM",
+        "condition": {
+          "!!": {
+            "var": "icon"
           }
         }
       }
     ]
   },
   {
-    "id":"small-media-carousel",
-    "fields":[]
+    "id": "small-media-carousel",
+    "fields": []
   },
   {
     "id": "external-video-player-link-item",
-    "fields":[
+    "fields": [
       {
         "component": "reference",
         "valueType": "string",
@@ -3930,32 +4521,33 @@
         "default": "None"
       },
       {
-        "component":"text",
+        "component": "text",
         "valueType": "string",
-        "name":"image-alt-text",
-        "label":"Image Alt Text",
+        "name": "image-alt-text",
+        "label": "Image Alt Text",
         "description": "Pick alt text from AEM DAM with ability to override it",
-        "required":true,
-        "default":"Alt text from AEM DAM",
-        "condition":{
-          "!!":{
-            "var":"image"
+        "required": true,
+        "default": "Alt text from AEM DAM",
+        "condition": {
+          "!!": {
+            "var": "image"
           }
         }
       },
       {
         "component": "text",
         "valueType": "string",
-        "name":"title",
-        "label":"Title",
-        "description": "Enter the title of the title"
+        "name": "title",
+        "label": "Title",
+        "description": "Enter the title of the tile"
       },
       {
         "component": "text",
         "valueType": "string",
         "name": "ctaText",
         "label": "CTA Text",
-        "description": "Enter label to display on the CTA"
+        "description": "Enter label to display on the CTA",
+        "required": true
       },
       {
         "component": "select",
@@ -3965,7 +4557,7 @@
         "options": [
           {
             "name": "Link",
-            "value": "link" 
+            "value": "link"
           },
           {
             "name": "PDF",
@@ -3984,13 +4576,25 @@
         "label": "CTA Link",
         "valueType": "string",
         "description": "Enter the URL to navigate when CTA is clicked",
+        "required": true,
         "validation": {
           "rootPath": "/content"
         },
         "condition": {
           "and": [
-            { "===": [ { "var": "ctaType" }, "link" ] },
-            { "!!": { "var": "ctaText" } }
+            {
+              "===": [
+                {
+                  "var": "ctaType"
+                },
+                "link"
+              ]
+            },
+            {
+              "!!": {
+                "var": "ctaText"
+              }
+            }
           ]
         }
       },
@@ -4002,8 +4606,19 @@
         "valueType": "string",
         "condition": {
           "and": [
-            { "===": [ { "var": "ctaType" }, "pdf" ] },
-            { "!!": { "var": "ctaText" } }
+            {
+              "===": [
+                {
+                  "var": "ctaType"
+                },
+                "pdf"
+              ]
+            },
+            {
+              "!!": {
+                "var": "ctaText"
+              }
+            }
           ]
         }
       },
@@ -4013,29 +4628,6 @@
         "label": "ARIA Label",
         "valueType": "string",
         "description": "Enter ARIA label to comply ADA"
-      },
-        {
-        "component": "select",
-        "name": "targetPath",
-        "label": "Target Path",
-        "description": "Select the target path for the authored CTA URL",
-        "value": "sameTab",
-        "options": [
-          {
-            "name": "Same Tab",
-            "value": "sameTab"
-          },
-          {
-            "name": "New Tab",
-            "value": "newTab"
-          }
-        ],
-        "condition": {
-          "and": [
-            { "===": [ { "var": "ctaType" }, "link" ] },
-            { "!!": { "var": "ctaText" } }
-          ]
-        }
       },
       {
         "component": "checkbox-group",
@@ -4051,20 +4643,31 @@
         ],
         "condition": {
           "and": [
-            { "===": [ { "var": "ctaType" }, "link" ] },
-            { "!!": { "var": "ctaText" } }
+            {
+              "===": [
+                {
+                  "var": "ctaType"
+                },
+                "link"
+              ]
+            },
+            {
+              "!!": {
+                "var": "ctaText"
+              }
+            }
           ]
         }
       }
     ]
   },
   {
-    "id":"external-video-player-link",
-    "fields":[]
+    "id": "external-video-player-link",
+    "fields": []
   },
   {
     "id": "icon-list-with-eyebrow-item",
-    "fields":[
+    "fields": [
       {
         "component": "reference",
         "valueType": "string",
@@ -4081,16 +4684,16 @@
         "description": "Enter the eyebrow text"
       },
       {
-        "component":"text",
+        "component": "text",
         "valueType": "string",
-        "name":"icon-alt-text",
-        "label":"Icon Alt text",
+        "name": "icon-alt-text",
+        "label": "Icon Alt text",
         "description": "Pick alt text from AEM DAM with ability to override it",
-        "required":true,
-        "default":"Alt text from AEM DAM",
-        "condition":{
-          "!!":{
-            "var":"icon"
+        "required": true,
+        "default": "Alt text from AEM DAM",
+        "condition": {
+          "!!": {
+            "var": "icon"
           }
         }
       },
@@ -4112,6 +4715,6 @@
   },
   {
     "id": "icon-list-with-eyebrow",
-    "fields":[]
+    "fields": []
   }
 ]
