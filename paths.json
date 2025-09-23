@@ -1,10 +1,10 @@
 {
   "mappings": [
-    "/content/aem-pb-test/us/eds-training-pb/:/",
-    "/content/aem-pb-test/us/eds-training-pb/configuration:/.helix/config.json",
-    "/content/aem-pb-test/us/eds-training-pb/metadata:/metadata.json"
+    "/content/eds-training-pb/:/",
+    "/content/eds-training-pb/configuration:/.helix/config.json",
+    "/content/eds-training-pb/metadata:/metadata.json"
   ],
   "includes": [
-    "/content/aem-pb-test/us/eds-training-pb/"
+    "/content/eds-training-pb/"
   ]
 }
