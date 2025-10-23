@@ -3,343 +3,53 @@
     "id": "main",
     "components": [
       "section",
-      "cont-sec-container",
-      "column-container",
-      "tabs-section"
+      "column-section"
     ]
   },
   {
     "id": "section",
     "components": [
-      "image-block",
-      "spacer-and-divider",
-      "small-width-media",
       "text",
+      "image",
       "button",
       "title",
-      "primary-hero",
-      "lcdp",
-      "healthgrades-widget",
-      "horizontal-numeric-tile",
-      "search",
+      "hero",
       "cards",
-      "timeline",
       "columns",
-      "fragment",
-      "relatedlinks",
-      "icon-tile",
-      "additional-resource-card",
-      "enhanced-related-links",
-      "text-component",
-      "two-column-with-image",
-      "accordion",
-      "additional-links",
-      "promo-banner",
-      "executive-tile",
-      "text-callout",
-      "pull-quote",
-      "table",
-      "table-2-columns",
-      "table-3-columns",
-      "table-4-columns",
-      "table-5-columns",
-      "table-6-columns",
-      "vertical-numeric-tile",
-      "bio-pagination",
-      "media-card",
-      "expanded-access-form",
-      "submission-form",
-      "news-tile",
-      "executive-grids",
-      "csr-form",
-      "medium-media-carousel",
-      "press-release-feed",
-      "timeline-card",
-      "video",
-      "question-card-carousel",
-      "two-column-text-carousel",
-      "sleep-apnea-quiz",
-      "icon-card",
-      "external-video-player-link",
-      "two-column-text-carousel",
-      "overlapping-block",
-      "numerated-tile",
-      "icon-list-with-eyebrow",
-      "small-media-carousel",
-      "bulleted-icon-list",
-      "story-banner",
-      "story-feed",
-      "search-faq",
-      "news-and-story-card",
-      "media-contacts",
-      "telehealth-cards",
-      "medicine-cards",
-      "federated-components"
+      "fragment"
     ]
   },
   {
-    "id": "column-container",
+    "id": "column-section",
     "components": [
-      "column-break",
-      "accordion",
-      "additional-links",
-      "cards",
       "text",
-      "title",
-      "relatedlinks",
-      "enhanced-related-links",
-      "text-component",
-      "spacer-and-divider",
-      "image-block",
-      "executive-grids",
-      "text-callout",
-      "medium-media-carousel",
-      "vertical-numeric-tile",
-      "horizontal-numeric-tile",
-      "timeline-card",
-      "media-card",
-      "video",
-      "question-card-carousel",
-      "telehealth-cards",
-      "promo-banner",
-      "pull-quote",
-      "healthgrades-widget",
-      "crm-form",
-      "bulleted-icon-list",
-      "news-and-story-card",
-      "text-callout",
-      "small-media-carousel",
-      "media-contacts",
-      "overlapping-block",
-      "icon-tile"
-    ]
-  },
-  {
-    "id": "tabs-section",
-    "components": ["tabs"]
-  },
-  {
-    "id": "cont-sec-container",
-    "components": [
-      "federated-components",
-      "spacer-and-divider",
-      "text",
+      "image",
       "button",
       "title",
-      "primary-hero",
-      "lcdp",
-      "search",
       "cards",
       "columns",
-      "fragment",
-      "relatedlinks",
-      "icon-tile",
-      "additional-resource-card",
-      "enhanced-related-links",
-      "text-component",
-      "two-column-with-image",
-      "tabs",
-      "accordion",
-      "additional-links",
-      "promo-banner",
-      "pull-quote",
-      "table",
-      "table-2-columns",
-      "table-3-columns",
-      "table-4-columns",
-      "table-5-columns",
-      "table-6-columns",
-      "vertical-numeric-tile",
-      "image-block",
-      "expanded-access-form",
-      "news-tile",
-      "executive-grids",
-      "timeline",
-      "medium-media-carousel",
-      "press-release-feed",
-      "timeline-card",
-      "video",
-      "question-card-carousel",
-      "two-column-text-carousel",
-      "sleep-apnea-quiz",
-      "icon-card",
-      "external-video-player-link",
-      "two-column-text-carousel",
-      "overlapping-block",
-      "telehealth-cards",
-      "numerated-tile",
-      "icon-list-with-eyebrow",
-      "bulleted-icon-list",
-      "telehealth-cards",
-      "story-banner",
-      "story-feed",
-      "search-faq",
-      "media-contacts",
-      "news-and-story-card",
-      "media-contacts",
-      "small-media-carousel",
-      "medicine-cards",
-      "healthgrades-widget"
+      "fragment"
     ]
-  },
-  {
-    "id": "accordion",
-    "components": ["accordion-item"]
-  },
-  {
-    "id": "additional-links",
-    "components": ["additional-link"]
-  },
-  {
-    "id": "additional-resource-card",
-    "components": ["resource-card"]
-  },
-  {
-    "id": "bulleted-icon-list",
-    "components": ["bulleted-icon-list-item"]
   },
   {
     "id": "cards",
-    "components": ["card"]
+    "components": [
+      "card"
+    ]
   },
   {
     "id": "columns",
-    "components": ["column"]
+    "components": [
+      "column"
+    ]
   },
   {
-    "id": "enhanced-related-links",
-    "components": ["enhanced-related-link"]
-  },
-  {
-    "id": "executive-grids",
-    "components": ["executive-grid"]
-  },
-  {
-    "id": "external-video-player-link",
-    "components": ["external-video-player-link-item"]
-  },
-  {
-    "id": "horizontal-numeric-tile",
-    "components": ["numeric-tile"]
-  },
-  {
-    "id": "icon-card",
-    "components": ["icon-card-item"]
-  },
-  {
-    "id": "icon-tile-eyebrow-grid",
-    "components": ["icon-tile-eyebrow"]
-  },
-  {
-    "id": "icon-tile-grid",
-    "components": ["tile"]
-  },
-  {
-    "id": "media-card",
-    "components": ["media-card-link"]
-  },
-  {
-    "id": "medicine-cards",
-    "components": ["medicine-card-item"]
-  },
-  {
-    "id": "medium-media-carousel",
-    "components": ["medium-media-carousel-item"]
-  },
-  {
-    "id": "news-and-story-card",
-    "components": ["news-and-story-card-item"]
-  },
-  {
-    "id": "news-tile",
-    "components": ["news-tile-item"]
-  },
-  {
-    "id": "numerated-tile",
-    "components": ["numerated-tile-item"]
-  },
-  {
-    "id": "primary-hero",
-    "components": ["icongrid-tile"]
-  },
-  {
-    "id": "promo-banner",
-    "components": ["promo-banner"]
-  },
-  {
-    "id": "pull-quote",
-    "components": ["pull-quote"]
-  },
-  {
-    "id": "question-card-carousel",
-    "components": ["question-card-carousel-item"]
-  },
-  {
-    "id": "relatedlinks",
-    "components": ["relatedlink"]
-  },
-  {
-    "id": "search",
-    "components": ["search"]
-  },
-  {
-    "id": "sleep-apnea-quiz",
-    "components": ["sleep-apnea-quiz"]
-  },
-  {
-    "id": "small-media-carousel",
-    "components": ["small-media-carousel-item"]
-  },
-  {
-    "id": "small-width-media",
-    "components": ["small-width-media"]
-  },
-  {
-    "id": "table-2-columns",
-    "components": ["table-col-2"]
-  },
-  {
-    "id": "table-3-columns",
-    "components": ["table-col-3"]
-  },
-  {
-    "id": "table-4-columns",
-    "components": ["table-col-4"]
-  },
-  {
-    "id": "table-5-columns",
-    "components": ["table-col-5"]
-  },
-  {
-    "id": "table-6-columns",
-    "components": ["table-col-6"]
-  },
-  {
-    "id": "table",
-    "components": ["table-row"]
-  },
-  {
-    "id": "tabs",
-    "components": ["tab"]
-  },
-  {
-    "id": "telehealth-cards",
-    "components": ["telehealth-card"]
-  },
-  {
-    "id": "timeline",
-    "components": ["timeline-item"]
-  },
-  {
-    "id": "two-column-text-carousel",
-    "components": ["two-column-text-carousel-item"]
-  },
-  {
-    "id": "vertical-numeric-tile",
-    "components": ["vertical-numeric-tile-item"]
-  },
-  {
-    "id": "video",
-    "components": ["video-item"]
+    "id": "column",
+    "components": [
+      "text",
+      "image",
+      "button",
+      "title"
+    ]
   }
 ]

@@ -3,22 +3,11 @@
     "id": "main",
     "components": [
       "section",
-      "cont-sec-container",
-      "column-container",
-      "tabs-section"
+      "column-section"
     ]
   },
   {
     "...": "./_section.json#/filters"
-  },
-  {
-    "...": "./_column-container.json#/filters"
-  },
-  {
-    "...": "./_tabs-section.json#/filters"
-  },
-  {
-    "...": "./_cont-sec-container.json#/filters"
   },
   {
     "...": "../blocks/*/_*.json#/filters"
